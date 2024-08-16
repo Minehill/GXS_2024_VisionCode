@@ -1,0 +1,2 @@
+Invoking command in '/home/minehill/GXS_VisionData/src/build/vedio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/minehill/GXS_VisionData/src/adjust -DCMAKE_INSTALL_PREFIX=/home/minehill/GXS_VisionData/src/install/vedio
+Invoked command in '/home/minehill/GXS_VisionData/src/build/vedio' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/minehill/GXS_VisionData/src/adjust -DCMAKE_INSTALL_PREFIX=/home/minehill/GXS_VisionData/src/install/vedio
