@@ -1,0 +1,97 @@
+[0.000000] (-) TimerEvent: {}
+[0.000194] (-) JobUnselected: {'identifier': 'adjust_hsv'}
+[0.000243] (-) JobUnselected: {'identifier': 'binary_detector'}
+[0.000286] (-) JobUnselected: {'identifier': 'qrmsg'}
+[0.000344] (colorblock_detector) JobQueued: {'identifier': 'colorblock_detector', 'dependencies': OrderedDict([('qrmsg', '/home/minehill/GXS_VisionData/src/install/qrmsg')])}
+[0.000426] (colorblock_detector) JobStarted: {'identifier': 'colorblock_detector'}
+[0.009249] (colorblock_detector) JobProgress: {'identifier': 'colorblock_detector', 'progress': 'cmake'}
+[0.010223] (colorblock_detector) JobProgress: {'identifier': 'colorblock_detector', 'progress': 'build'}
+[0.011664] (colorblock_detector) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/minehill/GXS_VisionData/src/build/colorblock_detector', '--', '-j8', '-l8'], 'cwd': '/home/minehill/GXS_VisionData/src/build/colorblock_detector', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'minehill'), ('GIT_ASKPASS', '/home/minehill/.vscode-server/bin/b1c0a14de1414fcdaa400695b4db1c0799bc3124/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/minehill/GXS_VisionData/install/qrmsg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/minehill'), ('OLDPWD', '/home/minehill/GXS_VisionData'), ('TERM_PROGRAM_VERSION', '1.92.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c66c06db-0692-4726-ac75-999531f71869.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/minehill/.vscode-server/bin/b1c0a14de1414fcdaa400695b4db1c0799bc3124/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/minehill/.vscode-server/bin/b1c0a14de1414fcdaa400695b4db1c0799bc3124/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/minehill/GXS_VisionData/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'minehill'), ('NAME', 'LAPTOP-7F00R6UU'), ('WSL_INTEROP', '/run/WSL/469_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/minehill/.vscode-server/bin/b1c0a14de1414fcdaa400695b4db1c0799bc3124/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/PlasticSCM5/server:/mnt/c/Program Files/PlasticSCM5/client:/mnt/f/xumiji/bin/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/e/VScode/Microsoft VS Code/bin:/mnt/e/Anaconda3:/mnt/e/Anaconda3/Scripts:/mnt/e/Anaconda3/Library/bin:/mnt/e/git/Git/cmd:/mnt/c/Program Files/mingw64/bin:/mnt/f/putty/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/f/matlab/bin:/mnt/e/Wechat_program_development/微信web开发者工具/dll:/mnt/e/Xftp-7/:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/19848/.conda/envs/opencv/Library/bin:/mnt/c/Users/19848/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/19848/GitHubDesktop/bin:/mnt/c/Users/19848/Desktop/vcpkg/vcpkg:/mnt/e/QQGameTempest/Hall.58204/:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-13b1a6ba95.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/minehill/GXS_VisionData/install/qrmsg:/home/minehill/GXS_VisionData/install/binary_detector:/home/minehill/GXS_VisionData/install/adjust_hsv:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/minehill/GXS_VisionData/src/build/colorblock_detector'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/minehill/GXS_VisionData/install/qrmsg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/minehill/GXS_VisionData/install/qrmsg:/home/minehill/GXS_VisionData/install/binary_detector:/home/minehill/GXS_VisionData/install/adjust_hsv:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.050270] (colorblock_detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target colorblock\x1b[0m\n'}
+[0.065526] (colorblock_detector) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/colorblock.dir/src/colorblock.cpp.o\x1b[0m\n'}
+[0.098703] (-) TimerEvent: {}
+[0.199387] (-) TimerEvent: {}
+[0.299779] (-) TimerEvent: {}
+[0.400108] (-) TimerEvent: {}
+[0.500468] (-) TimerEvent: {}
+[0.600827] (-) TimerEvent: {}
+[0.701157] (-) TimerEvent: {}
+[0.801515] (-) TimerEvent: {}
+[0.901857] (-) TimerEvent: {}
+[1.002204] (-) TimerEvent: {}
+[1.102593] (-) TimerEvent: {}
+[1.202998] (-) TimerEvent: {}
+[1.303376] (-) TimerEvent: {}
+[1.403740] (-) TimerEvent: {}
+[1.504219] (-) TimerEvent: {}
+[1.604690] (-) TimerEvent: {}
+[1.705183] (-) TimerEvent: {}
+[1.805584] (-) TimerEvent: {}
+[1.906031] (-) TimerEvent: {}
+[2.006368] (-) TimerEvent: {}
+[2.106818] (-) TimerEvent: {}
+[2.207301] (-) TimerEvent: {}
+[2.307741] (-) TimerEvent: {}
+[2.408173] (-) TimerEvent: {}
+[2.508602] (-) TimerEvent: {}
+[2.609140] (-) TimerEvent: {}
+[2.709609] (-) TimerEvent: {}
+[2.810005] (-) TimerEvent: {}
+[2.910367] (-) TimerEvent: {}
+[3.010828] (-) TimerEvent: {}
+[3.111232] (-) TimerEvent: {}
+[3.211659] (-) TimerEvent: {}
+[3.312039] (-) TimerEvent: {}
+[3.412432] (-) TimerEvent: {}
+[3.512931] (-) TimerEvent: {}
+[3.613316] (-) TimerEvent: {}
+[3.713721] (-) TimerEvent: {}
+[3.814213] (-) TimerEvent: {}
+[3.816641] (colorblock_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/minehill/GXS_VisionData/src/colorblock_detector/src/colorblock.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSearchResponse::SearchResponse(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.816810] (colorblock_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/minehill/GXS_VisionData/src/colorblock_detector/src/colorblock.cpp:14:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmymessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.816888] (colorblock_detector) StderrLine: {'line': b'   14 |         this->create_service<\x1b[01;31m\x1b[Kmymessage\x1b[m\x1b[K::srv::Sum>(\n'}
+[3.817031] (colorblock_detector) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.817099] (colorblock_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/minehill/GXS_VisionData/src/colorblock_detector/src/colorblock.cpp:14:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[3.817162] (colorblock_detector) StderrLine: {'line': b'   14 |         this->\x1b[01;31m\x1b[Kcreate_service<mymessage::srv::Sum>\x1b[m\x1b[K(\n'}
+[3.817222] (colorblock_detector) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.823732] (colorblock_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/minehill/GXS_VisionData/src/colorblock_detector/src/colorblock.cpp:14:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KSearchResponse::create_service<<expression error> >(const char [13], std::_Bind_helper<false, void (SearchResponse::*)(std::shared_ptr<qrmsg::srv::Qr_Request_<std::allocator<void> > >, std::shared_ptr<qrmsg::srv::Qr_Response_<std::allocator<void> > >), SearchResponse*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.823922] (colorblock_detector) StderrLine: {'line': b'   14 |         \x1b[01;31m\x1b[Kthis->create_service<mymessage::srv::Sum>(\x1b[m\x1b[K\n'}
+[3.823998] (colorblock_detector) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[3.824097] (colorblock_detector) StderrLine: {'line': b'   15 | \x1b[01;31m\x1b[K            "QrCallSearch",\x1b[m\x1b[K\n'}
+[3.824228] (colorblock_detector) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~\x1b[m\x1b[K                       \n'}
+[3.824307] (colorblock_detector) StderrLine: {'line': b'   16 | \x1b[01;31m\x1b[K            std::bind(&SearchResponse::handle_searchblock, this,\x1b[m\x1b[K\n'}
+[3.824367] (colorblock_detector) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.824423] (colorblock_detector) StderrLine: {'line': b'   17 | \x1b[01;31m\x1b[K                    std::placeholders::_1, std::placeholders::_2))\x1b[m\x1b[K;\n'}
+[3.824499] (colorblock_detector) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.824593] (colorblock_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[3.824658] (colorblock_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[3.824738] (colorblock_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.824856] (colorblock_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/minehill/GXS_VisionData/src/colorblock_detector/src/colorblock.cpp:1\x1b[m\x1b[K:\n'}
+[3.824921] (colorblock_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.824984] (colorblock_detector) StderrLine: {'line': b'  267 |   \x1b[01;36m\x1b[Kcreate_service\x1b[m\x1b[K(\n'}
+[3.825041] (colorblock_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.825141] (colorblock_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.825212] (colorblock_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/minehill/GXS_VisionData/src/colorblock_detector/src/colorblock.cpp:14:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.825290] (colorblock_detector) StderrLine: {'line': b'   14 |         \x1b[01;31m\x1b[Kthis->create_service<mymessage::srv::Sum>(\x1b[m\x1b[K\n'}
+[3.825424] (colorblock_detector) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[3.825490] (colorblock_detector) StderrLine: {'line': b'   15 | \x1b[01;31m\x1b[K            "QrCallSearch",\x1b[m\x1b[K\n'}
+[3.825549] (colorblock_detector) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~\x1b[m\x1b[K                       \n'}
+[3.825605] (colorblock_detector) StderrLine: {'line': b'   16 | \x1b[01;31m\x1b[K            std::bind(&SearchResponse::handle_searchblock, this,\x1b[m\x1b[K\n'}
+[3.825669] (colorblock_detector) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.825726] (colorblock_detector) StderrLine: {'line': b'   17 | \x1b[01;31m\x1b[K                    std::placeholders::_1, std::placeholders::_2))\x1b[m\x1b[K;\n'}
+[3.825782] (colorblock_detector) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.914387] (-) TimerEvent: {}
+[4.014712] (-) TimerEvent: {}
+[4.115065] (-) TimerEvent: {}
+[4.215436] (-) TimerEvent: {}
+[4.315784] (-) TimerEvent: {}
+[4.416171] (-) TimerEvent: {}
+[4.516536] (-) TimerEvent: {}
+[4.616886] (-) TimerEvent: {}
+[4.717266] (-) TimerEvent: {}
+[4.743931] (colorblock_detector) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/colorblock.dir/build.make:76: CMakeFiles/colorblock.dir/src/colorblock.cpp.o] Error 1\n'}
+[4.744268] (colorblock_detector) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/colorblock.dir/all] Error 2\n'}
+[4.744362] (colorblock_detector) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.745924] (colorblock_detector) CommandEnded: {'returncode': 2}
+[4.773620] (colorblock_detector) JobEnded: {'identifier': 'colorblock_detector', 'rc': 2}
+[4.784249] (-) EventReactorShutdown: {}
