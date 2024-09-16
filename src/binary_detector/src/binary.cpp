@@ -61,7 +61,6 @@ string QrDetector::detect(const Mat& frame)
     return result;
 }
 
-
 QrRequest::QrRequest(std::string name, int arr_[6]) : Node(name) 
 {
 RCLCPP_INFO(this->get_logger(), "节点已启动：%s.", name.c_str());

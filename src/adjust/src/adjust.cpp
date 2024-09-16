@@ -31,13 +31,12 @@ void on_trackbar(int, void*) {
     // 应用掩码到原图像
     Mat result;
     bitwise_and(image, image, result, mask);
-
     // 显示过滤后的图像
     imshow("Filtered Image", result);
 }
 
 int main(int argc, char** argv) {
-    string path = "/home/minehill/GXS_VisionData/src/adjust/blue.png"; 
+    string path = "/home/jason/gxs/GXS_2024_VisionCode/src/image_data/images/2.png"; 
 
     // 加载图像
     image = imread(path);
@@ -46,8 +45,11 @@ int main(int argc, char** argv) {
         return -1;
     }
 
-    // 创建窗口
-    namedWindow("Filtered Image", WINDOW_AUTOSIZE);
+    // 创建一个可调整大小的窗口
+    cv::namedWindow("Filtered Image", cv::WINDOW_NORMAL);
+
+    // 调整窗口大小
+    cv::resizeWindow("Filtered Image", 300, 200);
 
     // 初始化滑块值
     int h_min = 0, h_max = 180;

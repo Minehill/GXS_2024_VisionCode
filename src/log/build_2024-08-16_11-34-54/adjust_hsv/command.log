@@ -1,4 +1,0 @@
-Invoking command in '/home/minehill/GXS_VisionData/src/build/adjust_hsv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/minehill/GXS_VisionData/src/build/adjust_hsv -- -j8 -l8
-Invoked command in '/home/minehill/GXS_VisionData/src/build/adjust_hsv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/minehill/GXS_VisionData/src/build/adjust_hsv -- -j8 -l8
-Invoking command in '/home/minehill/GXS_VisionData/src/build/adjust_hsv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/minehill/GXS_VisionData/src/build/adjust_hsv
-Invoked command in '/home/minehill/GXS_VisionData/src/build/adjust_hsv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/minehill/GXS_VisionData/src/build/adjust_hsv

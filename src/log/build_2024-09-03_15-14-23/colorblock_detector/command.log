@@ -1,2 +1,0 @@
-Invoking command in '/home/minehill/GXS_VisionData/src/build/colorblock_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/minehill/GXS_VisionData/src/build/colorblock_detector -- -j8 -l8
-Invoked command in '/home/minehill/GXS_VisionData/src/build/colorblock_detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/minehill/GXS_VisionData/src/build/colorblock_detector -- -j8 -l8

@@ -29,7 +29,7 @@ int main(int argc, char** argv)
     //     if (waitKey(30) >= 0) break;
     // }
 
-    Mat frame = cv::imread("/home/minehill/GXS_VisionData/src/binary_detector/image.png");
+    Mat frame = cv::imread("/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/image.png");
     auto Qd = std::make_shared<QrDetector>();
     string result = Qd->detect(frame);
     int i = 0, j = 0;

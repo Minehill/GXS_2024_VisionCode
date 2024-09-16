@@ -1,0 +1,48 @@
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:35:7:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #\U0000521b\U00005efa\U00004e00\U00004e2a\U000053ef\U00008c03\U00006574\U00005927\U00005c0f\U00007684\U00007a97\U000053e3
+   35 |     # [01;31m[K创建一个可调整大小的窗口[m[K
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:36:21:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   36 |     cv2.namedWindow([01;35m[K'Filtered Image'[m[K, cv2.WINDOW_NORMAL)
+      |                     [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:38:7:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #\U00008c03\U00006574\U00007a97\U000053e3\U00005927\U00005c0f
+   38 |     # [01;31m[K调整窗口大小[m[K
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:39:22:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   39 |     cv2.resizeWindow([01;35m[K'Filtered Image'[m[K, 400, 300)  # 设定窗口大小为800x600像素
+      |                      [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:39:51:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K#[m[K’ in program
+   39 |     cv2.resizeWindow('Filtered Image', 400, 300)  [01;31m[K#[m[K 设定窗口大小为800x600像素
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:[m[K In function ‘[01m[Kvoid on_trackbar(int, void*)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv2[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv[m[K’?
+   36 |     [01;31m[Kcv2[m[K.namedWindow('Filtered Image', cv2.WINDOW_NORMAL)
+      |     [01;31m[K^~~[m[K
+      |     [32m[Kcv[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:58:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kh_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   58 |     int [01;35m[Kh_min[m[K = 0, h_max = 180;
+      |         [01;35m[K^~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:58:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kh_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   58 |     int h_min = 0, [01;35m[Kh_max[m[K = 180;
+      |                    [01;35m[K^~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:59:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ks_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   59 |     int [01;35m[Ks_min[m[K = 0, s_max = 255;
+      |         [01;35m[K^~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:59:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ks_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   59 |     int s_min = 0, [01;35m[Ks_max[m[K = 255;
+      |                    [01;35m[K^~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:60:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kv_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   60 |     int [01;35m[Kv_min[m[K = 0, v_max = 255;
+      |         [01;35m[K^~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:60:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kv_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   60 |     int v_min = 0, [01;35m[Kv_max[m[K = 255;
+      |                    [01;35m[K^~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:44:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   44 | int main([01;35m[Kint argc[m[K, char** argv) {
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/adjust/src/adjust.cpp:44:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   44 | int main(int argc, [01;35m[Kchar** argv[m[K) {
+      |                    [01;35m[K~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/adjust.dir/build.make:76: CMakeFiles/adjust.dir/src/adjust.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/adjust.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
