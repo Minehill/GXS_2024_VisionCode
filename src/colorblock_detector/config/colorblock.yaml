@@ -1,0 +1,12 @@
+/colorblock_detector:
+  ros__parameters:
+    if_debug: true
+    1_hsv:
+      lower: [45, 115, 50]
+      upper: [180, 255, 160]
+    2_hsv:
+      lower: [0, 0, 0]
+      upper: [255, 255, 255]
+    3_hsv:
+      lower: [0, 0, 0]
+      upper: [255, 255, 255]

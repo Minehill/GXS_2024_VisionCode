@@ -1,16 +1,14 @@
 #include <rclcpp/rclcpp.hpp>
 #include <qrmsg/srv/qr.hpp>
 #include <opencv2/opencv.hpp>
-
+#include <vector>
 class SearchResponse : public rclcpp::Node 
 {
     public:
-    cv::Mat frame;
-    // 声明摄像头
-    cv::VideoCapture cap;
     SearchResponse(std::string name) : Node(name) 
     {
         RCLCPP_INFO(this->get_logger(), "节点已启动：%s.", name.c_str());
+        getParams();
         // 打开摄像头
         cap.open(0, cv::CAP_V4L);
         while (!cap.isOpened()) 
@@ -28,6 +26,32 @@ class SearchResponse : public rclcpp::Node
                     std::placeholders::_1, std::placeholders::_2));
     }
 
+    void getParams()
+    {
+        // 获取参数
+        hsv_lower_1 = this->declare_parameter<std::vector<int>>("1_hsv.lower", std::vector<int>{0, 0, 0});
+        hsv_upper_1 = this->declare_parameter<std::vector<int>>("1_hsv.upper", std::vector<int>{0, 0, 0});
+        hsv_lower_2 = this->declare_parameter<std::vector<int>>("2_hsv.lower", std::vector<int>{0, 0, 0});
+        hsv_upper_2 = this->declare_parameter<std::vector<int>>("2_hsv.upper", std::vector<int>{0, 0, 0});
+        hsv_lower_3 = this->declare_parameter<std::vector<int>>("3_hsv.lower", std::vector<int>{0, 0, 0});
+        hsv_upper_3 = this->declare_parameter<std::vector<int>>("3_hsv.upper", std::vector<int>{0, 0, 0});
+        if_debug = this->declare_parameter<bool>("if_debug", false);
+    }
+
+    cv::Mat frame;
+    // 声明摄像头
+    cv::VideoCapture cap;
+    std::vector<int> hsv_lower_1;
+    std::vector<int> hsv_upper_1;
+    std::vector<int> hsv_lower_2;
+    std::vector<int> hsv_upper_2;
+    std::vector<int> hsv_lower_3;
+    std::vector<int> hsv_upper_3;
+    std::vector<int> hsv_lower;
+    std::vector<int> hsv_upper;
+    bool if_debug;
+     
+
     private:
     // 收到请求的处理函数
     void handle_searchblock
@@ -37,6 +61,23 @@ class SearchResponse : public rclcpp::Node
         ) 
     {
         RCLCPP_INFO(this->get_logger(), "收到num: %ld way: %ld", request->num,request->way);
+        if(request->num == 1)
+        {
+            hsv_lower = hsv_lower_1;
+            hsv_upper = hsv_upper_1;
+        }
+        else if(request->num == 2)
+        {
+            hsv_lower = hsv_lower_2;
+            hsv_upper = hsv_upper_2;
+        }
+        else if(request->num == 3)
+        {
+            hsv_lower = hsv_lower_3;
+            hsv_upper = hsv_upper_3;
+        }
+
+
         bool if_find = false;
         bool if_lock = false;
         cv::Point2f pre_center = cv::Point2f(0, 0);
@@ -44,13 +85,13 @@ class SearchResponse : public rclcpp::Node
         while(!if_find)
         {
             cap.read(frame);
-            cv::imshow("Frame", frame);
+            
             // 寻找HSV色域范围在指定范围内的物体
             cv::Mat hsv;
             cv::cvtColor(frame, hsv, cv::COLOR_BGR2HSV);
             cv::Mat mask;
-            cv::inRange(hsv, cv::Scalar(45, 115, 50), cv::Scalar(180, 255, 160), mask);
-            cv::imshow("Mask", mask);
+            cv::inRange(hsv, cv::Scalar(hsv_lower[0], hsv_lower[1], hsv_lower[2]), cv::Scalar(hsv_upper[0], hsv_upper[1], hsv_upper[2]), mask);
+
             // 将色域过滤后的最大面积物体找出，并返回外接矩形四角坐标并绘制
             std::vector<std::vector<cv::Point>> contours;
             cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
@@ -79,16 +120,23 @@ class SearchResponse : public rclcpp::Node
                 double distance = cv::norm(diff);
                 // 计算差值的角度
                 double angle = atan2(diff.y, diff.x) * 180 / CV_PI;
-                // 显示中心点
-                cv::circle(frame, center, 5, cv::Scalar(0, 255, 0), -1);
-                // 显示差值
-                cv::putText(frame, "Distance: " + std::to_string(distance), cv::Point(10, 30), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
-                cv::putText(frame, "Angle: " + std::to_string(angle), cv::Point(10, 60), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
-                // 显示面积
-                cv::putText(frame, "Area: " + std::to_string(cv::contourArea(max_contour)), cv::Point(10, 90), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
-                // 显示图像
-                cv::imshow("Frame", frame);
-                cv::waitKey(1);
+                
+                if (if_debug)
+                {
+                    // 显示中心点
+                    cv::circle(frame, center, 5, cv::Scalar(0, 255, 0), -1);
+                    // 显示差值
+                    cv::putText(frame, "Distance: " + std::to_string(distance), cv::Point(10, 30), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
+                    cv::putText(frame, "Angle: " + std::to_string(angle), cv::Point(10, 60), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
+                    // 显示面积
+                    cv::putText(frame, "Area: " + std::to_string(cv::contourArea(max_contour)), cv::Point(10, 90), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
+                    // 显示图像
+                    cv::imshow("Frame", frame);
+                    cv::imshow("Mask", mask);
+                    cv::imshow("Frame", frame);
+                    cv::waitKey(1);
+                }
+                
                 // 若外接矩形面积大于指定值，则认为找到目标
                 if (cv::contourArea(max_contour) > 12000) 
                 {
