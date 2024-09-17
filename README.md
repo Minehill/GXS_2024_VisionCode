@@ -7,7 +7,7 @@
 |-- qrmsg  
 |-- image_data  
 |--- photo.py  
-|--- images
+|--- images  
 |-- 其余编译文件  
 |- readme.md  
 
