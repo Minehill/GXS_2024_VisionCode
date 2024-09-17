@@ -3,7 +3,7 @@
 |- src  
 |-- adjust  
 |-- binary_detector  
-|-- colorblock_detector 
+|-- colorblock_detector  
 |-- qrmsg  
 |-- image_data  
 |--- photo.py  
