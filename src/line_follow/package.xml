@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>line_follow</name>
+  <version>0.0.0</version>
+  <description>Line following package</description>
+  <maintainer email="1984861420@qq.com">Minehill</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rclpy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>OpenCV</build_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>OpenCV</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
