@@ -29,26 +29,26 @@ class SearchResponse : public rclcpp::Node
     void getParams()
     {
         // 获取参数
-        hsv_lower_1 = this->declare_parameter<std::vector<int>>("1_hsv.lower", std::vector<int>{0, 0, 0});
-        hsv_upper_1 = this->declare_parameter<std::vector<int>>("1_hsv.upper", std::vector<int>{0, 0, 0});
-        hsv_lower_2 = this->declare_parameter<std::vector<int>>("2_hsv.lower", std::vector<int>{0, 0, 0});
-        hsv_upper_2 = this->declare_parameter<std::vector<int>>("2_hsv.upper", std::vector<int>{0, 0, 0});
-        hsv_lower_3 = this->declare_parameter<std::vector<int>>("3_hsv.lower", std::vector<int>{0, 0, 0});
-        hsv_upper_3 = this->declare_parameter<std::vector<int>>("3_hsv.upper", std::vector<int>{0, 0, 0});
+        hsv_lower_1 = this->declare_parameter<std::vector<long int>>("1_hsv.lower", std::vector<long int>{0, 0, 0});
+        hsv_upper_1 = this->declare_parameter<std::vector<long int>>("1_hsv.upper", std::vector<long int>{0, 0, 0});
+        hsv_lower_2 = this->declare_parameter<std::vector<long int>>("2_hsv.lower", std::vector<long int>{0, 0, 0});
+        hsv_upper_2 = this->declare_parameter<std::vector<long int>>("2_hsv.upper", std::vector<long int>{0, 0, 0});
+        hsv_lower_3 = this->declare_parameter<std::vector<long int>>("3_hsv.lower", std::vector<long int>{0, 0, 0});
+        hsv_upper_3 = this->declare_parameter<std::vector<long int>>("3_hsv.upper", std::vector<long int>{0, 0, 0});
         if_debug = this->declare_parameter<bool>("if_debug", false);
     }
 
     cv::Mat frame;
     // 声明摄像头
     cv::VideoCapture cap;
-    std::vector<int> hsv_lower_1;
-    std::vector<int> hsv_upper_1;
-    std::vector<int> hsv_lower_2;
-    std::vector<int> hsv_upper_2;
-    std::vector<int> hsv_lower_3;
-    std::vector<int> hsv_upper_3;
-    std::vector<int> hsv_lower;
-    std::vector<int> hsv_upper;
+    std::vector<long int> hsv_lower_1;
+    std::vector<long int> hsv_upper_1;
+    std::vector<long int> hsv_lower_2;
+    std::vector<long int> hsv_upper_2;
+    std::vector<long int> hsv_lower_3;
+    std::vector<long int> hsv_upper_3;
+    std::vector<long int> hsv_lower;
+    std::vector<long int> hsv_upper;
     bool if_debug;
      
 
@@ -153,6 +153,7 @@ class SearchResponse : public rclcpp::Node
                 if (if_lock && cv::norm(center - pre_center) < 1) 
                 {
                     if_find = true;
+                    response->dis = pnp_solve(rect);
                     // 摧毁所有的窗口
                     cv::destroyAllWindows();
                 }
@@ -161,10 +162,56 @@ class SearchResponse : public rclcpp::Node
                     pre_center = center;
                 }
             }
-            response->finish = true;
-            response->way = request->way;
         }
+       
+        response->finish = true;
+        response->way = request->way;
     }
+    
+    // pnp求解目标距离
+    float pnp_solve(cv::RotatedRect rect)
+    {
+        // 假设这些参数已知
+        double actual_width = 0.1; // 目标物体的实际宽度，单位：米
+        double actual_height = 0.05; // 目标物体的实际高度，单位：米
+        double fx = 800; // 相机的焦距，单位：像素
+        double fy = 800; // 相机的焦距，单位：像素
+        double cx = 320; // 相机的主点x坐标
+        double cy = 240; // 相机的主点y坐标
+        double k1 = 0, k2 = 0, p1 = 0, p2 = 0, k3 = 0; // 畸变系数
+
+        // 获取矩形的四个顶点
+        cv::Point2f rect_points[4];
+        rect.points(rect_points);
+
+        // 定义图像中的2D坐标
+        std::vector<cv::Point2f> image_points;
+        for (int i = 0; i < 4; i++) {
+            image_points.push_back(rect_points[i]);
+        }
+
+        // 定义目标物体在世界坐标系中的3D坐标
+        std::vector<cv::Point3f> object_points;
+        object_points.push_back(cv::Point3f(-actual_width/2, -actual_height/2, 0)); // 左下角
+        object_points.push_back(cv::Point3f(actual_width/2, -actual_height/2, 0));  // 右下角
+        object_points.push_back(cv::Point3f(actual_width/2, actual_height/2, 0));   // 右上角
+        object_points.push_back(cv::Point3f(-actual_width/2, actual_height/2, 0));  // 左上角
+
+        // 定义相机内参矩阵和畸变系数
+        cv::Mat camera_matrix = (cv::Mat_<double>(3, 3) << fx, 0, cx, 0, fy, cy, 0, 0, 1);
+        cv::Mat dist_coeffs = (cv::Mat_<double>(1, 5) << k1, k2, p1, p2, k3);
+
+        // 定义旋转向量和平移向量
+        cv::Mat rvec, tvec;
+
+        // 使用solvePnP求解位姿
+        cv::solvePnP(object_points, image_points, camera_matrix, dist_coeffs, rvec, tvec);
+
+        // 计算目标物体的距离
+        float distance = cv::norm(tvec);
+        return distance;
+    }
+
     // 声明服务
     rclcpp::Service<qrmsg::srv::Qr>::SharedPtr search_block_server_;
 };

@@ -6,7 +6,7 @@
 #include <vector>
 #include <qrmsg/srv/qr.hpp>
 #include <rclcpp/rclcpp.hpp>
-
+#include <std_msgs/msg/float64.hpp>
 using namespace cv;
 using namespace zbar;
 using namespace std;
@@ -14,8 +14,10 @@ using namespace std;
 
 QrDetector::QrDetector()
 {
+
     // 是否找到二维码
     if_find = false;
+
 }
 
 // 以下代码为识别二维码
@@ -63,53 +65,70 @@ string QrDetector::detect(const Mat& frame)
 
 QrRequest::QrRequest(std::string name, int arr_[6]) : Node(name) 
 {
-RCLCPP_INFO(this->get_logger(), "节点已启动：%s.", name.c_str());
-int i = 0;
-while(i < 6)
-{
-    arr[i] = arr_[i];
-    i++;
-}
 
-client_ = this->create_client<qrmsg::srv::Qr>("QrCallSearch");
+    // 初始化距离发布者
+    distance_publisher = this->create_publisher<std_msgs::msg::Float64>("distance", 10);
+    
+    RCLCPP_INFO(this->get_logger(), "节点已启动：%s.", name.c_str());
+    int i = 0;
+    while(i < 6)
+    {
+        arr[i] = arr_[i];
+        i++;
+    }
 
-now_index = 0;
-int way_ = now_index / 3;
-send_request(arr[now_index], way_);
+    client_ = this->create_client<qrmsg::srv::Qr>("QrCallSearch");
+
+    now_index = 0;
+    int way_ = now_index / 3;
+    send_request(arr[now_index], way_);
 }
 
 void QrRequest::send_request(int &num_, int &way_) 
 {
-RCLCPP_INFO(this->get_logger(), "pick for %d, using way %d", num_, way_);
+    RCLCPP_INFO(this->get_logger(), "pick for %d, using way %d", num_, way_);
 
-// 1.等待服务端上线
-while (!client_->wait_for_service(std::chrono::seconds(1))) 
-{
-    //等待时检测rclcpp的状态
-    if (!rclcpp::ok()) 
+    // 1.等待服务端上线
+    while (!client_->wait_for_service(std::chrono::seconds(1))) 
     {
-    RCLCPP_ERROR(this->get_logger(), "等待服务的过程中被打断...");
-    return;
+        //等待时检测rclcpp的状态
+        if (!rclcpp::ok()) 
+        {
+        RCLCPP_ERROR(this->get_logger(), "等待服务的过程中被打断...");
+        return;
+        }
+        RCLCPP_INFO(this->get_logger(), "等待服务端上线中");
     }
-    RCLCPP_INFO(this->get_logger(), "等待服务端上线中");
-}
 
-// 2.构造请求
-auto request = std::make_shared<qrmsg::srv::Qr::Request>();
-request->num = num_;
-request->way = way_;
+    // 2.构造请求
+    auto request = std::make_shared<qrmsg::srv::Qr::Request>();
+    request->num = num_;
+    request->way = way_;
 
-// 3.发送异步请求，然后等待返回，返回时调用回调函数
-client_->async_send_request(
-    request, std::bind(&QrRequest::result_callback_, this,
-                        std::placeholders::_1));
+    // 3.发送异步请求，然后等待返回，返回时调用回调函数
+    client_->async_send_request(
+        request, std::bind(&QrRequest::result_callback_, this,
+                            std::placeholders::_1));
 }
 
 void QrRequest::result_callback_(rclcpp::Client<qrmsg::srv::Qr>::SharedFuture result_future) 
 {
     auto response = result_future.get();
+    // 若完成，则发布距离消息
     if (response->finish)
+    {
+        // 持续发布距离消息，当距离小于一定值时停止。
+        while (response->dis > distance_threshold)
+        {
+            std_msgs::msg::Float64 msg;
+            msg.data = response->dis;
+            distance_publisher->publish(msg);
+            // 间隔0.1s发布一次
+            rclcpp::sleep_for(std::chrono::milliseconds(100));
+        }
+
         now_index++;
+    }
     else
         RCLCPP_INFO(this->get_logger(), "第 %d 次行动失败, 此时捡取编号为 %d", now_index+1, arr[now_index]);
     if (now_index > 5)

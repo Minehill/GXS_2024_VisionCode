@@ -8,7 +8,7 @@ import math
 
 class LineFollower(Node):
     def __init__(self):
-        super().__init__('line_follower')
+        super().__init__('line_follow')
         self.declare_parameters(
             namespace='',
             parameters=[

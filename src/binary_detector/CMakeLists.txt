@@ -8,6 +8,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(qrmsg REQUIRED)
+find_package(std_msgs REQUIRED)
 # find_package(ZBar REQUIRED)
 
 # Use pkg-config to find ZBar
@@ -26,6 +27,7 @@ ament_target_dependencies(${PROJECT_NAME}
   sensor_msgs
   cv_bridge
   qrmsg
+  std_msgs
 )
 
 target_link_libraries(${PROJECT_NAME}
@@ -54,6 +56,7 @@ ament_target_dependencies(binary
   sensor_msgs
   cv_bridge
   qrmsg
+  std_msgs
 )
 
 install(TARGETS

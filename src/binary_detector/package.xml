@@ -13,6 +13,7 @@
   <depend>sensor_msgs</depend>
   <depend>cv_bridge</depend>
   <depend>qrmsg</depend>
+  <depend>std_msgs</depend>
   <build_depend>ament_cmake</build_depend>
   <build_depend>opencv4</build_depend>
   <build_depend>zbar</build_depend>
