@@ -12,8 +12,8 @@ class LineFollower(Node):
         self.declare_parameters(
             namespace='',
             parameters=[
-                ('lower_white', [0, 0, 200]),  # 白色的HSV下限
-                ('upper_white', [180, 30, 255]),  # 白色的HSV上限
+                ('lower_white', [90, 0, 0]),  # 白色的HSV下限
+                ('upper_white', [180, 150, 255]),  # 白色的HSV上限
                 ('lower_yellow', [20, 100, 100]),  # 黄色的HSV下限
                 ('upper_yellow', [30, 255, 255]),  # 黄色的HSV上限
                 ('min_line_length', 30),
@@ -21,13 +21,20 @@ class LineFollower(Node):
                 ('if_debug', False)
             ]
         )
-        self.cap = cv2.VideoCapture(0)
-        if not self.cap.isOpened():
-            self.get_logger().error("无法打开摄像头")
-            rclpy.shutdown()
+        # self.cap = cv2.VideoCapture(0)
+        # if not self.cap.isOpened():
+        #     self.get_logger().error("无法打开摄像头")
+        #     rclpy.shutdown()
 
     def pro_img(self):
-        ret, img = self.cap.read()
+        # ret, img = self.cap.read()
+
+        img = cv2.imread('/home/minehill/GXS_2024_VisionCode/src/line_follow/images/img_6.jpg')
+        # 展示原图，但是修改展示大小(通过创建窗口、resize、imshow)
+        cv2.namedWindow('ori', cv2.WINDOW_NORMAL)
+        cv2.resizeWindow('ori', 752, 423)
+        cv2.imshow('ori', img)
+
         lower_white = np.array(self.get_parameter('lower_white').get_parameter_value().integer_array_value, dtype=np.uint8)
         upper_white = np.array(self.get_parameter('upper_white').get_parameter_value().integer_array_value, dtype=np.uint8)
         lower_yellow = np.array(self.get_parameter('lower_yellow').get_parameter_value().integer_array_value, dtype=np.uint8)
@@ -43,16 +50,20 @@ class LineFollower(Node):
         img = self.cat(img)
 
         mask_white = cv2.inRange(img, lower_white, upper_white)
-        mask_yellow = cv2.inRange(img, lower_yellow, upper_yellow)
-        mask = cv2.bitwise_or(mask_white, mask_yellow)
+        # mask_yellow = cv2.inRange(img, lower_yellow, upper_yellow)
+        # mask = cv2.bitwise_or(mask_white, mask_yellow)
+        mask = mask_white
         result = cv2.bitwise_and(img, img, mask=mask)
+        cv2.imshow('kk', result)
         gray = cv2.cvtColor(result, cv2.COLOR_RGB2GRAY)
         ret, binary = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
         kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-        for i in range(10):
-            eroded = cv2.dilate(binary, kernel)
-            binary = eroded
-        for i in range(3):
+        # 膨胀
+        # for i in range(10):
+        #     eroded = cv2.dilate(binary, kernel)
+        #     binary = eroded
+        # 腐蚀
+        for i in range(5):
             eroded = cv2.erode(binary, kernel)
             binary = eroded
         # 使用高斯概率加权求和，对边缘做平滑化处理
@@ -89,8 +100,23 @@ class LineFollower(Node):
         except:
             flage_l, flage_r = None, None
         line_image = cv2.addWeighted(edges, 0.8, line_image, 1, 0)
+        # 在原图img可视化找到的线
+        # 确保line_image的尺寸和通道数与img匹配
+        line_image = cv2.resize(line_image, (img.shape[1], img.shape[0]))
+        if len(line_image.shape) == 2:
+            line_image_ = cv2.cvtColor(line_image, cv2.COLOR_GRAY2BGR)
+        # 将找到的线可视化到原图上
+        res_ = cv2.addWeighted(img, 0.8, line_image_, 1, 0)
+        print('----------')
+        cv2.imshow("img", img)
+        cv2.imshow("result", result)
+        cv2.imshow("binary", binary)
         cv2.imshow("find_line", line_image)
-        cv2.waitKey(1)
+        cv2.imshow("res", res_)
+        print('|||||||||||')
+        while True:
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
 
     def cat(self, image):
         image = cv2.resize(image, (752, 423))
@@ -149,17 +175,17 @@ class LineFollower(Node):
                         left_slope_set.append(slope)
 
         try:
-            if left_y_set:
-                lindex = left_y_set.index(min(left_y_set))
-                left_x_top = left_x_set[lindex]
-                left_y_top = left_y_set[lindex]
-                lslope = np.median(left_slope_set)
+            # if left_y_set:
+            #     lindex = left_y_set.index(min(left_y_set))
+            #     left_x_top = left_x_set[lindex]
+            #     left_y_top = left_y_set[lindex]
+            #     lslope = np.median(left_slope_set)
 
-            left_x_bottom = int(left_x_top + (max_y - left_y_top) / lslope)
-            cv2.line(image, (left_x_bottom, max_y), (left_x_top, left_y_top), color, thickness)
-            angle_rad = math.atan2((max_y - left_y_top), (left_x_bottom-left_x_top))
-            angle_deg = int(math.degrees(angle_rad))
-            flage_l = angle_deg
+            # left_x_bottom = int(left_x_top + (max_y - left_y_top) / lslope)
+            # cv2.line(image, (left_x_bottom, max_y), (left_x_top, left_y_top), color, thickness)
+            # angle_rad = math.atan2((max_y - left_y_top), (left_x_bottom-left_x_top))
+            # angle_deg = int(math.degrees(angle_rad))
+            # flage_l = angle_deg
 
             if right_y_set:
                 lindex = right_y_set.index(min(right_y_set))
@@ -169,21 +195,24 @@ class LineFollower(Node):
 
             right_x_bottom = int(right_x_top + (max_y - right_y_top) / rslope)
             cv2.line(image, (right_x_bottom, max_y), (right_x_top, right_y_top), color, thickness)
+            print('rslope:', rslope)
             angle_rad = math.atan2((max_y - right_y_top), (right_x_bottom-right_x_top))
             angle_deg = int(math.degrees(angle_rad))
             flage_r = angle_deg
         except:
             pass
         
-        return flage_l
+        return flage_r
 
 def main(args=None):
     rclpy.init(args=args)
     node = LineFollower()
-    while rclpy.ok():
-        node.pro_img()
-        rclpy.spin_once(node)
-    node.cap.release()
+    # while rclpy.ok():
+    #     node.pro_img()
+    #     rclpy.spin_once(node)
+    node.pro_img()
+
+    # node.cap.release()
     cv2.destroyAllWindows()
     rclpy.shutdown()
 
