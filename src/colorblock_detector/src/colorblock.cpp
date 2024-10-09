@@ -2,6 +2,8 @@
 #include <qrmsg/srv/qr.hpp>
 #include <opencv2/opencv.hpp>
 #include <vector>
+#include <geometry_msgs/msg/vector3.hpp>
+
 class SearchResponse : public rclcpp::Node 
 {
     public:
@@ -24,6 +26,8 @@ class SearchResponse : public rclcpp::Node
             "QrCallSearch",
             std::bind(&SearchResponse::handle_searchblock, this,
                     std::placeholders::_1, std::placeholders::_2));
+        // 创建发布者
+        colorblock_pos_pub = this->create_publisher<geometry_msgs::msg::Vector3>("colorblock_pos", 10);
     }
 
     void getParams()
@@ -41,6 +45,7 @@ class SearchResponse : public rclcpp::Node
     cv::Mat frame;
     // 声明摄像头
     cv::VideoCapture cap;
+    // 声明HSV色域范围
     std::vector<long int> hsv_lower_1;
     std::vector<long int> hsv_upper_1;
     std::vector<long int> hsv_lower_2;
@@ -50,7 +55,8 @@ class SearchResponse : public rclcpp::Node
     std::vector<long int> hsv_lower;
     std::vector<long int> hsv_upper;
     bool if_debug;
-     
+    // 声明发布者，发布PNP解算后的距离
+    rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr colorblock_pos_pub;
 
     private:
     // 收到请求的处理函数
@@ -61,6 +67,13 @@ class SearchResponse : public rclcpp::Node
         ) 
     {
         RCLCPP_INFO(this->get_logger(), "收到num: %ld way: %ld", request->num,request->way);
+        
+        if (request->is_new)
+        {
+            if_find = false;
+            if_lock = false;
+        }
+        
         if(request->num == 1)
         {
             hsv_lower = hsv_lower_1;
@@ -78,8 +91,6 @@ class SearchResponse : public rclcpp::Node
         }
 
 
-        bool if_find = false;
-        bool if_lock = false;
         cv::Point2f pre_center = cv::Point2f(0, 0);
         // 显示摄像头的画面
         while(!if_find)
@@ -150,16 +161,26 @@ class SearchResponse : public rclcpp::Node
                     if_lock = false;
                 }
                 // 若中心点坐标与前一帧中心点坐标的差值小于指定值，则认为找到目标
-                if (if_lock && cv::norm(center - pre_center) < 1) 
+                if (!if_find)
                 {
-                    if_find = true;
+                    if (if_lock && cv::norm(center - pre_center) < 1) 
+                    {
+                        if_find = true;
+                        response->dis = pnp_solve(rect);
+                        // 摧毁所有的窗口
+                        cv::destroyAllWindows();
+                    }
+                    else
+                    {
+                        pre_center = center;
+                    }
+                }
+                // 找到目标后，由于机械臂在移动，因此无需再进行前后帧对比
+                else
+                {
                     response->dis = pnp_solve(rect);
                     // 摧毁所有的窗口
                     cv::destroyAllWindows();
-                }
-                else
-                {
-                    pre_center = center;
                 }
             }
         }
@@ -167,53 +188,80 @@ class SearchResponse : public rclcpp::Node
         response->finish = true;
         response->way = request->way;
     }
-    
+
     // pnp求解目标距离
     float pnp_solve(cv::RotatedRect rect)
     {
-        // 假设这些参数已知
-        double actual_width = 0.1; // 目标物体的实际宽度，单位：米
-        double actual_height = 0.05; // 目标物体的实际高度，单位：米
-        double fx = 800; // 相机的焦距，单位：像素
-        double fy = 800; // 相机的焦距，单位：像素
-        double cx = 320; // 相机的主点x坐标
-        double cy = 240; // 相机的主点y坐标
-        double k1 = 0, k2 = 0, p1 = 0, p2 = 0, k3 = 0; // 畸变系数
-
         // 获取矩形的四个顶点
         cv::Point2f rect_points[4];
         rect.points(rect_points);
 
         // 定义图像中的2D坐标
         std::vector<cv::Point2f> image_points;
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 4; i++)
+        {
             image_points.push_back(rect_points[i]);
         }
 
-        // 定义目标物体在世界坐标系中的3D坐标
+        // 定义物体的3D坐标（假设物体在z=0平面上）
         std::vector<cv::Point3f> object_points;
-        object_points.push_back(cv::Point3f(-actual_width/2, -actual_height/2, 0)); // 左下角
-        object_points.push_back(cv::Point3f(actual_width/2, -actual_height/2, 0));  // 右下角
-        object_points.push_back(cv::Point3f(actual_width/2, actual_height/2, 0));   // 右上角
-        object_points.push_back(cv::Point3f(-actual_width/2, actual_height/2, 0));  // 左上角
+        object_points.push_back(cv::Point3f(-actual_width / 2, -actual_height / 2, 0));
+        object_points.push_back(cv::Point3f(actual_width / 2, -actual_height / 2, 0));
+        object_points.push_back(cv::Point3f(actual_width / 2, actual_height / 2, 0));
+        object_points.push_back(cv::Point3f(-actual_width / 2, actual_height / 2, 0));
 
-        // 定义相机内参矩阵和畸变系数
+        // 相机内参矩阵
         cv::Mat camera_matrix = (cv::Mat_<double>(3, 3) << fx, 0, cx, 0, fy, cy, 0, 0, 1);
+
+        // 畸变系数
         cv::Mat dist_coeffs = (cv::Mat_<double>(1, 5) << k1, k2, p1, p2, k3);
 
-        // 定义旋转向量和平移向量
+        // 输出旋转向量和平移向量
         cv::Mat rvec, tvec;
 
-        // 使用solvePnP求解位姿
+        // 使用solvePnP求解
         cv::solvePnP(object_points, image_points, camera_matrix, dist_coeffs, rvec, tvec);
 
-        // 计算目标物体的距离
-        float distance = cv::norm(tvec);
-        return distance;
+        // 将旋转向量转换为旋转矩阵
+        cv::Mat R;
+        cv::Rodrigues(rvec, R);
+
+        // 打印旋转矩阵和平移向量
+        std::cout << "Rotation Matrix: " << R << std::endl;
+        std::cout << "Translation Vector: " << tvec << std::endl;
+
+        // 提取平移向量中的x, y, z分量
+        double x = tvec.at<double>(0);
+        double y = tvec.at<double>(1);
+        double z = tvec.at<double>(2);
+
+        // 打印目标物体相对于相机的真实位置
+        std::cout << "Object Position (X, Y, Z): (" << x << ", " << y << ", " << z << ")" << std::endl;
+
+        // 发布该位姿
+        geometry_msgs::msg::Vector3 pos;
+        pos.x = x;
+        pos.y = y;
+        pos.z = z;
+        colorblock_pos_pub->publish(pos);
+        return z;
     }
+
+    // 假设这些参数已知
+    double actual_width = 0.1; // 目标物体的实际宽度，单位：米
+    double actual_height = 0.05; // 目标物体的实际高度，单位：米
+    double fx = 800; // 相机的焦距，单位：像素
+    double fy = 800; // 相机的焦距，单位：像素
+    double cx = 320; // 相机的主点x坐标
+    double cy = 240; // 相机的主点y坐标
+    double k1 = 0, k2 = 0, p1 = 0, p2 = 0, k3 = 0; // 畸变系数
 
     // 声明服务
     rclcpp::Service<qrmsg::srv::Qr>::SharedPtr search_block_server_;
+
+    // 识别的目标是否找到
+    bool if_find = false;
+    bool if_lock = false;
 };
 
 

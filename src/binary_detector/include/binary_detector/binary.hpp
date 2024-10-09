@@ -31,6 +31,7 @@ public:
   QrRequest(std::string name, int arr_[6]);
 
   void send_request(int &num_, int &way_);
+  void again_send_request(int &num_, int &way_);
 
   // 真实距离发布者
   rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr distance_publisher;
@@ -39,8 +40,11 @@ public:
 
 private:
   void result_callback_(rclcpp::Client<qrmsg::srv::Qr>::SharedFuture result_future);
+  // void void_result_callback_(rclcpp::Client<qrmsg::srv::Qr>::SharedFuture result_future);
   rclcpp::Client<qrmsg::srv::Qr>::SharedPtr client_;
   int now_index, arr[6];
+  // 相应
+  auto response;
 };
 
 #endif

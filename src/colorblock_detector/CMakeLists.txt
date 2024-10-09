@@ -8,6 +8,7 @@ find_package(rclcpp REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(qrmsg REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 include_directories(
   include
@@ -23,6 +24,7 @@ ament_target_dependencies(colorblock
   rclcpp
   cv_bridge
   qrmsg
+  geometry_msgs
 )
 
 install(TARGETS

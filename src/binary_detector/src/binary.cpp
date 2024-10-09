@@ -64,11 +64,7 @@ string QrDetector::detect(const Mat& frame)
 }
 
 QrRequest::QrRequest(std::string name, int arr_[6]) : Node(name) 
-{
-
-    // 初始化距离发布者
-    distance_publisher = this->create_publisher<std_msgs::msg::Float64>("distance", 10);
-    
+{   
     RCLCPP_INFO(this->get_logger(), "节点已启动：%s.", name.c_str());
     int i = 0;
     while(i < 6)
@@ -104,6 +100,7 @@ void QrRequest::send_request(int &num_, int &way_)
     auto request = std::make_shared<qrmsg::srv::Qr::Request>();
     request->num = num_;
     request->way = way_;
+    request->is_new = true;
 
     // 3.发送异步请求，然后等待返回，返回时调用回调函数
     client_->async_send_request(
@@ -111,22 +108,32 @@ void QrRequest::send_request(int &num_, int &way_)
                             std::placeholders::_1));
 }
 
+// 此时已经找到了目标，只需要继续前进即可
+void QrRequest::again_send_request(int &num_, int &way_) 
+{   
+    // 2.构造请求
+    auto request = std::make_shared<qrmsg::srv::Qr::Request>();
+    request->num = num_;
+    request->way = way_;
+    request->is_new = false;
+
+    // 3.发送同步请求，然后等待返回，返回时调用回调函数
+    auto result_future = client_->async_send_request(request);
+    response = result_future.get();
+}
+
 void QrRequest::result_callback_(rclcpp::Client<qrmsg::srv::Qr>::SharedFuture result_future) 
 {
-    auto response = result_future.get();
+    response = result_future.get();
     // 若完成，则发布距离消息
     if (response->finish)
     {
-        // 持续发布距离消息，当距离小于一定值时停止。
-        while (response->dis > distance_threshold)
+        // 继续调用服务，当距离小于一定值时停止。
+        while (response->finish && response->dis > distance_threshold)
         {
-            std_msgs::msg::Float64 msg;
-            msg.data = response->dis;
-            distance_publisher->publish(msg);
-            // 间隔0.1s发布一次
-            rclcpp::sleep_for(std::chrono::milliseconds(100));
+            RCLCPP_INFO(this->get_logger(), "当前距离为 %f, 继续前进", response->dis);
+            again_send_request(arr[now_index], now_index / 3);
         }
-
         now_index++;
     }
     else
