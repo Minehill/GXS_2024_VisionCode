@@ -1,0 +1,8 @@
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:[m[K In member function ‘[01m[Kvoid SearchResponse::getParams()[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:40:9:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv_uppper_1[m[K’ was not declared in this scope; did you mean ‘[01m[Khsv_upper_1[m[K’?
+   40 |         [01;31m[Khsv_uppper_1[m[K = this->declare_parameter<std::vector<long int>>("1_hsv.upper", std::vector<long int>{180, 255, 255});
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+      |         [32m[Khsv_upper_1[m[K
+gmake[2]: *** [CMakeFiles/colorblock.dir/build.make:76: CMakeFiles/colorblock.dir/src/colorblock.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/colorblock.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

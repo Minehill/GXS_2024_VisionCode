@@ -1,0 +1,22 @@
+[0.035s] Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/gxs/GXS_2024_VisionCode/install/line_follow:/opt/ros/humble /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv -- -j16 -l16
+[0.112s] [100%] Built target adjust
+[0.302s] Invoked command in '/home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/gxs/GXS_2024_VisionCode/install/line_follow:/opt/ros/humble /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv -- -j16 -l16
+[0.340s] Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/gxs/GXS_2024_VisionCode/install/line_follow:/opt/ros/humble /usr/bin/cmake --install /home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv
+[0.355s] -- Install configuration: ""
+[0.355s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/lib/adjust_hsv/adjust
+[0.355s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/ament_index/resource_index/package_run_dependencies/adjust_hsv
+[0.355s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/ament_index/resource_index/parent_prefix_path/adjust_hsv
+[0.355s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/environment/ament_prefix_path.sh
+[0.355s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/environment/ament_prefix_path.dsv
+[0.355s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/environment/path.sh
+[0.356s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/environment/path.dsv
+[0.356s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/local_setup.bash
+[0.356s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/local_setup.sh
+[0.356s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/local_setup.zsh
+[0.356s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/local_setup.dsv
+[0.356s] -- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.dsv
+[0.356s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/ament_index/resource_index/packages/adjust_hsv
+[0.356s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/cmake/adjust_hsvConfig.cmake
+[0.356s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/cmake/adjust_hsvConfig-version.cmake
+[0.356s] -- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.xml
+[0.360s] Invoked command in '/home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/gxs/GXS_2024_VisionCode/install/line_follow:/opt/ros/humble /usr/bin/cmake --install /home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv

@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target colorblock[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/colorblock.dir/src/colorblock.cpp.o[0m
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:[m[K In member function ‘[01m[Kvoid SearchResponse::searchblock(qrmsg::msg::Qr_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:183:68:[m[K [01;31m[Kerror: [m[K‘[01m[KSize[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::Size[m[K’?
+  183 |             cv::Mat kernel = getStructuringElement(cv::MORPH_RECT, [01;31m[KSize[m[K(20, 20));
+      |                                                                    [01;31m[K^~~~[m[K
+      |                                                                    [32m[Kcv::Size[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:4[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:359:16:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::Size[m[K’ declared here
+  359 | typedef Size2i [01;36m[KSize[m[K;
+      |                [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/colorblock.dir/build.make:76: CMakeFiles/colorblock.dir/src/colorblock.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/colorblock.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

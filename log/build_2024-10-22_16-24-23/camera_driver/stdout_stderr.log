@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target image_publisher[0m
+[100%] Built target image_publisher
+-- Install configuration: ""
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/lib/camera_driver/image_publisher
+-- Set runtime path of "/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/lib/camera_driver/image_publisher" to ""
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/ament_index/resource_index/package_run_dependencies/camera_driver
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/ament_index/resource_index/parent_prefix_path/camera_driver
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/ament_prefix_path.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/ament_prefix_path.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/path.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/path.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.bash
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.zsh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/ament_index/resource_index/packages/camera_driver
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/cmake/camera_driverConfig.cmake
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/cmake/camera_driverConfig-version.cmake
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.xml

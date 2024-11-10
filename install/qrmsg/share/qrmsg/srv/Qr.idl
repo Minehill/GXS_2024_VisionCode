@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from qrmsg/srv/Qr.srv
+// generated code does not contain a copyright notice
+
+
+module qrmsg {
+  module srv {
+    @verbatim (language="comment", text=
+      "num:当前处理物料的编号；way:处理方式，0为捡取，1为放下; new: 是否开始寻找新物体")
+    struct Qr_Request {
+      int64 num;
+
+      int64 way;
+
+      boolean is_new;
+    };
+    @verbatim (language="comment", text=
+      "finish:当前动作是否完成；way:此步执行的处理方式;  dis:返回摄像头离物块的真实距离，左负右正")
+    struct Qr_Response {
+      boolean finish;
+
+      int64 way;
+
+      double dis;
+    };
+  };
+};

@@ -1,0 +1,16 @@
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/lib/camera_driver/image_publisher
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/ament_index/resource_index/package_run_dependencies/camera_driver
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/ament_index/resource_index/parent_prefix_path/camera_driver
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/ament_prefix_path.sh
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/ament_prefix_path.dsv
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/path.sh
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/path.dsv
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.bash
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.sh
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.zsh
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.dsv
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.dsv
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/ament_index/resource_index/packages/camera_driver
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/cmake/camera_driverConfig.cmake
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/cmake/camera_driverConfig-version.cmake
+/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.xml

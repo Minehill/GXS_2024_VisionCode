@@ -1,0 +1,10 @@
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:[m[K In member function ‘[01m[Kvoid SearchResponse::handle_searchblock(std::shared_ptr<qrmsg::srv::Qr_Request_<std::allocator<void> > >, std::shared_ptr<qrmsg::srv::Qr_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:139:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap[m[K’ was not declared in this scope
+  139 |             [01;31m[Kcap[m[K.read(frame);
+      |             [01;31m[K^~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:140:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass cv::Mat[m[K’ has no member named ‘[01m[Kcopy[m[K’
+  140 |             frame = frame_.[01;31m[Kcopy[m[K();
+      |                            [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/colorblock.dir/build.make:76: CMakeFiles/colorblock.dir/src/colorblock.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/colorblock.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

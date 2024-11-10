@@ -1,0 +1,11 @@
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:[m[K In member function ‘[01m[Kvoid SearchResponse::image_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:120:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSearchResponse::searchblock()[m[K’
+  120 |         [01;31m[Ksearchblock()[m[K;
+      |         [01;31m[K~~~~~~~~~~~^~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:125:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid SearchResponse::searchblock(qrmsg::msg::Qr_<std::allocator<void> >::SharedPtr)[m[K’
+  125 |     void [01;36m[Ksearchblock[m[K(const qrmsg::msg::Qr::SharedPtr msg)
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:125:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+gmake[2]: *** [CMakeFiles/colorblock.dir/build.make:76: CMakeFiles/colorblock.dir/src/colorblock.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/colorblock.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,14 @@
+In file included from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:1[m[K:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/include/binary_detector/binary.hpp:47:3:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+   47 |   [01;31m[Kauto[m[K response;
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:[m[K In member function ‘[01m[Kvoid QrRequest::result_callback_(rclcpp::Client<qrmsg::srv::Qr>::SharedFuture)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:135:58:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kint&[m[K’ to an rvalue of type ‘[01m[Kint[m[K’
+  135 |             again_send_request(arr[now_index], [01;31m[Know_index / 3[m[K);
+      |                                                [01;31m[K~~~~~~~~~~^~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:112:52:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid QrRequest::again_send_request(int&, int&)[m[K’
+  112 | void QrRequest::again_send_request(int &num_, [01;36m[Kint &way_[m[K)
+      |                                               [01;36m[K~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/binary_detector.dir/build.make:76: CMakeFiles/binary_detector.dir/src/binary.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/binary_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

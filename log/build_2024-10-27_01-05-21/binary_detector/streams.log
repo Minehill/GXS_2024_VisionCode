@@ -1,0 +1,41 @@
+[0.009s] Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/build/binary_detector': AMENT_PREFIX_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/binary_detector -- -j16 -l16
+[0.067s] [ 25%] [32mBuilding CXX object CMakeFiles/binary_detector.dir/src/binary.cpp.o[0m
+[2.109s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.109s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.109s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.109s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.109s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.110s]                  from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/include/binary_detector/binary.hpp:10[m[K,
+[2.110s]                  from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:1[m[K:
+[2.110s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:[m[K In member function ‘[01m[Kvoid QrRequest::send_request()[m[K’:
+[2.110s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:122:5:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: First argument to logging macros must be an rclcpp::Logger
+[2.110s]   122 |     [01;31m[KRCLCPP_INFO[m[K("if_done? %d", if_done);
+[2.110s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.110s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.111s]                  from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/include/binary_detector/binary.hpp:10[m[K,
+[2.111s]                  from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:1[m[K:
+[2.111s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:122:5:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K("if_done? %d")[m[K’, which is of non-class type ‘[01m[Kconst char [12][m[K’
+[2.111s]   122 |     [01;31m[KRCLCPP_INFO[m[K("if_done? %d", if_done);
+[2.111s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.111s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:122:5:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K("if_done? %d")[m[K’, which is of non-class type ‘[01m[Kconst char [12][m[K’
+[2.111s]   122 |     [01;31m[KRCLCPP_INFO[m[K("if_done? %d", if_done);
+[2.111s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[3.532s] gmake[2]: *** [CMakeFiles/binary_detector.dir/build.make:76: CMakeFiles/binary_detector.dir/src/binary.cpp.o] Error 1
+[3.532s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/binary_detector.dir/all] Error 2
+[3.532s] gmake: *** [Makefile:146: all] Error 2
+[3.534s] Invoked command in '/home/jason/gxs/GXS_2024_VisionCode/build/binary_detector' returned '2': AMENT_PREFIX_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/binary_detector -- -j16 -l16

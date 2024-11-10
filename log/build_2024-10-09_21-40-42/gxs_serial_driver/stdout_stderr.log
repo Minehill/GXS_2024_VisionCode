@@ -1,0 +1,39 @@
+[35m[1mConsolidate compiler generated dependencies of target gxs_serial_driver_node[0m
+[35m[1mConsolidate compiler generated dependencies of target gxs_serial_driver[0m
+[ 40%] Built target gxs_serial_driver_node
+[100%] Built target gxs_serial_driver
+-- Install configuration: ""
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/lib/gxs_serial_driver/gxs_serial_driver_node
+-- Set runtime path of "/home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/lib/gxs_serial_driver/gxs_serial_driver_node" to ""
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/include
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/include/rm_serial_driver
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/include/rm_serial_driver/rm_serial_driver.hpp
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/include/rm_serial_driver/crc.hpp
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/include/rm_serial_driver/packet.hpp
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/library_path.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/library_path.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/lib/libgxs_serial_driver.so
+-- Set runtime path of "/home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/lib/libgxs_serial_driver.so" to ""
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/config
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/config/serial_driver.yaml
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/launch
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/launch/serial_driver.launch.py
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/ament_index/resource_index/package_run_dependencies/gxs_serial_driver
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/ament_index/resource_index/parent_prefix_path/gxs_serial_driver
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/ament_prefix_path.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/ament_prefix_path.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/path.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/path.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/local_setup.bash
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/local_setup.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/local_setup.zsh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/local_setup.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/ament_index/resource_index/packages/gxs_serial_driver
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/ament_index/resource_index/rclcpp_components/gxs_serial_driver
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/cmake/gxs_serial_driverConfig.cmake
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/cmake/gxs_serial_driverConfig-version.cmake
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.xml

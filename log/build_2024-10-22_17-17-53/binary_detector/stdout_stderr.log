@@ -1,0 +1,8 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/binary_detector.dir/src/binary.cpp.o[0m
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kqrmsg/msg.qr/hpp: No such file or directory
+    8 | #include [01;31m[K<qrmsg/msg.qr/hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/binary_detector.dir/build.make:76: CMakeFiles/binary_detector.dir/src/binary.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/binary_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

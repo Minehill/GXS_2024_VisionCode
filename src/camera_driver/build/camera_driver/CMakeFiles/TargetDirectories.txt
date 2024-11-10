@@ -1,0 +1,10 @@
+/home/jason/gxs/GXS_2024_VisionCode/src/camera_driver/build/camera_driver/CMakeFiles/uninstall.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/camera_driver/build/camera_driver/CMakeFiles/camera_driver_uninstall.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/camera_driver/build/camera_driver/CMakeFiles/image_publisher.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/camera_driver/build/camera_driver/CMakeFiles/test.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/camera_driver/build/camera_driver/CMakeFiles/edit_cache.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/camera_driver/build/camera_driver/CMakeFiles/rebuild_cache.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/camera_driver/build/camera_driver/CMakeFiles/list_install_components.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/camera_driver/build/camera_driver/CMakeFiles/install.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/camera_driver/build/camera_driver/CMakeFiles/install/local.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/camera_driver/build/camera_driver/CMakeFiles/install/strip.dir

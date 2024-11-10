@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/include/**",
+        "/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/**",
+        "/home/jason/Desktop/rm_vision/install/trajectory/include/**",
+        "/home/jason/Desktop/rm_vision/install/rm_serial_driver/include/**",
+        "/home/jason/Desktop/rm_vision/install/armor_tracker/include/**",
+        "/home/jason/Desktop/rm_vision/install/armor_detector/include/**",
+        "/home/jason/Desktop/rm_vision/install/auto_aim_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

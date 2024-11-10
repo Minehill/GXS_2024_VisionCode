@@ -1,0 +1,9 @@
+# num:当前处理物料的编号；way:处理方式，0为捡取，1为放下; new: 是否开始寻找新物体
+int64 num
+int64 way
+bool is_new
+---
+# finish:当前动作是否完成；way:此步执行的处理方式;  dis:返回摄像头离物块的真实距离，左负右正
+bool finish
+int64 way
+float64 dis

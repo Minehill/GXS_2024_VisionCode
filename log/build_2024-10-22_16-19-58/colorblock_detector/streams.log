@@ -1,0 +1,54 @@
+[0.013s] Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/build/colorblock_detector': AMENT_PREFIX_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/colorblock_detector -- -j16 -l16
+[0.063s] [35m[1mConsolidate compiler generated dependencies of target colorblock[0m
+[0.084s] [ 50%] [32mBuilding CXX object CMakeFiles/colorblock.dir/src/colorblock.cpp.o[0m
+[1.967s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:80:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_transport[m[K’ does not name a type
+[1.967s]    80 |     [01;31m[Kimage_transport[m[K::Subscriber img_subscriber_;
+[1.967s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.969s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:85:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+[1.969s]    85 |     void image_callback(const [01;31m[Ksensor_msgs[m[K::msg::Image::SharedPtr msg) {
+[1.969s]       |                               [01;31m[K^~~~~~~~~~~[m[K
+[1.969s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:85:47:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[1.969s]    85 |     void image_callback(const sensor_msgs::msg[01;31m[K::[m[KImage::SharedPtr msg) {
+[1.969s]       |                                               [01;31m[K^~[m[K
+[1.969s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:85:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[1.969s]    85 |     void image_callback[34m[K([m[Kconst sensor_msgs::msg[01;31m[K:[m[K[32m[K:[m[KImage::SharedPtr msg) {
+[1.969s]       |                        [34m[K~[m[K                      [01;31m[K^[m[K[32m[K~[m[K
+[1.969s]       |                                               [32m[K)[m[K
+[1.970s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:85:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.970s]    85 |     void image_callback(const sensor_msgs::[01;31m[Kmsg[m[K::Image::SharedPtr msg) {
+[1.970s]       |                                            [01;31m[K^~~[m[K
+[1.970s]       |                                               [32m[K;[m[K
+[1.970s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:85:49:[m[K [01;31m[Kerror: [m[K‘[01m[KImage[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[1.970s]    85 |     void image_callback(const sensor_msgs::msg::[01;31m[KImage[m[K::SharedPtr msg) {
+[1.970s]       |                                                 [01;31m[K^~~~~[m[K
+[1.994s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:[m[K In constructor ‘[01m[KSearchResponse::SearchResponse(std::string)[m[K’:
+[1.994s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:36:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kimg_subscriber_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcount_subscribers[m[K’?
+[1.994s]    36 |         [01;31m[Kimg_subscriber_[m[K = this->create_subscription<sensor_msgs::msg::Image>(
+[1.994s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.994s]       |         [32m[Kcount_subscribers[m[K
+[1.999s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:36:53:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[2.000s]    36 |         img_subscriber_ = this->create_subscription<[01;31m[Ksensor_msgs[m[K::msg::Image>(
+[2.000s]       |                                                     [01;31m[K^~~~~~~~~~~[m[K
+[2.000s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:36:33:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[2.000s]    36 |         img_subscriber_ = this->[01;31m[Kcreate_subscription<sensor_msgs::msg::Image>[m[K(
+[2.000s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.000s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:38:24:[m[K [01;31m[Kerror: [m[K‘[01m[KImageService[m[K’ has not been declared
+[2.000s]    38 |             std::bind(&[01;31m[KImageService[m[K::image_callback, this, std::placeholders::_1));
+[2.000s]       |                        [01;31m[K^~~~~~~~~~~~[m[K
+[2.005s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:40:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecutor_[m[K’ was not declared in this scope
+[2.005s]    40 |         [01;31m[Kexecutor_[m[K = std::make_shared<rclcpp::executors::MultiThreadedExecutor>();
+[2.005s]       |         [01;31m[K^~~~~~~~~[m[K
+[2.013s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:[m[K In member function ‘[01m[Kvoid SearchResponse::spin()[m[K’:
+[2.013s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:61:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kexecutor_[m[K’ was not declared in this scope
+[2.013s]    61 |        [01;31m[Kexecutor_[m[K->spin();
+[2.013s]       |        [01;31m[K^~~~~~~~~[m[K
+[2.021s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:[m[K In member function ‘[01m[Kvoid SearchResponse::handle_searchblock(std::shared_ptr<qrmsg::srv::Qr_Request_<std::allocator<void> > >, std::shared_ptr<qrmsg::srv::Qr_Response_<std::allocator<void> > >)[m[K’:
+[2.021s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:137:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap[m[K’ was not declared in this scope
+[2.021s]   137 |             [01;31m[Kcap[m[K.read(frame);
+[2.021s]       |             [01;31m[K^~~[m[K
+[2.021s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:138:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass cv::Mat[m[K’ has no member named ‘[01m[Kcopy[m[K’
+[2.021s]   138 |             frame = frame_.[01;31m[Kcopy[m[K();
+[2.021s]       |                            [01;31m[K^~~~[m[K
+[3.218s] gmake[2]: *** [CMakeFiles/colorblock.dir/build.make:76: CMakeFiles/colorblock.dir/src/colorblock.cpp.o] Error 1
+[3.218s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/colorblock.dir/all] Error 2
+[3.218s] gmake: *** [Makefile:146: all] Error 2

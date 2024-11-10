@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target gxs_serial_driver[0m
+[ 40%] Built target gxs_serial_driver_node
+[ 60%] [32mBuilding CXX object CMakeFiles/gxs_serial_driver.dir/src/rm_serial_driver.cpp.o[0m
+[ 80%] [32m[1mLinking CXX shared library libgxs_serial_driver.so[0m
+[100%] Built target gxs_serial_driver

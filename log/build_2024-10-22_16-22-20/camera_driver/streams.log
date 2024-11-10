@@ -1,0 +1,5 @@
+[0.010s] Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/build/camera_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/camera_driver -- -j16 -l16
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target image_publisher[0m
+[0.047s] [ 50%] [32mBuilding CXX object CMakeFiles/image_publisher.dir/src/camera_driver.cpp.o[0m
+[3.833s] [100%] [32m[1mLinking CXX executable image_publisher[0m
+[4.171s] [100%] Built target image_publisher

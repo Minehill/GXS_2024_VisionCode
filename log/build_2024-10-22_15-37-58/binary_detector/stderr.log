@@ -1,0 +1,42 @@
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:[m[K In constructor ‘[01m[KQrRequest::QrRequest(std::string, int*)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:83:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kway[m[K’ was not declared in this scope; did you mean ‘[01m[Kway_[m[K’?
+   83 |         send_request(arr[now_index], [01;31m[Kway[m[K);
+      |                                      [01;31m[K^~~[m[K
+      |                                      [32m[Kway_[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/include/binary_detector/binary.hpp:9[m[K,
+                 from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:1[m[K:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:84:9:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: First argument to logging macros must be an rclcpp::Logger
+   84 |         [01;31m[KRCLCPP_INFO[m[K("return dis is : %lf", dis);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/include/binary_detector/binary.hpp:9[m[K,
+                 from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:1[m[K:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:84:9:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K("return dis is : %lf")[m[K’, which is of non-class type ‘[01m[Kconst char [20][m[K’
+   84 |         [01;31m[KRCLCPP_INFO[m[K("return dis is : %lf", dis);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:84:9:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K("return dis is : %lf")[m[K’, which is of non-class type ‘[01m[Kconst char [20][m[K’
+   84 |         [01;31m[KRCLCPP_INFO[m[K("return dis is : %lf", dis);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/binary_detector.dir/build.make:76: CMakeFiles/binary_detector.dir/src/binary.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/binary_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

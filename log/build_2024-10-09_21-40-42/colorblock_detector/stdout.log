@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target colorblock[0m
+[100%] Built target colorblock
+-- Install configuration: ""
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/lib/colorblock_detector/colorblock
+-- Set runtime path of "/home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/lib/colorblock_detector/colorblock" to ""
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/ament_index/resource_index/package_run_dependencies/colorblock_detector
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/ament_index/resource_index/parent_prefix_path/colorblock_detector
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/environment/ament_prefix_path.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/environment/ament_prefix_path.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/environment/path.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/environment/path.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/local_setup.bash
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/local_setup.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/local_setup.zsh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/local_setup.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/ament_index/resource_index/packages/colorblock_detector
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/cmake/colorblock_detectorConfig.cmake
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/cmake/colorblock_detectorConfig-version.cmake
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.xml

@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/adjust.dir/src/adjust.cpp.o[0m
+[100%] [32m[1mLinking CXX executable adjust[0m
+[100%] Built target adjust
+-- Install configuration: ""
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/lib/adjust_hsv/adjust
+-- Set runtime path of "/home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/lib/adjust_hsv/adjust" to ""
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/ament_index/resource_index/package_run_dependencies/adjust_hsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/ament_index/resource_index/parent_prefix_path/adjust_hsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/environment/ament_prefix_path.sh
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/environment/path.sh
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/environment/path.dsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/local_setup.bash
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/local_setup.sh
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/local_setup.zsh
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/local_setup.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.dsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/ament_index/resource_index/packages/adjust_hsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/cmake/adjust_hsvConfig.cmake
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/cmake/adjust_hsvConfig-version.cmake
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.xml

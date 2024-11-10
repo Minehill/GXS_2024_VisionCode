@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target binary_detector[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/binary_detector.dir/src/binary.cpp.o[0m
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:[m[K In member function ‘[01m[Kstd::shared_ptr<qrmsg::srv::Qr_Response_<std::allocator<void> > > QrRequest::again_send_request(int&, int&)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:125:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  125 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 50%] [32m[1mLinking CXX static library libbinary_detector.a[0m
+[ 50%] Built target binary_detector
+[ 75%] [32mBuilding CXX object CMakeFiles/binary.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable binary[0m
+[100%] Built target binary
+-- Install configuration: ""
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/lib/binary_detector/libbinary_detector.a
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/include/
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/include//binary_detector
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/include//binary_detector/binary.hpp
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/lib/binary_detector/binary
+-- Set runtime path of "/home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/lib/binary_detector/binary" to ""
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/ament_index/resource_index/package_run_dependencies/binary_detector
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/ament_index/resource_index/parent_prefix_path/binary_detector
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/environment/ament_prefix_path.sh
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/environment/path.sh
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/environment/path.dsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/local_setup.bash
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/local_setup.sh
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/local_setup.zsh
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/local_setup.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.dsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/ament_index/resource_index/packages/binary_detector
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/cmake/binary_detectorConfig.cmake
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/cmake/binary_detectorConfig-version.cmake
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.xml

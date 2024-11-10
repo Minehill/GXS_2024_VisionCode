@@ -1,0 +1,6 @@
+[0.009s] Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/build/gxs_serial_driver': AMENT_PREFIX_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/gxs_serial_driver -- -j16 -l16
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target gxs_serial_driver[0m
+[0.048s] [ 40%] Built target gxs_serial_driver_node
+[0.049s] [ 60%] [32mBuilding CXX object CMakeFiles/gxs_serial_driver.dir/src/rm_serial_driver.cpp.o[0m
+[6.095s] [ 80%] [32m[1mLinking CXX shared library libgxs_serial_driver.so[0m
+[6.355s] [100%] Built target gxs_serial_driver

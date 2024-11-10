@@ -27,6 +27,14 @@ ament_target_dependencies(colorblock
   geometry_msgs
 )
 
+install(
+  DIRECTORY config/
+  DESTINATION share/${PROJECT_NAME}/config
+)
+
+install(DIRECTORY launch
+DESTINATION share/${PROJECT_NAME})
+
 install(TARGETS
   colorblock
   DESTINATION lib/${PROJECT_NAME})

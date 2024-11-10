@@ -1,0 +1,200 @@
+[0.000000] (-) TimerEvent: {}
+[0.000152] (-) JobUnselected: {'identifier': 'adjust_hsv'}
+[0.000170] (-) JobUnselected: {'identifier': 'binary_detector'}
+[0.000180] (-) JobUnselected: {'identifier': 'camera_driver'}
+[0.000189] (-) JobUnselected: {'identifier': 'colorblock_detector'}
+[0.000204] (-) JobUnselected: {'identifier': 'gxs_serial_driver'}
+[0.000212] (-) JobUnselected: {'identifier': 'line_follow'}
+[0.000228] (qrmsg) JobQueued: {'identifier': 'qrmsg', 'dependencies': OrderedDict()}
+[0.000359] (qrmsg) JobStarted: {'identifier': 'qrmsg'}
+[0.006088] (qrmsg) JobProgress: {'identifier': 'qrmsg', 'progress': 'cmake'}
+[0.007191] (qrmsg) JobProgress: {'identifier': 'qrmsg', 'progress': 'build'}
+[0.007312] (qrmsg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jason/gxs/GXS_2024_VisionCode/build/qrmsg', '--', '-j16', '-l16'], 'cwd': '/home/jason/gxs/GXS_2024_VisionCode/build/qrmsg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jason'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('HOME', '/home/jason'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1538'), ('SYSTEMD_EXEC_PID', '2593'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4557'), ('https_proxy', 'http://127.0.0.1:7890'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'jason'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:39953'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jason'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jason:@/tmp/.ICE-unix/2574,unix/jason:/tmp/.ICE-unix/2574'), ('INVOCATION_ID', 'bc037f124bc341d5b6f8c446d24f7ebf'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/jason/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e0535c1362.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jason/gxs/GXS_2024_VisionCode/build/qrmsg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.053511] (qrmsg) StdoutLine: {'line': b'[ 10%] Built target qrmsg__rosidl_generator_c\n'}
+[0.054196] (qrmsg) StdoutLine: {'line': b'[ 12%] Built target qrmsg__cpp\n'}
+[0.061359] (qrmsg) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_qrmsg\n'}
+[0.068015] (qrmsg) StdoutLine: {'line': b'[ 43%] Built target qrmsg__rosidl_typesupport_introspection_c\n'}
+[0.068308] (qrmsg) StdoutLine: {'line': b'[ 43%] Built target qrmsg__rosidl_typesupport_c\n'}
+[0.068394] (qrmsg) StdoutLine: {'line': b'[ 43%] Built target qrmsg__rosidl_typesupport_cpp\n'}
+[0.073107] (qrmsg) StdoutLine: {'line': b'[ 56%] Built target qrmsg__rosidl_typesupport_introspection_cpp\n'}
+[0.073270] (qrmsg) StdoutLine: {'line': b'[ 64%] Built target qrmsg__rosidl_typesupport_fastrtps_c\n'}
+[0.073816] (qrmsg) StdoutLine: {'line': b'[ 74%] Built target qrmsg__rosidl_typesupport_fastrtps_cpp\n'}
+[0.085171] (qrmsg) StdoutLine: {'line': b'[ 74%] Built target qrmsg\n'}
+[0.096462] (qrmsg) StdoutLine: {'line': b'[ 76%] Built target qrmsg__py\n'}
+[0.099941] (-) TimerEvent: {}
+[0.109763] (qrmsg) StdoutLine: {'line': b'[ 84%] Built target qrmsg__rosidl_generator_py\n'}
+[0.127973] (qrmsg) StdoutLine: {'line': b'[100%] Built target qrmsg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.128195] (qrmsg) StdoutLine: {'line': b'[100%] Built target qrmsg__rosidl_typesupport_c__pyext\n'}
+[0.128276] (qrmsg) StdoutLine: {'line': b'[100%] Built target qrmsg__rosidl_typesupport_introspection_c__pyext\n'}
+[0.188729] (qrmsg) StdoutLine: {'line': b'running egg_info\n'}
+[0.189014] (qrmsg) StdoutLine: {'line': b'writing qrmsg.egg-info/PKG-INFO\n'}
+[0.189121] (qrmsg) StdoutLine: {'line': b'writing dependency_links to qrmsg.egg-info/dependency_links.txt\n'}
+[0.189295] (qrmsg) StdoutLine: {'line': b'writing top-level names to qrmsg.egg-info/top_level.txt\n'}
+[0.190904] (qrmsg) StdoutLine: {'line': b"reading manifest file 'qrmsg.egg-info/SOURCES.txt'\n"}
+[0.191188] (qrmsg) StdoutLine: {'line': b"writing manifest file 'qrmsg.egg-info/SOURCES.txt'\n"}
+[0.200119] (-) TimerEvent: {}
+[0.204392] (qrmsg) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_qrmsg_egg\n'}
+[0.213317] (qrmsg) CommandEnded: {'returncode': 0}
+[0.251117] (qrmsg) JobProgress: {'identifier': 'qrmsg', 'progress': 'install'}
+[0.255834] (qrmsg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jason/gxs/GXS_2024_VisionCode/build/qrmsg'], 'cwd': '/home/jason/gxs/GXS_2024_VisionCode/build/qrmsg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jason'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('HOME', '/home/jason'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1538'), ('SYSTEMD_EXEC_PID', '2593'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4557'), ('https_proxy', 'http://127.0.0.1:7890'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'jason'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:39953'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jason'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jason:@/tmp/.ICE-unix/2574,unix/jason:/tmp/.ICE-unix/2574'), ('INVOCATION_ID', 'bc037f124bc341d5b6f8c446d24f7ebf'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/jason/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e0535c1362.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jason/gxs/GXS_2024_VisionCode/build/qrmsg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.261347] (qrmsg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.261501] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/ament_index/resource_index/rosidl_interfaces/qrmsg\n'}
+[0.261600] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg\n'}
+[0.261712] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg\n'}
+[0.261790] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail\n'}
+[0.261850] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__functions.h\n'}
+[0.261909] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__functions.c\n'}
+[0.261968] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__type_support.h\n'}
+[0.262025] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__struct.h\n'}
+[0.262082] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.262139] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/qr.h\n'}
+[0.262196] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv\n'}
+[0.262253] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail\n'}
+[0.262310] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__functions.h\n'}
+[0.262371] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__functions.c\n'}
+[0.262456] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__type_support.h\n'}
+[0.262523] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__struct.h\n'}
+[0.262580] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/qr.h\n'}
+[0.262636] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/library_path.sh\n'}
+[0.262696] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/library_path.dsv\n'}
+[0.262753] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_generator_c.so\n'}
+[0.262813] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg\n'}
+[0.262872] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg\n'}
+[0.262929] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail\n'}
+[0.263001] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__rosidl_typesupport_fastrtps_c.h\n'}
+[0.263101] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.263170] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv\n'}
+[0.263227] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail\n'}
+[0.263284] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__rosidl_typesupport_fastrtps_c.h\n'}
+[0.263343] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_fastrtps_c.so\n'}
+[0.263408] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg\n'}
+[0.263466] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg\n'}
+[0.263535] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail\n'}
+[0.263594] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__rosidl_typesupport_introspection_c.h\n'}
+[0.263651] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__type_support.c\n'}
+[0.263717] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.263810] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv\n'}
+[0.263905] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail\n'}
+[0.263982] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__rosidl_typesupport_introspection_c.h\n'}
+[0.264039] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__type_support.c\n'}
+[0.264096] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_introspection_c.so\n'}
+[0.264157] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_c.so\n'}
+[0.264220] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg\n'}
+[0.264387] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg\n'}
+[0.264493] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/qr.hpp\n'}
+[0.264526] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail\n'}
+[0.264553] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__traits.hpp\n'}
+[0.264580] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__builder.hpp\n'}
+[0.264605] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__struct.hpp\n'}
+[0.264631] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv\n'}
+[0.264655] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/qr.hpp\n'}
+[0.264681] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail\n'}
+[0.264706] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__traits.hpp\n'}
+[0.264730] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__builder.hpp\n'}
+[0.264760] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__struct.hpp\n'}
+[0.264788] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg\n'}
+[0.264817] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg\n'}
+[0.264842] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail\n'}
+[0.264866] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/dds_fastrtps\n'}
+[0.264890] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.264914] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.264939] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv\n'}
+[0.264962] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail\n'}
+[0.264986] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/dds_fastrtps\n'}
+[0.265010] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.265037] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.265065] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg\n'}
+[0.265092] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg\n'}
+[0.265135] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail\n'}
+[0.265160] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__type_support.cpp\n'}
+[0.265185] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.265210] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv\n'}
+[0.265243] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail\n'}
+[0.265276] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__type_support.cpp\n'}
+[0.265302] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.265328] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_introspection_cpp.so\n'}
+[0.265353] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_cpp.so\n'}
+[0.265390] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/pythonpath.sh\n'}
+[0.265416] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/pythonpath.dsv\n'}
+[0.265441] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg-0.0.0-py3.10.egg-info\n'}
+[0.265466] (qrmsg) StdoutLine: {'line': b'-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.265500] (qrmsg) StdoutLine: {'line': b'-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.265527] (qrmsg) StdoutLine: {'line': b'-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.265553] (qrmsg) StdoutLine: {'line': b'-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.265580] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg\n'}
+[0.265607] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg\n'}
+[0.265657] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg/_qr_s.c\n'}
+[0.265682] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg/__init__.py\n'}
+[0.265706] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg/_qr.py\n'}
+[0.265732] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.265758] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/_qrmsg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.265783] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/__init__.py\n'}
+[0.265807] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv\n'}
+[0.265830] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv/_qr_s.c\n'}
+[0.265855] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv/__init__.py\n'}
+[0.265878] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv/_qr.py\n'}
+[0.265901] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.265925] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/_qrmsg_s.ep.rosidl_typesupport_c.c\n'}
+[0.265948] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.265972] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/libqrmsg__rosidl_generator_py.so\n'}
+[0.265995] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/_qrmsg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.282574] (qrmsg) StdoutLine: {'line': b"Listing '/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg'...\n"}
+[0.282727] (qrmsg) StdoutLine: {'line': b"Listing '/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg'...\n"}
+[0.282791] (qrmsg) StdoutLine: {'line': b"Listing '/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv'...\n"}
+[0.285010] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.285298] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.285490] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.285586] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_generator_py.so\n'}
+[0.285674] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv/Qr.idl\n'}
+[0.285759] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/msg/Qr.idl\n'}
+[0.285816] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv/Qr.srv\n'}
+[0.285957] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv/Qr_Request.msg\n'}
+[0.286028] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv/Qr_Response.msg\n'}
+[0.286088] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/msg/Qr.msg\n'}
+[0.286155] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv\n'}
+[0.286210] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv/Qr.srv\n'}
+[0.286264] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/msg\n'}
+[0.286317] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/msg/Qr.msg\n'}
+[0.286370] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/ament_index/resource_index/package_run_dependencies/qrmsg\n'}
+[0.286431] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/ament_index/resource_index/parent_prefix_path/qrmsg\n'}
+[0.286485] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/ament_prefix_path.sh\n'}
+[0.286543] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/ament_prefix_path.dsv\n'}
+[0.286597] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/path.sh\n'}
+[0.286650] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/path.dsv\n'}
+[0.286703] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/local_setup.bash\n'}
+[0.286756] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/local_setup.sh\n'}
+[0.286810] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/local_setup.zsh\n'}
+[0.286863] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/local_setup.dsv\n'}
+[0.286916] (qrmsg) StdoutLine: {'line': b'-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.dsv\n'}
+[0.286984] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/ament_index/resource_index/packages/qrmsg\n'}
+[0.287040] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_generator_cExport.cmake\n'}
+[0.287094] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.287638] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.287722] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.288111] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.288177] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.288704] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_cExport.cmake\n'}
+[0.288797] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.289318] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_generator_cppExport.cmake\n'}
+[0.289868] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.289952] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.290377] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.290461] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.290948] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_cppExport.cmake\n'}
+[0.291010] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.291461] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_generator_pyExport.cmake\n'}
+[0.291545] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.291622] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/rosidl_cmake-extras.cmake\n'}
+[0.291678] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.291732] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.291787] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.291840] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.291899] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.291953] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.292007] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsgConfig.cmake\n'}
+[0.292061] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsgConfig-version.cmake\n'}
+[0.292114] (qrmsg) StdoutLine: {'line': b'-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.xml\n'}
+[0.293365] (qrmsg) CommandEnded: {'returncode': 0}
+[0.300220] (-) TimerEvent: {}
+[0.351610] (qrmsg) JobEnded: {'identifier': 'qrmsg', 'rc': 0}
+[0.352089] (-) EventReactorShutdown: {}

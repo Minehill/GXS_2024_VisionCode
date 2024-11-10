@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target colorblock[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/colorblock.dir/src/colorblock.cpp.o[0m
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:[m[K In member function ‘[01m[Kvoid SearchResponse::searchblock(qrmsg::msg::Qr_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:206:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kimg[m[K’ was not declared in this scope
+  206 |                 cv::drawContours([01;31m[Kimg[m[K, std::vector<std::vector<cv::Point>>{max_contour}, 0, cv::Scalar(0, 255, 0), 3);
+      |                                  [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/colorblock.dir/build.make:76: CMakeFiles/colorblock.dir/src/colorblock.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/colorblock.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

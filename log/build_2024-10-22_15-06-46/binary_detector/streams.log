@@ -1,0 +1,38 @@
+[0.010s] Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/build/binary_detector': CMAKE_PREFIX_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg:/home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver:/home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector:/home/jason/gxs/GXS_2024_VisionCode/install/binary_detector:/home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv:/home/jason/gxs/GXS_2024_VisionCode/install/line_follow:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib:/home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/binary_detector -- -j16 -l16
+[0.037s] [35m[1mConsolidate compiler generated dependencies of target binary_detector[0m
+[0.048s] [ 25%] [32mBuilding CXX object CMakeFiles/binary_detector.dir/src/binary.cpp.o[0m
+[1.634s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:83:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kbool[m[K’
+[1.634s]    83 | void QrRequest::send_request(int &num_, int &way_， [01;31m[Kbool[m[K &new_)
+[1.634s]       |                                                     [01;31m[K^~~~[m[K
+[1.638s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.638s]                  from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/include/binary_detector/binary.hpp:9[m[K,
+[1.638s]                  from [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:1[m[K:
+[1.638s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:[m[K In member function ‘[01m[Kvoid QrRequest::send_request(int&, int&)[m[K’:
+[1.638s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:85:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kway_[m[K’ was not declared in this scope
+[1.638s]    85 | LCPP_INFO(this->get_logger(), "pick for %d, using way %d", num_, [01;31m[Kway_[m[K);
+[1.639s]       |                                                                  [01;31m[K^~~~[m[K
+[1.639s] 
+[1.642s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:102:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kway_[m[K’ was not declared in this scope
+[1.642s]   102 |     request->way = [01;31m[Kway_[m[K;
+[1.642s]       |                    [01;31m[K^~~~[m[K
+[1.645s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:103:23:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_[m[K’ was not declared in this scope
+[1.645s]   103 |     request->is_new = [01;31m[Knew_[m[K;
+[1.645s]       |                       [01;31m[K^~~~[m[K
+[1.648s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:[m[K In member function ‘[01m[Kstd::shared_ptr<qrmsg::srv::Qr_Response_<std::allocator<void> > > QrRequest::again_send_request(int&, int&)[m[K’:
+[1.648s] [01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:125:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.648s]   125 | [01;35m[K}[m[K
+[1.648s]       | [01;35m[K^[m[K
+[2.147s] gmake[2]: *** [CMakeFiles/binary_detector.dir/build.make:76: CMakeFiles/binary_detector.dir/src/binary.cpp.o] Error 1
+[2.147s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/binary_detector.dir/all] Error 2
+[2.148s] gmake: *** [Makefile:146: all] Error 2
+[2.150s] Invoked command in '/home/jason/gxs/GXS_2024_VisionCode/build/binary_detector' returned '2': CMAKE_PREFIX_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg:/home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver:/home/jason/gxs/GXS_2024_VisionCode/install/colorblock_detector:/home/jason/gxs/GXS_2024_VisionCode/install/binary_detector:/home/jason/gxs/GXS_2024_VisionCode/install/adjust_hsv:/home/jason/gxs/GXS_2024_VisionCode/install/line_follow:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/lib:/home/jason/gxs/GXS_2024_VisionCode/install/gxs_serial_driver/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/binary_detector -- -j16 -l16

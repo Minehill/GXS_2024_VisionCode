@@ -27,12 +27,15 @@ endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
 "srv/Qr.srv"
+"msg/Qr.msg"
 )
 
 install(DIRECTORY srv
   DESTINATION share/${PROJECT_NAME}
 )
-
+install(DIRECTORY msg
+  DESTINATION share/${PROJECT_NAME}
+)
 ament_export_dependencies(rosidl_default_runtime)
 
 ament_package()

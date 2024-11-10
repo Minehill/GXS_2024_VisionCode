@@ -1,0 +1,8 @@
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:[m[K In member function ‘[01m[Kvoid QrRequest::result_callback_(rclcpp::Client<qrmsg::srv::Qr>::SharedFuture)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:143:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kreponse[m[K’ was not declared in this scope; did you mean ‘[01m[Kresponse[m[K’?
+  143 |             [01;31m[Kreponse[m[K->finish = false;
+      |             [01;31m[K^~~~~~~[m[K
+      |             [32m[Kresponse[m[K
+gmake[2]: *** [CMakeFiles/binary_detector.dir/build.make:76: CMakeFiles/binary_detector.dir/src/binary.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/binary_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

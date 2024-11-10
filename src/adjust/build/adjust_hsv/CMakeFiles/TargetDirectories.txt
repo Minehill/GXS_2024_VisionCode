@@ -1,0 +1,10 @@
+/home/jason/gxs/GXS_2024_VisionCode/src/adjust/build/adjust_hsv/CMakeFiles/uninstall.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/adjust/build/adjust_hsv/CMakeFiles/adjust_hsv_uninstall.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/adjust/build/adjust_hsv/CMakeFiles/adjust.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/adjust/build/adjust_hsv/CMakeFiles/test.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/adjust/build/adjust_hsv/CMakeFiles/edit_cache.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/adjust/build/adjust_hsv/CMakeFiles/rebuild_cache.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/adjust/build/adjust_hsv/CMakeFiles/list_install_components.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/adjust/build/adjust_hsv/CMakeFiles/install.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/adjust/build/adjust_hsv/CMakeFiles/install/local.dir
+/home/jason/gxs/GXS_2024_VisionCode/src/adjust/build/adjust_hsv/CMakeFiles/install/strip.dir

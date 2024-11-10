@@ -1,0 +1,8 @@
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:[m[K In member function ‘[01m[Kvoid SearchResponse::handle_searchblock(std::shared_ptr<qrmsg::srv::Qr_Request_<std::allocator<void> > >, std::shared_ptr<qrmsg::srv::Qr_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:78:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K；[m[K’
+   78 |             RCLCPP_INFO(this->get_logger(), "进入is new 分支")[01;31m[K；[m[K
+      |                                                               [01;31m[K^~[m[K
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp:78:63:[m[K [01;31m[Kerror: [m[K‘[01m[K；[m[K’ was not declared in this scope
+gmake[2]: *** [CMakeFiles/colorblock.dir/build.make:76: CMakeFiles/colorblock.dir/src/colorblock.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/colorblock.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
