@@ -69,28 +69,28 @@ include CMakeFiles/colorblock.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/colorblock.dir/flags.make
 
-CMakeFiles/colorblock.dir/src/colorblock.cpp.o: CMakeFiles/colorblock.dir/flags.make
-CMakeFiles/colorblock.dir/src/colorblock.cpp.o: /home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp
-CMakeFiles/colorblock.dir/src/colorblock.cpp.o: CMakeFiles/colorblock.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jason/gxs/GXS_2024_VisionCode/build/colorblock_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/colorblock.dir/src/colorblock.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/colorblock.dir/src/colorblock.cpp.o -MF CMakeFiles/colorblock.dir/src/colorblock.cpp.o.d -o CMakeFiles/colorblock.dir/src/colorblock.cpp.o -c /home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp
+CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o: CMakeFiles/colorblock.dir/flags.make
+CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o: /home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock_new.cpp
+CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o: CMakeFiles/colorblock.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jason/gxs/GXS_2024_VisionCode/build/colorblock_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o -MF CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o.d -o CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o -c /home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock_new.cpp
 
-CMakeFiles/colorblock.dir/src/colorblock.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/colorblock.dir/src/colorblock.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp > CMakeFiles/colorblock.dir/src/colorblock.cpp.i
+CMakeFiles/colorblock.dir/src/colorblock_new.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/colorblock.dir/src/colorblock_new.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock_new.cpp > CMakeFiles/colorblock.dir/src/colorblock_new.cpp.i
 
-CMakeFiles/colorblock.dir/src/colorblock.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/colorblock.dir/src/colorblock.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp -o CMakeFiles/colorblock.dir/src/colorblock.cpp.s
+CMakeFiles/colorblock.dir/src/colorblock_new.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/colorblock.dir/src/colorblock_new.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock_new.cpp -o CMakeFiles/colorblock.dir/src/colorblock_new.cpp.s
 
 # Object files for target colorblock
 colorblock_OBJECTS = \
-"CMakeFiles/colorblock.dir/src/colorblock.cpp.o"
+"CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o"
 
 # External object files for target colorblock
 colorblock_EXTERNAL_OBJECTS =
 
-colorblock: CMakeFiles/colorblock.dir/src/colorblock.cpp.o
+colorblock: CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o
 colorblock: CMakeFiles/colorblock.dir/build.make
 colorblock: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 colorblock: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d

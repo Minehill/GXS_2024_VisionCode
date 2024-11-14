@@ -7,7 +7,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     config = os.path.join(
         get_package_share_directory('colorblock_detector'), 'config', 'colorblock.yaml')
-    
+        
     qrcode = Node(
         package="binary_detector",
         executable="binary",

@@ -1,4 +1,0 @@
-Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv -- -j16 -l16
-Invoked command in '/home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv -- -j16 -l16
-Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv
-Invoked command in '/home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv

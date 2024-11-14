@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000252] (-) JobUnselected: {'identifier': 'adjust_hsv'}
-[0.000268] (-) JobUnselected: {'identifier': 'binary_detector'}
-[0.000277] (-) JobUnselected: {'identifier': 'camera_driver'}
-[0.000298] (-) JobUnselected: {'identifier': 'colorblock_detector'}
-[0.000306] (-) JobUnselected: {'identifier': 'gxs_serial_driver'}
-[0.000314] (-) JobUnselected: {'identifier': 'line_follow'}
-[0.000321] (-) JobUnselected: {'identifier': 'qrmsg'}
-[0.000567] (-) EventReactorShutdown: {}

@@ -823,8 +823,42 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: /home/jason/gxs/GXS_2024_Vision
   /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
+  /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/image_encodings.hpp \
+  /usr/include/opencv4/opencv2/core/core.hpp \
+  /usr/include/opencv4/opencv2/imgproc/imgproc.hpp \
+  /usr/include/opencv4/opencv2/imgproc/types_c.h \
+  /usr/include/opencv4/opencv2/core/core_c.h \
+  /usr/include/opencv4/opencv2/core/types_c.h \
+  /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge_export.h
 
+
+/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge_export.h:
+
+/usr/include/opencv4/opencv2/imgproc/imgproc.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/image_encodings.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp:
 
@@ -903,6 +937,8 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: /home/jason/gxs/GXS_2024_Vision
 /opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
 
@@ -1094,6 +1130,8 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: /home/jason/gxs/GXS_2024_Vision
 
 /opt/ros/humble/include/rcl/rcl/logging_rosout.h:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp:
+
 /usr/include/c++/11/numeric:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
@@ -1113,6 +1151,8 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: /home/jason/gxs/GXS_2024_Vision
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
 
 /opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
+
+/usr/include/opencv4/opencv2/core/core_c.h:
 
 /opt/ros/humble/include/rmw/rmw/names_and_types.h:
 
@@ -1256,6 +1296,8 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: /home/jason/gxs/GXS_2024_Vision
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
+/usr/include/opencv4/opencv2/imgproc/types_c.h:
+
 /usr/include/c++/11/string_view:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
@@ -1367,6 +1409,8 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: /home/jason/gxs/GXS_2024_Vision
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/c++/11/bits/postypes.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp:
 
 /usr/include/opencv4/opencv2/core/cvstd.hpp:
 
@@ -1557,6 +1601,8 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: /home/jason/gxs/GXS_2024_Vision
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
 
 /usr/include/c++/11/functional:
+
+/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:
 
 /home/jason/gxs/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__traits.hpp:
 
@@ -1828,6 +1874,8 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: /home/jason/gxs/GXS_2024_Vision
 
 /usr/include/c++/11/bits/move.h:
 
+/usr/include/opencv4/opencv2/core/core.hpp:
+
 /usr/include/c++/11/bits/hash_bytes.h:
 
 /usr/include/asm-generic/errno-base.h:
@@ -1873,6 +1921,8 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: /home/jason/gxs/GXS_2024_Vision
 /usr/include/opencv4/opencv2/core/cvdef.h:
 
 /usr/include/c++/11/bits/sstream.tcc:
+
+/usr/include/opencv4/opencv2/core/types_c.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
 
@@ -2146,6 +2196,8 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: /home/jason/gxs/GXS_2024_Vision
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:
+
 /opt/ros/humble/include/rcl/rcl/timer.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
@@ -2301,6 +2353,8 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: /home/jason/gxs/GXS_2024_Vision
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
 

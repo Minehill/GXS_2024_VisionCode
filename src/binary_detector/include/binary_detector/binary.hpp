@@ -10,19 +10,28 @@
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/float64.hpp>
 #include <std_msgs/msg/bool.hpp>
+#include <sensor_msgs/msg/image.hpp>
+#include <cv_bridge/cv_bridge.h>
 using namespace cv;
 using namespace zbar;
 using namespace std;
 
-class QrDetector
+class QrDetector : public rclcpp::Node 
 {
     public:
         QrDetector();
 
         // 以下代码为识别二维码
         pair<string, int> decodeDisplay(const Mat& image);
-        string detect(const Mat& frame);
+        string detect(const Mat& image);
         bool if_find;
+        string res_;
+        // 图像
+        cv::Mat frame_;
+        // 图像订阅者
+        rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr img_subscriber_;
+        // 图像回调函数
+        void image_callback(const sensor_msgs::msg::Image::SharedPtr msg);
 
 };
 
@@ -51,11 +60,13 @@ public:
   double distance_threshold = 0.05;
   double dis;
 
+
 private:
   // void result_callback_(rclcpp::Client<qrmsg::srv::Qr>::SharedFuture result_future);
   // void again_result_callback_(rclcpp::Client<qrmsg::srv::Qr>::SharedFuture result_future);
   // void state_callback(const std_msgs::msg::Bool::SharedPtr msg);
   void send_request(const std_msgs::msg::Bool::SharedPtr msg);
+  
   // rclcpp::Client<qrmsg::srv::Qr>::SharedPtr client_;
   int now_index, arr[6];
   bool is_new;

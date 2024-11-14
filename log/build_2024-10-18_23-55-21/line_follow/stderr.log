@@ -1,5 +1,0 @@
-  File "/home/jason/gxs/GXS_2024_VisionCode/install/line_follow/lib/python3.10/site-packages/line_follow/lf.py", line 101
-    读取图片。
-        ^
-SyntaxError: invalid character '。' (U+3002)
-

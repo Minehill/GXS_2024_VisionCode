@@ -15,7 +15,7 @@ include_directories(
   ${OpenCV_INCLUDE_DIRS}
 )
 
-add_executable(colorblock src/colorblock.cpp)
+add_executable(colorblock src/colorblock_new.cpp)
 target_link_libraries(colorblock
   ${OpenCV_LIBRARIES}
 )

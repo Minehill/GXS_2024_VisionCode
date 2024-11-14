@@ -9,23 +9,45 @@
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/float64.hpp>
 #include <std_msgs/msg/bool.hpp>
+#include <sensor_msgs/msg/image.hpp>
+#include <cv_bridge/cv_bridge.h>
 using namespace cv;
 using namespace zbar;
 using namespace std;
 
 
-QrDetector::QrDetector()
+QrDetector::QrDetector() : Node("binary_detect") 
 {
-
+    RCLCPP_INFO(this->get_logger(), "binary detect 启动");
+    res_ = "none";
     // 是否找到二维码
     if_find = false;
+    // 图像订阅者
+    img_subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
+        "image_topic", 10,
+        std::bind(&QrDetector::image_callback, this, std::placeholders::_1));
+        RCLCPP_INFO(this->get_logger(), "binary detect 启动结束");
+    
+    
+}
 
+// 订阅图像的回调函数
+void QrDetector::image_callback(const sensor_msgs::msg::Image::SharedPtr msg) {
+    RCLCPP_INFO(this->get_logger(), "bi");
+    // 将 ROS 图像消息转换为 OpenCV 图像
+    cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
+    frame_ = cv_ptr->image;
+    
+    res_ = detect(frame_);
 }
 
 // 以下代码为识别二维码
 pair<string, int> QrDetector::decodeDisplay(const Mat& image) 
 {
     // 初始化zbar扫描器
+
+    RCLCPP_INFO(this->get_logger(), "scan start!");
+
     ImageScanner scanner;
     scanner.set_config(ZBAR_NONE, ZBAR_CFG_ENABLE, 1);
 
@@ -48,21 +70,30 @@ pair<string, int> QrDetector::decodeDisplay(const Mat& image)
     return make_pair("none", 0);
 }
 
-string QrDetector::detect(const Mat& frame) 
+string QrDetector::detect(const Mat& image) 
 {
+    RCLCPP_INFO(this->get_logger(), "thread");
     string result = "";
-    while (!if_find)
+    if (!if_find)
     {
-        pair<string, int> rt = decodeDisplay(frame);
+        if (image.empty())
+        {
+            RCLCPP_INFO(this->get_logger(), "frame thread");
+            return "none";
+        } 
+        RCLCPP_INFO(this->get_logger(), "detect thread");
+
+        pair<string, int> rt = decodeDisplay(image);
         
         if (rt.second)
         {
             result = rt.first;
             if_find = true;
+            return result;
         }
+        else
+            return "none";
     }
-
-    return result;
 }
 
 QrRequest::QrRequest(std::string name, int arr_[6]) : Node(name) 

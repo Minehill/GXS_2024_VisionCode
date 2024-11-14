@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock.cpp" "CMakeFiles/colorblock.dir/src/colorblock.cpp.o" "gcc" "CMakeFiles/colorblock.dir/src/colorblock.cpp.o.d"
+  "/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock_new.cpp" "CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o" "gcc" "CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o.d"
   )
 
 # Targets to which this target links.

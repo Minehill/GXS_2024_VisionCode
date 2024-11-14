@@ -58,15 +58,16 @@ class SearchResponse : public rclcpp::Node
 
     void getParams()
     {
-        // 获取参数
-        // this->declare_parameter<std::vector<long int>>("1_hsv.lower", std::vector<long int>{80, 60, 130});
-        hsv_lower_1 = this->declare_parameter<std::vector<long int>>("1_hsv.lower", std::vector<long int>{98, 240, 0});
-        hsv_upper_1 = this->declare_parameter<std::vector<long int>>("1_hsv.upper", std::vector<long int>{105, 255, 255});
 
-        hsv_lower_2 = this->declare_parameter<std::vector<long int>>("2_hsv.lower", std::vector<long int>{90, 240, 0});
-        hsv_upper_2 = this->declare_parameter<std::vector<long int>>("2_hsv.upper", std::vector<long int>{98, 255, 255});
-        hsv_lower_3 = this->declare_parameter<std::vector<long int>>("3_hsv.lower", std::vector<long int>{170, 180, 0});
-        hsv_upper_3 = this->declare_parameter<std::vector<long int>>("3_hsv.upper", std::vector<long int>{180, 255, 255});
+        // 获取参数
+        hsv_lower_1 = this->declare_parameter<std::vector<long int>>("1_hsv_lower", std::vector<long int>{98, 240, 0});
+        hsv_upper_1 = this->declare_parameter<std::vector<long int>>("1_hsv_upper", std::vector<long int>{105, 255, 255});
+
+        hsv_lower_2 = this->declare_parameter<std::vector<long int>>("2_hsv_lower", std::vector<long int>{90, 240, 0});
+        hsv_upper_2 = this->declare_parameter<std::vector<long int>>("2_hsv_upper", std::vector<long int>{98, 255, 255});
+        
+        hsv_lower_3 = this->declare_parameter<std::vector<long int>>("3_hsv_lower", std::vector<long int>{170, 180, 0});
+        hsv_upper_3 = this->declare_parameter<std::vector<long int>>("3_hsv_upper", std::vector<long int>{180, 255, 255});
         if_debug = this->declare_parameter<bool>("if_debug", true);
     }
 
@@ -270,6 +271,9 @@ class SearchResponse : public rclcpp::Node
                         pre_center = center;
                     }
                 }
+                
+                
+                RCLCPP_INFO(this->get_logger(), "find something!");
             }
             else
             {

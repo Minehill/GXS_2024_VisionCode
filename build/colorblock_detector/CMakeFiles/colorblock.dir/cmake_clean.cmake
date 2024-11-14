@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/colorblock.dir/src/colorblock.cpp.o"
-  "CMakeFiles/colorblock.dir/src/colorblock.cpp.o.d"
+  "CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o"
+  "CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o.d"
   "colorblock"
   "colorblock.pdb"
 )

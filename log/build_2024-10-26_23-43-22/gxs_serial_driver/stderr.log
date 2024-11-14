@@ -1,7 +1,0 @@
-[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/rm_serial_driver/src/rm_serial_driver.cpp:[m[K In member function ‘[01m[Kvoid rm_serial_driver::RMSerialDriver::SendPickData(geometry_msgs::msg::Vector3_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/rm_serial_driver/src/rm_serial_driver.cpp:133:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kserial_driver_[m[K’
-  133 |     [01;31m[Kserial_driver_[m[K->port()->send(data);
-      |     [01;31m[K^~~~~~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/gxs_serial_driver.dir/build.make:76: CMakeFiles/gxs_serial_driver.dir/src/rm_serial_driver.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gxs_serial_driver.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

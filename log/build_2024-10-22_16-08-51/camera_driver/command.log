@@ -1,2 +1,0 @@
-Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/build/camera_driver': /usr/bin/cmake /home/jason/gxs/GXS_2024_VisionCode/src/camera_driver -DCMAKE_INSTALL_PREFIX=/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver
-Invoked command in '/home/jason/gxs/GXS_2024_VisionCode/build/camera_driver' returned '1': /usr/bin/cmake /home/jason/gxs/GXS_2024_VisionCode/src/camera_driver -DCMAKE_INSTALL_PREFIX=/home/jason/gxs/GXS_2024_VisionCode/install/camera_driver

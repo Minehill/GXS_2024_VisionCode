@@ -742,4 +742,22 @@ CMakeFiles/binary_detector.dir/src/binary.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
+ /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/image_encodings.hpp \
+ /usr/include/opencv4/opencv2/core/core.hpp \
+ /usr/include/opencv4/opencv2/imgproc/imgproc.hpp \
+ /usr/include/opencv4/opencv2/imgproc/types_c.h \
+ /usr/include/opencv4/opencv2/core/core_c.h \
+ /usr/include/opencv4/opencv2/core/types_c.h \
+ /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge_export.h

@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target image_publisher[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/image_publisher.dir/src/camera_driver.cpp.o[0m
-[100%] [32m[1mLinking CXX executable image_publisher[0m
-[100%] Built target image_publisher

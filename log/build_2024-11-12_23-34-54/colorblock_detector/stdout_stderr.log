@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o[0m
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock_new.cpp:[m[K In constructor ‘[01m[KSearchResponse::SearchResponse(std::string)[m[K’:
+[01m[K/home/jason/gxs/GXS_2024_VisionCode/src/colorblock_detector/src/colorblock_new.cpp:34:9:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+   34 |         [01;31m[K500ms[m[K, std::bind(&SearchResponse::timer_callback, this));
+      |         [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/colorblock.dir/build.make:76: CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/colorblock.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

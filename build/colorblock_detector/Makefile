@@ -210,29 +210,29 @@ colorblock/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/colorblock.dir/build.make CMakeFiles/colorblock.dir/build
 .PHONY : colorblock/fast
 
-src/colorblock.o: src/colorblock.cpp.o
-.PHONY : src/colorblock.o
+src/colorblock_new.o: src/colorblock_new.cpp.o
+.PHONY : src/colorblock_new.o
 
 # target to build an object file
-src/colorblock.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/colorblock.dir/build.make CMakeFiles/colorblock.dir/src/colorblock.cpp.o
-.PHONY : src/colorblock.cpp.o
+src/colorblock_new.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/colorblock.dir/build.make CMakeFiles/colorblock.dir/src/colorblock_new.cpp.o
+.PHONY : src/colorblock_new.cpp.o
 
-src/colorblock.i: src/colorblock.cpp.i
-.PHONY : src/colorblock.i
+src/colorblock_new.i: src/colorblock_new.cpp.i
+.PHONY : src/colorblock_new.i
 
 # target to preprocess a source file
-src/colorblock.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/colorblock.dir/build.make CMakeFiles/colorblock.dir/src/colorblock.cpp.i
-.PHONY : src/colorblock.cpp.i
+src/colorblock_new.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/colorblock.dir/build.make CMakeFiles/colorblock.dir/src/colorblock_new.cpp.i
+.PHONY : src/colorblock_new.cpp.i
 
-src/colorblock.s: src/colorblock.cpp.s
-.PHONY : src/colorblock.s
+src/colorblock_new.s: src/colorblock_new.cpp.s
+.PHONY : src/colorblock_new.s
 
 # target to generate assembly for a file
-src/colorblock.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/colorblock.dir/build.make CMakeFiles/colorblock.dir/src/colorblock.cpp.s
-.PHONY : src/colorblock.cpp.s
+src/colorblock_new.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/colorblock.dir/build.make CMakeFiles/colorblock.dir/src/colorblock_new.cpp.s
+.PHONY : src/colorblock_new.cpp.s
 
 # Help Target
 help:
@@ -250,9 +250,9 @@ help:
 	@echo "... colorblock_detector_uninstall"
 	@echo "... uninstall"
 	@echo "... colorblock"
-	@echo "... src/colorblock.o"
-	@echo "... src/colorblock.i"
-	@echo "... src/colorblock.s"
+	@echo "... src/colorblock_new.o"
+	@echo "... src/colorblock_new.i"
+	@echo "... src/colorblock_new.s"
 .PHONY : help
 
 

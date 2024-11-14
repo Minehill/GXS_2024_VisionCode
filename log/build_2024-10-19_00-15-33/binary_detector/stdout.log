@@ -1,5 +1,0 @@
-[ 25%] [32mBuilding CXX object CMakeFiles/binary_detector.dir/src/binary.cpp.o[0m
-[ 50%] [32m[1mLinking CXX static library libbinary_detector.a[0m
-[ 50%] Built target binary_detector
-[ 75%] [32m[1mLinking CXX executable binary[0m
-[100%] Built target binary
