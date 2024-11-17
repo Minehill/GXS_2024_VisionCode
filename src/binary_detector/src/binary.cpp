@@ -9,6 +9,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/float64.hpp>
 #include <std_msgs/msg/bool.hpp>
+#include <std_msgs/msg/string.hpp>
 #include <sensor_msgs/msg/image.hpp>
 #include <cv_bridge/cv_bridge.h>
 using namespace cv;
@@ -27,13 +28,12 @@ QrDetector::QrDetector() : Node("binary_detect")
         "image_topic", 10,
         std::bind(&QrDetector::image_callback, this, std::placeholders::_1));
         RCLCPP_INFO(this->get_logger(), "binary detect 启动结束");
-    
-    
+    // 二维码信息发布者
+    qr_pub = this->create_publisher<std_msgs::msg::String>("qr_msg", 10);
 }
 
 // 订阅图像的回调函数
 void QrDetector::image_callback(const sensor_msgs::msg::Image::SharedPtr msg) {
-    RCLCPP_INFO(this->get_logger(), "bi");
     // 将 ROS 图像消息转换为 OpenCV 图像
     cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
     frame_ = cv_ptr->image;
@@ -45,9 +45,6 @@ void QrDetector::image_callback(const sensor_msgs::msg::Image::SharedPtr msg) {
 pair<string, int> QrDetector::decodeDisplay(const Mat& image) 
 {
     // 初始化zbar扫描器
-
-    RCLCPP_INFO(this->get_logger(), "scan start!");
-
     ImageScanner scanner;
     scanner.set_config(ZBAR_NONE, ZBAR_CFG_ENABLE, 1);
 
@@ -64,6 +61,11 @@ pair<string, int> QrDetector::decodeDisplay(const Mat& image)
         // 提取二维码数据
         for (Image::SymbolIterator symbol = zbarImage.symbol_begin(); symbol != zbarImage.symbol_end(); ++symbol) {
             string barcodeData = symbol->get_data();
+            // 将该消息发布(发布前转换为ROS2的标准消息)
+            auto message = std_msgs::msg::String();
+            message.data = barcodeData;
+            qr_pub->publish(message);
+
             return make_pair(barcodeData, 1);
         }
     }
@@ -72,16 +74,14 @@ pair<string, int> QrDetector::decodeDisplay(const Mat& image)
 
 string QrDetector::detect(const Mat& image) 
 {
-    RCLCPP_INFO(this->get_logger(), "thread");
     string result = "";
     if (!if_find)
     {
         if (image.empty())
         {
-            RCLCPP_INFO(this->get_logger(), "frame thread");
+            RCLCPP_INFO(this->get_logger(), "no image");
             return "none";
         } 
-        RCLCPP_INFO(this->get_logger(), "detect thread");
 
         pair<string, int> rt = decodeDisplay(image);
         
@@ -98,8 +98,6 @@ string QrDetector::detect(const Mat& image)
 
 QrRequest::QrRequest(std::string name, int arr_[6]) : Node(name) 
 {   
-
-
     RCLCPP_INFO(this->get_logger(), "节点已启动：%s.", name.c_str());
     if_done = false;
     int i = 0;
@@ -144,8 +142,12 @@ void QrRequest::send_request(const std_msgs::msg::Bool::SharedPtr msg)
     // RCLCPP_INFO(this->get_logger(), "pick for %d, using way %d", arr[now_index], now_index/3);
 
     auto message = qrmsg::msg::Qr();
-    message.num = arr[now_index];
-    message.way = now_index / 3;
+    message.num = arr[now_index % 3];
+    if ((now_index/3) % 2)
+        message.way = 1;
+    else
+        message.way = 0;
+    // message.way = now_index / 3;
     message.is_new = false;
 
     if (msg->data)
@@ -154,7 +156,7 @@ void QrRequest::send_request(const std_msgs::msg::Bool::SharedPtr msg)
         now_index++;
         message.is_new = true;
     }
-    if (now_index > 5)
+    if (now_index > 11)
     {
         RCLCPP_INFO(this->get_logger(), "任务完成");
         return;

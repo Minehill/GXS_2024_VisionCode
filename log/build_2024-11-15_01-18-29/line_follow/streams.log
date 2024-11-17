@@ -1,0 +1,21 @@
+[0.320s] Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/src/line_follow': PYTHONPATH=/home/jason/gxs/GXS_2024_VisionCode/build/line_follow/prefix_override:/home/jason/gxs/GXS_2024_VisionCode/install/line_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/line_follow build --build-base /home/jason/gxs/GXS_2024_VisionCode/build/line_follow/build install --record /home/jason/gxs/GXS_2024_VisionCode/build/line_follow/install.log --single-version-externally-managed install_data
+[0.432s] running egg_info
+[0.432s] writing ../../build/line_follow/line_follow.egg-info/PKG-INFO
+[0.432s] writing dependency_links to ../../build/line_follow/line_follow.egg-info/dependency_links.txt
+[0.432s] writing entry points to ../../build/line_follow/line_follow.egg-info/entry_points.txt
+[0.432s] writing requirements to ../../build/line_follow/line_follow.egg-info/requires.txt
+[0.432s] writing top-level names to ../../build/line_follow/line_follow.egg-info/top_level.txt
+[0.433s] reading manifest file '../../build/line_follow/line_follow.egg-info/SOURCES.txt'
+[0.434s] writing manifest file '../../build/line_follow/line_follow.egg-info/SOURCES.txt'
+[0.434s] running build
+[0.434s] running build_py
+[0.434s] running install
+[0.435s] running install_lib
+[0.435s] running install_data
+[0.435s] running install_egg_info
+[0.436s] removing '/home/jason/gxs/GXS_2024_VisionCode/install/line_follow/lib/python3.10/site-packages/line_follow-0.0.0-py3.10.egg-info' (and everything under it)
+[0.436s] Copying ../../build/line_follow/line_follow.egg-info to /home/jason/gxs/GXS_2024_VisionCode/install/line_follow/lib/python3.10/site-packages/line_follow-0.0.0-py3.10.egg-info
+[0.436s] running install_scripts
+[0.449s] Installing line_follow script to /home/jason/gxs/GXS_2024_VisionCode/install/line_follow/lib/line_follow
+[0.449s] writing list of installed files to '/home/jason/gxs/GXS_2024_VisionCode/build/line_follow/install.log'
+[0.468s] Invoked command in '/home/jason/gxs/GXS_2024_VisionCode/src/line_follow' returned '0': PYTHONPATH=/home/jason/gxs/GXS_2024_VisionCode/build/line_follow/prefix_override:/home/jason/gxs/GXS_2024_VisionCode/install/line_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/line_follow build --build-base /home/jason/gxs/GXS_2024_VisionCode/build/line_follow/build install --record /home/jason/gxs/GXS_2024_VisionCode/build/line_follow/install.log --single-version-externally-managed install_data

@@ -10,6 +10,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/float64.hpp>
 #include <std_msgs/msg/bool.hpp>
+#include <std_msgs/msg/string.hpp>
 #include <sensor_msgs/msg/image.hpp>
 #include <cv_bridge/cv_bridge.h>
 using namespace cv;
@@ -30,6 +31,8 @@ class QrDetector : public rclcpp::Node
         cv::Mat frame_;
         // 图像订阅者
         rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr img_subscriber_;
+        // 二维码消息发布者
+        rclcpp::Publisher<std_msgs::msg::String>::SharedPtr qr_pub;
         // 图像回调函数
         void image_callback(const sensor_msgs::msg::Image::SharedPtr msg);
 

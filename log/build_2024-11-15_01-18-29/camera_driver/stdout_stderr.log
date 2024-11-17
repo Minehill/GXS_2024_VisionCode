@@ -1,0 +1,35 @@
+-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found image_transport: 3.1.8 (/opt/ros/humble/share/image_transport/cmake)
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jason/gxs/GXS_2024_VisionCode/build/camera_driver
+[35m[1mConsolidate compiler generated dependencies of target image_publisher[0m
+[100%] Built target image_publisher
+-- Install configuration: ""
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/lib/camera_driver/image_publisher
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/ament_index/resource_index/package_run_dependencies/camera_driver
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/ament_index/resource_index/parent_prefix_path/camera_driver
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/ament_prefix_path.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/path.sh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/environment/path.dsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.bash
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.sh
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.zsh
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/local_setup.dsv
+-- Installing: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.dsv
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/ament_index/resource_index/packages/camera_driver
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/cmake/camera_driverConfig.cmake
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/cmake/camera_driverConfig-version.cmake
+-- Up-to-date: /home/jason/gxs/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.xml

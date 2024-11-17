@@ -263,11 +263,11 @@ class SearchResponse : public rclcpp::Node
             //  侵蚀图像
             cv::Mat erode_kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(15, 15));
             cv::erode(mask, mask, erode_kernel, cv::Point(-1, -1), 2);
-            cv::imshow("erode", mask);
+            // cv::imshow("erode", mask);
             //  扩张
             cv::Mat dia_kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
             cv::dilate(mask, mask, dia_kernel);
-            cv::imshow("dia", mask);
+            // cv::imshow("dia", mask);
             
 
             // 将色域过滤后的最大面积物体找出，并返回外接矩形四角坐标并绘制
@@ -321,7 +321,7 @@ class SearchResponse : public rclcpp::Node
                 
                 // 若外接矩形面积大于指定值，则认为找到目标
                 // lzt : for debug 
-                std::cout << cv::contourArea(max_contour);
+                // std::cout << cv::contourArea(max_contour);
 
                 // 若面积大于一定值，说明能够锁定目标
                 if (cv::contourArea(max_contour) > 2000) 
@@ -352,12 +352,12 @@ class SearchResponse : public rclcpp::Node
                 }
                 
                 
-                RCLCPP_INFO(this->get_logger(), "find something!");
+                // RCLCPP_INFO(this->get_logger(), "find something!");
             }
-            else
-            {
-                RCLCPP_INFO(this->get_logger(), "find nothing!");
-            }
+            // else
+            // {
+            //    RCLCPP_INFO(this->get_logger(), "find nothing!");
+            // }
         }
         else if (msg->way == 1)
         {
@@ -368,11 +368,11 @@ class SearchResponse : public rclcpp::Node
             cv::cvtColor(frame, hsv, cv::COLOR_BGR2HSV);
             cv::Mat mask;
             cv::inRange(hsv, cv::Scalar(hsv_lower_[0], hsv_lower_[1], hsv_lower_[2]), cv::Scalar(hsv_upper_[0], hsv_upper_[1], hsv_upper_[2]), mask=mask);
-            cv::imshow("Mask", mask);
+            // cv::imshow("Mask", mask);
             //  扩张
             cv::Mat dia_kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
             cv::dilate(mask, mask, dia_kernel);
-            cv::imshow("dia", mask);
+            // cv::imshow("dia", mask);
 
             // 找到所有轮廓
             std::vector<std::vector<cv::Point>> contours;
@@ -397,14 +397,15 @@ class SearchResponse : public rclcpp::Node
                 cv::Point2f center;
                 float radius;
                 cv::minEnclosingCircle(contours[max_contour_idx], center, radius);
-
+		if (if_debug)
+                {
                 // 在图上绘制圆
                 cv::circle(frame, center, static_cast<int>(radius), cv::Scalar(0, 255, 0), 2);
                 cv::imshow("Frame", frame);
 
                 // 输出圆心坐标
                 RCLCPP_INFO(this->get_logger(), "Circle center: (%f, %f)", center.x, center.y);
-
+		}
                 // 发布该位姿
                 geometry_msgs::msg::Vector3 pos;
                 pos.x = center.x;
@@ -413,7 +414,7 @@ class SearchResponse : public rclcpp::Node
                 colorblock_pos_pub->publish(pos);
             }
 
-            cv::waitKey(1);
+            // cv::waitKey(1);
 
         }
     }

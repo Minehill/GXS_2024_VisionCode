@@ -1,0 +1,32 @@
+[0.009s] Invoking command in '/home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/gxs/GXS_2024_VisionCode/install/line_follow:/opt/ros/humble /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv -- -j16 -l16
+[0.022s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.093s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.108s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.110s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.113s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.119s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.128s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.160s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.161s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.225s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.320s] [31mCMake Error at CMakeLists.txt:11 (find_package):
+[0.320s]   By not providing "FindOpenCV.cmake" in CMAKE_MODULE_PATH this project has
+[0.320s]   asked CMake to find a package configuration file provided by "OpenCV", but
+[0.320s]   CMake did not find one.
+[0.320s] 
+[0.320s]   Could not find a package configuration file provided by "OpenCV" with any
+[0.321s]   of the following names:
+[0.321s] 
+[0.321s]     OpenCVConfig.cmake
+[0.321s]     opencv-config.cmake
+[0.321s] 
+[0.321s]   Add the installation prefix of "OpenCV" to CMAKE_PREFIX_PATH or set
+[0.321s]   "OpenCV_DIR" to a directory containing one of the above files.  If "OpenCV"
+[0.321s]   provides a separate development package or SDK, be sure it has been
+[0.321s]   installed.
+[0.321s] 
+[0.321s] [0m
+[0.321s] -- Configuring incomplete, errors occurred!
+[0.321s] See also "/home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv/CMakeFiles/CMakeOutput.log".
+[0.324s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.325s] Invoked command in '/home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/gxs/GXS_2024_VisionCode/install/line_follow:/opt/ros/humble /usr/bin/cmake --build /home/jason/gxs/GXS_2024_VisionCode/build/adjust_hsv -- -j16 -l16
