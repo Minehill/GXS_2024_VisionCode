@@ -36,6 +36,14 @@ struct ReceivePacket
   bool if_done;  // 是否完成
 } __attribute__((packed));
 
+struct QRPaket
+{
+  uint8_t header = 0x4A;
+  uint8_t num1;  // 第一轮的编号
+  uint8_t num2;  // 第二轮的编号
+  uint16_t checksum = 0;  // 校验和
+} __attribute__((packed));
+
 inline ReceivePacket fromVector(const std::vector<uint8_t> & data)
 {
   ReceivePacket packet;
@@ -60,6 +68,16 @@ inline std::vector<uint8_t> toLfVector(const LfPacket & data)
     reinterpret_cast<const uint8_t *>(&data) + sizeof(LfPacket), packet.begin());
   return packet;
 }
+
+inline std::vector<uint8_t> toQRVector(const QRPaket & data)
+{
+  std::vector<uint8_t> packet(sizeof(QRPaket));
+  std::copy(
+    reinterpret_cast<const uint8_t *>(&data),
+    reinterpret_cast<const uint8_t *>(&data) + sizeof(QRPaket), packet.begin());
+  return packet;
+}
+
 
 }  // namespace rm_serial_driver
 

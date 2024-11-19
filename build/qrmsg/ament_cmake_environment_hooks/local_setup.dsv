@@ -1,4 +1,0 @@
-source;share/qrmsg/environment/ament_prefix_path.sh
-source;share/qrmsg/environment/library_path.sh
-source;share/qrmsg/environment/path.sh
-source;share/qrmsg/environment/pythonpath.sh

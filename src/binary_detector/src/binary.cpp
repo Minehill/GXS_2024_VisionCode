@@ -141,12 +141,17 @@ void QrRequest::send_request(const std_msgs::msg::Bool::SharedPtr msg)
 {
     // RCLCPP_INFO(this->get_logger(), "pick for %d, using way %d", arr[now_index], now_index/3);
 
+    // 圆盘色块，色环，色环上的色块，色环
+    int way_arr[4] = {0, 1, 2, 1};
+
     auto message = qrmsg::msg::Qr();
     message.num = arr[now_index % 3];
-    if ((now_index/3) % 2)
-        message.way = 1;
-    else
-        message.way = 0;
+    int i_ = now_index / 3;
+    message.way = way_arr[i_];
+    // if ((now_index/3) % 2)
+    //     message.way = 1;
+    // else
+    //     message.way = 0;
     // message.way = now_index / 3;
     message.is_new = false;
 

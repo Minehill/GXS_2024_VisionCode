@@ -8,6 +8,7 @@
 #include <geometry_msgs/msg/vector3.hpp>
 #include <qrmsg/srv/qr.hpp>
 #include <std_msgs/msg/bool.hpp>
+#include <std_msgs/msg/string.hpp>
 // C++ system
 #include <cstdint>
 #include <functional>
@@ -46,9 +47,14 @@ RMSerialDriver::RMSerialDriver(const rclcpp::NodeOptions & options)
   }
 
   // Create Subscription
+  // 目标位姿
   colorblock_sub = this->create_subscription<geometry_msgs::msg::Vector3>(
     "/colorblock_pos", rclcpp::SensorDataQoS(),
     std::bind(&RMSerialDriver::SendPickData, this, std::placeholders::_1));
+  // 二维码消息
+  Qr_sub = this->create_subscription<std_msgs::msg::String>(
+    "/qr_msg", rclcpp::SensorDataQoS(),
+    std::bind(&RMSerialDriver::SendQRData, this, std::placeholders::_1));
 }
 
 RMSerialDriver::~RMSerialDriver()
@@ -136,6 +142,38 @@ void RMSerialDriver::SendPickData(const geometry_msgs::msg::Vector3::SharedPtr m
   }
 }
 
+
+void RMSerialDriver::SendQRData(const std_msgs::msg::String::SharedPtr msg)
+{
+  try
+  {
+    QRPaket packet;
+    size_t pos = msg->data.find('+');
+    if (pos != std::string::npos) 
+    {
+      std::string leftPart = msg->data.substr(0, pos);
+      std::string rightPart = msg->data.substr(pos + 1);
+
+      packet.header = 0x4A;
+      packet.num1 = static_cast<uint8_t>(stoi(leftPart));
+      packet.num2 = static_cast<uint8_t>(stoi(rightPart));
+      crc16::Append_CRC16_Check_Sum(reinterpret_cast<uint8_t *>(&packet), sizeof(packet));
+
+      std::vector<uint8_t> data = toQRVector(packet);
+
+      serial_driver_->port()->send(data);
+      // // 输出处理后的值
+      // RCLCPP_INFO(this->get_logger(), "Left Value: %d, Right Value: %d", leftValue, rightValue);
+    }
+    else
+      RCLCPP_ERROR(this->get_logger(), "Invalid barcode data format: %s", msg->data.c_str());
+  }
+  catch (const std::exception & ex) 
+  {
+    RCLCPP_ERROR(get_logger(), "Error while sending pick data: %s", ex.what());
+    reopenPort();
+  }
+}
 
 void RMSerialDriver::getParams()
 {

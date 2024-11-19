@@ -12,6 +12,7 @@
 #include <geometry_msgs/msg/vector3.hpp>
 #include <qrmsg/srv/qr.hpp>
 #include <std_msgs/msg/bool.hpp>
+#include <std_msgs/msg/string.hpp>
 // C++ system
 #include <future>
 #include <memory>
@@ -34,7 +35,7 @@ private:
   void receiveData();
 
   void SendPickData(const geometry_msgs::msg::Vector3::SharedPtr msg);
-
+  void SendQRData(const std_msgs::msg::String::SharedPtr msg);
   void reopenPort();
 
   void setParam(const rclcpp::Parameter & param);
@@ -64,7 +65,7 @@ private:
   // rclcpp::Subscription<geometry_msgs::msg::TwistStamped>::SharedPtr cmd_vel_sub_;
   rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr state_pub;
   rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr colorblock_sub;
-
+  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr Qr_sub;
   // For debug usage
   // rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr latency_pub_;
   // rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_;
