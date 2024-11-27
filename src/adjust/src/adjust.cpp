@@ -36,7 +36,7 @@ void on_trackbar(int, void*) {
 }
 
 int main(int argc, char** argv) {
-    string path = "/home/jason/gxs/GXS_2024_VisionCode/src/image_data/images/1.png"; 
+    string path = "/home/lccc/Desktop/GXS_2024_VisionCode/src/image_data/images/3.png"; 
 
     // 加载图像
     image = imread(path);

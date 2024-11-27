@@ -1,0 +1,2 @@
+source;share/binary_detector/environment/ament_prefix_path.sh
+source;share/binary_detector/environment/path.sh

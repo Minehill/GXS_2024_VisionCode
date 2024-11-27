@@ -1,0 +1,8 @@
+source;share/adjust_hsv/hook/cmake_prefix_path.ps1
+source;share/adjust_hsv/hook/cmake_prefix_path.dsv
+source;share/adjust_hsv/hook/cmake_prefix_path.sh
+source;share/adjust_hsv/local_setup.bash
+source;share/adjust_hsv/local_setup.dsv
+source;share/adjust_hsv/local_setup.ps1
+source;share/adjust_hsv/local_setup.sh
+source;share/adjust_hsv/local_setup.zsh

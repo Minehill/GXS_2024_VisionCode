@@ -1,0 +1,11 @@
+setup.py
+qrmsg/__init__.py
+qrmsg.egg-info/PKG-INFO
+qrmsg.egg-info/SOURCES.txt
+qrmsg.egg-info/dependency_links.txt
+qrmsg.egg-info/top_level.txt
+qrmsg/msg/__init__.py
+qrmsg/msg/_lf.py
+qrmsg/msg/_qr.py
+qrmsg/srv/__init__.py
+qrmsg/srv/_qr.py

@@ -1,0 +1,16 @@
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/lib/line_follow/lf
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/ament_index/resource_index/package_run_dependencies/line_follow
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/ament_index/resource_index/parent_prefix_path/line_follow
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/environment/ament_prefix_path.sh
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/environment/ament_prefix_path.dsv
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/environment/path.sh
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/environment/path.dsv
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/local_setup.bash
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/local_setup.sh
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/local_setup.zsh
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/local_setup.dsv
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.dsv
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/ament_index/resource_index/packages/line_follow
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/cmake/line_followConfig.cmake
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/cmake/line_followConfig-version.cmake
+/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.xml

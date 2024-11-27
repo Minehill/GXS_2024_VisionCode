@@ -1,0 +1,11 @@
+/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver/CMakeFiles/uninstall.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver/CMakeFiles/gxs_serial_driver_uninstall.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver/CMakeFiles/gxs_serial_driver.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver/CMakeFiles/gxs_serial_driver_node.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver/CMakeFiles/test.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver/CMakeFiles/edit_cache.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver/CMakeFiles/rebuild_cache.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver/CMakeFiles/list_install_components.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver/CMakeFiles/install.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver/CMakeFiles/install/local.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver/CMakeFiles/install/strip.dir

@@ -1,0 +1,20 @@
+[0.010s] Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector -- -j16 -l16
+[0.057s] [ 25%] [32mBuilding CXX object CMakeFiles/binary_detector.dir/src/binary.cpp.o[0m
+[2.321s] [01m[K/home/lccc/Desktop/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:[m[K In member function ‘[01m[Kvoid QrRequest::send_request(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.321s] [01m[K/home/lccc/Desktop/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:169:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kmessage[m[K’
+[2.321s]   169 |             [01;31m[Kmessage[m[K.num = arr[indexto];
+[2.321s]       |             [01;31m[K^~~~~~~[m[K
+[2.328s] [01m[K/home/lccc/Desktop/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:183:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.328s]   183 |         [01;31m[Kmessage[m[K.is_new = true;
+[2.328s]       |         [01;31m[K^~~~~~~[m[K
+[2.333s] [01m[K/home/lccc/Desktop/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:194:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.334s]   194 |     request_publisher->publish([01;31m[Kmessage[m[K);
+[2.334s]       |                                [01;31m[K^~~~~~~[m[K
+[4.532s] [01m[K/home/lccc/Desktop/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:[m[K In member function ‘[01m[Kstd::string QrDetector::detect(const cv::Mat&)[m[K’:
+[4.532s] [01m[K/home/lccc/Desktop/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:97:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[4.532s]    97 | [01;35m[K}[m[K
+[4.532s]       | [01;35m[K^[m[K
+[4.607s] gmake[2]: *** [CMakeFiles/binary_detector.dir/build.make:76: CMakeFiles/binary_detector.dir/src/binary.cpp.o] Error 1
+[4.607s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/binary_detector.dir/all] Error 2
+[4.608s] gmake: *** [Makefile:146: all] Error 2
+[4.609s] Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector' returned '2': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector -- -j16 -l16

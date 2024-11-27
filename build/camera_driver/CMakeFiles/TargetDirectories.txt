@@ -1,0 +1,10 @@
+/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver/CMakeFiles/uninstall.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver/CMakeFiles/camera_driver_uninstall.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver/CMakeFiles/image_publisher.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver/CMakeFiles/test.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver/CMakeFiles/edit_cache.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver/CMakeFiles/rebuild_cache.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver/CMakeFiles/list_install_components.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver/CMakeFiles/install.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver/CMakeFiles/install/local.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver/CMakeFiles/install/strip.dir

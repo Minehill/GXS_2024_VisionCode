@@ -16,7 +16,7 @@ PROC_NAME=component_conta
 Thread=`ps -ef | grep ${PROC_NAME} | grep -v "grep"`
 sleep $sec
 source ~/.bashrc
-source /home/jason/gxs/GXS_2024_VisionCode/install/setup.bash
+source /home/lccc/Desktop/GXS_2024_VisionCode/install/setup.bash
 ros2 launch colorblock_detector bringup.launch.py 
 
 echo "Thread starting"

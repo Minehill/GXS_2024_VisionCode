@@ -27,6 +27,7 @@ endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
 "srv/Qr.srv"
+"msg/Lf.msg"
 "msg/Qr.msg"
 )
 

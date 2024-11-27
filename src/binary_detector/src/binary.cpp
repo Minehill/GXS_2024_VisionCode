@@ -140,34 +140,49 @@ QrRequest::QrRequest(std::string name, int arr_[6]) : Node(name)
 void QrRequest::send_request(const std_msgs::msg::Bool::SharedPtr msg) 
 {
     // RCLCPP_INFO(this->get_logger(), "pick for %d, using way %d", arr[now_index], now_index/3);
-
-    // 圆盘色块，色环，色环上的色块，色环
-    int way_arr[4] = {0, 1, 2, 1};
-
     auto message = qrmsg::msg::Qr();
-    message.num = arr[now_index % 3];
-    int i_ = now_index / 3;
-    message.way = way_arr[i_];
-    // if ((now_index/3) % 2)
-    //     message.way = 1;
-    // else
-    //     message.way = 0;
-    // message.way = now_index / 3;
-    message.is_new = false;
+    if (now_index <= 11)
+    {
+	    // 圆盘色块，色环，色环上的色块，色环
+	    int way_arr[4] = {0, 1, 2, 1};
+	    message.num = arr[now_index % 3];
+	    int i_ = now_index / 3;
+	    message.way = way_arr[i_];
+	    // if ((now_index/3) % 2)
+	    //     message.way = 1;
+	    // else
+	    //     message.way = 0;
+	    // message.way = now_index / 3;
+	    message.is_new = false;
+    }
+    
+    else if (now_index <= 23)
+    {
+	    // 圆盘色块，色环，色环上的色块，色环上的色块
+	    int way_arr[4] = {0, 1, 2, 2};
+	    int indexto = (now_index%3) + 3;
+	    // RCLCPP_INFO(this->get_logger(), "dddddddddddddd: _ %d - %d ", indexto, arr[indexto]);
+	    message.num = arr[indexto];
+	    int i_ = (now_index-12) / 3;
+	    message.way = way_arr[i_];
 
+	    message.is_new = false;
+    }
+    else 
+    {
+    	RCLCPP_INFO(this->get_logger(), "done all");
+    	return;
+    }
     if (msg->data)
     {
         RCLCPP_INFO(this->get_logger(), "done it");
         now_index++;
         message.is_new = true;
     }
-    if (now_index > 11)
-    {
-        RCLCPP_INFO(this->get_logger(), "任务完成");
-        return;
-    }
+    
+    
     // RCLCPP_INFO(this->get_logger(), "if_done? %d", if_done);
-    RCLCPP_INFO(this->get_logger(), "now_index: %d, now_num: %d", now_index, message.num);
+    // RCLCPP_INFO(this->get_logger(), "now_index: %d, now_num: %d", now_index, message.num);
     request_publisher->publish(message);
 
 }

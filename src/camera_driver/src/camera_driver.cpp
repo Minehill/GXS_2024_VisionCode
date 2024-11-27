@@ -10,12 +10,16 @@ public:
         // 创建图像发布者
         publisher_ = this->create_publisher<sensor_msgs::msg::Image>("image_topic", 10);
         // 打开 USB 摄像头
-        cap_.open(0); // 0 为默认摄像头
+        cap_.open(0, cv::CAP_V4L2); // 0 为默认摄像头
+        if (!cap_.isOpened())
+        {
+        	cap_.open(1, cv::CAP_V4L2);
+        }
         if (!cap_.isOpened()) {
             RCLCPP_ERROR(this->get_logger(), "Failed to open camera");
             return;
         }
-
+	
         timer_ = this->create_wall_timer(
             std::chrono::milliseconds(30), std::bind(&ImagePublisher::publish_image, this));
     }

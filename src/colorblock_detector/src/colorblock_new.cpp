@@ -19,12 +19,12 @@ class SearchResponse : public rclcpp::Node
         // 色环阈值
         getParams_();
         // RGB阈值
-        thresh = 50;
+        thresh = 30;
 
         // 创建二维码请求订阅者
         request_sub = this->create_subscription<qrmsg::msg::Qr>(
             "/request", 10,
-            std::bind(&SearchResponse::searchblock, this, std::placeholders::_1));
+            std::bind(&SearchResponse::searchblock_RGB, this, std::placeholders::_1));
 
         // 创建位姿发布者
         colorblock_pos_pub = this->create_publisher<geometry_msgs::msg::Vector3>("colorblock_pos", 10);
@@ -210,7 +210,7 @@ class SearchResponse : public rclcpp::Node
     void searchblock(const qrmsg::msg::Qr::SharedPtr msg)
     {
         
-        // RCLCPP_INFO(this->get_logger(), "收到num: %ld way: %ld", msg->num,msg->way);
+        RCLCPP_INFO(this->get_logger(), "收到num: %ld way: %ld", msg->num,msg->way);
         
         if (msg->is_new)
         {
@@ -245,7 +245,7 @@ class SearchResponse : public rclcpp::Node
         }
         else
         {
-            RCLCPP_INFO(this->get_logger(), "colorblock out of index");
+            RCLCPP_INFO(this->get_logger(), "colorblock out of index : %d", msg->num);
             return;
         }
 
@@ -273,7 +273,6 @@ class SearchResponse : public rclcpp::Node
             cv::Mat dia_kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
             cv::dilate(mask, mask, dia_kernel);
             // cv::imshow("dia", mask);
-            
 
             // 将色域过滤后的最大面积物体找出，并返回外接矩形四角坐标并绘制
             std::vector<std::vector<cv::Point>> contours;
@@ -366,61 +365,6 @@ class SearchResponse : public rclcpp::Node
         }
         else if (msg->way == 1)
         {
-        //     frame = frame_.clone();
-            
-        //     // 寻找HSV色域范围在指定范围内的物体
-        //     cv::Mat hsv;
-        //     cv::cvtColor(frame, hsv, cv::COLOR_BGR2HSV);
-        //     cv::Mat mask;
-        //     cv::inRange(hsv, cv::Scalar(hsv_lower_[0], hsv_lower_[1], hsv_lower_[2]), cv::Scalar(hsv_upper_[0], hsv_upper_[1], hsv_upper_[2]), mask=mask);
-        //     // cv::imshow("Mask", mask);
-        //     //  扩张
-        //     cv::Mat dia_kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
-        //     cv::dilate(mask, mask, dia_kernel);
-        //     // cv::imshow("dia", mask);
-
-        //     // 找到所有轮廓
-        //     std::vector<std::vector<cv::Point>> contours;
-        //     cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
-
-        //     // 找到面积最大的轮廓
-        //     double max_area = 0;
-        //     int max_contour_idx = -1;
-        //     for (size_t i = 0; i < contours.size(); i++)
-        //     {
-        //         double area = cv::contourArea(contours[i]);
-        //         if (area > max_area)
-        //         {
-        //             max_area = area;
-        //             max_contour_idx = i;
-        //         }
-        //     }
-
-        //     if (max_contour_idx != -1)
-        //     {
-        //         // 拟合圆并获取圆心坐标和半径
-        //         cv::Point2f center;
-        //         float radius;
-        //         cv::minEnclosingCircle(contours[max_contour_idx], center, radius);
-		// if (if_debug)
-        //         {
-        //         // 在图上绘制圆
-        //         cv::circle(frame, center, static_cast<int>(radius), cv::Scalar(0, 255, 0), 2);
-        //         cv::imshow("Frame", frame);
-
-        //         // 输出圆心坐标
-        //         RCLCPP_INFO(this->get_logger(), "Circle center: (%f, %f)", center.x, center.y);
-		// }
-        //         // 发布该位姿
-        //         geometry_msgs::msg::Vector3 pos;
-        //         pos.x = center.x;
-        //         pos.y = center.y;
-        //         pos.z = msg->num;
-        //         colorblock_pos_pub->publish(pos);
-        //     }
-
-            // cv::waitKey(1);
-
             
             frame = frame_.clone();
             std::vector<cv::Mat> channels;
@@ -440,7 +384,7 @@ class SearchResponse : public rclcpp::Node
             }
             else
             {
-                RCLCPP_INFO(this->get_logger(), "colorblock out of index");
+                RCLCPP_INFO(this->get_logger(), "way1 colorblock out of index : %d", msg->num);
                 return;
             }
 
@@ -448,6 +392,7 @@ class SearchResponse : public rclcpp::Node
             
             if (if_debug)
             {
+            	RCLCPP_INFO(this->get_logger(), "put to pick ring");
                 // 设置窗口大小
                 cv::namedWindow("Binary", cv::WINDOW_NORMAL);
                 cv::resizeWindow("Binary", 800, 600); // 将窗口大小设置为 800x600
@@ -456,8 +401,14 @@ class SearchResponse : public rclcpp::Node
                 cv::imshow("Binary", binary);
             }
             // 扩张
-            cv::Mat dia_kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
-            cv::dilate(binary, binary, dia_kernel);
+            // cv::Mat dia_kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
+            // cv::dilate(binary, binary, dia_kernel);
+
+            // 自定义扩张操作
+            cv::Mat binary_;
+            cv::Mat dilated;
+            customDilate(binary, binary_, 8);
+
             if (if_debug)
             {
                 // 设置窗口大小
@@ -465,11 +416,11 @@ class SearchResponse : public rclcpp::Node
                 cv::resizeWindow("Dilated", 800, 600); // 将窗口大小设置为 800x600
 
                 // 显示扩张后的图像
-                cv::imshow("Dilated", binary);
+                cv::imshow("Dilated", binary_);
             }
             // 找到所有轮廓
             std::vector<std::vector<cv::Point>> contours;
-            cv::findContours(binary, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+            cv::findContours(binary_, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
             // 找到面积最大的轮廓
             double max_area = 0;
@@ -540,6 +491,7 @@ class SearchResponse : public rclcpp::Node
         }
         else if (msg->way == 2)
         {
+            
             frame = frame_.clone();
             std::vector<cv::Mat> channels;
             cv::split(frame, channels);
@@ -558,7 +510,7 @@ class SearchResponse : public rclcpp::Node
             }
             else
             {
-                RCLCPP_INFO(this->get_logger(), "colorblock out of index");
+                RCLCPP_INFO(this->get_logger(), "way2 colorblock out of index : %d", msg->num);
                 return;
             }
 
@@ -566,6 +518,7 @@ class SearchResponse : public rclcpp::Node
 
             if (if_debug)
             {
+                RCLCPP_INFO(this->get_logger(), "pick colorblock in color ring");
                 // 设置窗口大小
                 cv::namedWindow("Binary", cv::WINDOW_NORMAL);
                 cv::resizeWindow("Binary", 800, 600); // 将窗口大小设置为 800x600
@@ -657,7 +610,428 @@ class SearchResponse : public rclcpp::Node
     }
 
 
-    // 自定义侵蚀函数：10*10中，有一个0，则中心点置为0
+
+    // 订阅请求的回调函数
+    void searchblock_RGB(const qrmsg::msg::Qr::SharedPtr msg)
+    {
+        
+        // RCLCPP_INFO(this->get_logger(), "收到num: %ld way: %ld", msg->num,msg->way);
+        
+        if (msg->is_new)
+        {
+            if_find = false;
+            if_lock = false;
+            new_ = true;
+        }
+        
+        if(msg->num == 1)
+        {
+            hsv_lower = hsv_lower_1;
+            hsv_upper = hsv_upper_1;
+
+            hsv_lower_ = hsv_lower_1_;
+            hsv_upper_ = hsv_upper_1_;
+        }
+        else if(msg->num == 2)
+        {
+            hsv_lower = hsv_lower_2;
+            hsv_upper = hsv_upper_2;
+
+            hsv_lower_ = hsv_lower_2_;
+            hsv_upper_ = hsv_upper_2_;
+        }
+        else if(msg->num == 3)
+        {
+            hsv_lower = hsv_lower_3;
+            hsv_upper = hsv_upper_3;
+
+            hsv_lower_ = hsv_lower_3_;
+            hsv_upper_ = hsv_upper_3_;
+        }
+        else
+        {
+            RCLCPP_INFO(this->get_logger(), "colorblock out of index : %d", msg->num);
+            return;
+        }
+
+        if (frame_.empty())
+        {
+            RCLCPP_INFO(this->get_logger(), "进去了，但进不去了");
+            return;
+        }
+        if (msg->way == 0)
+        {
+            frame = frame_.clone();
+            std::vector<cv::Mat> channels;
+            cv::split(frame, channels);
+            cv::Mat mask;
+            if (msg->num == 1)
+            {
+                rgb_process = channels[2] - (channels[1] + channels[0]) / 2;
+            }
+            else if (msg->num == 2)
+            {
+                rgb_process = channels[1] - (channels[0] + channels[2]) / 2;
+            }
+            else if (msg->num == 3)
+            {
+                rgb_process = channels[0] - (channels[1] + channels[2]) / 2;
+            }
+            else
+            {
+                RCLCPP_INFO(this->get_logger(), "colorblock out of index");
+                return;
+            }
+
+            cv::threshold(rgb_process, mask, thresh, 255, cv::THRESH_BINARY);
+            
+            //  侵蚀图像
+            cv::Mat erode_kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(15, 15));
+            cv::erode(mask, mask, erode_kernel, cv::Point(-1, -1), 2);
+            // cv::imshow("erode", mask);
+            //  扩张
+            cv::Mat dia_kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
+            cv::dilate(mask, mask, dia_kernel);
+            // cv::imshow("dia", mask);
+
+            // 将色域过滤后的最大面积物体找出，并返回外接矩形四角坐标并绘制
+            std::vector<std::vector<cv::Point>> contours;
+            cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+            if (contours.size() > 0) 
+            {
+                std::vector<cv::Point> max_contour = contours[0];
+                for (size_t i = 1; i < contours.size(); i++) 
+                {
+                    if (cv::contourArea(contours[i]) > cv::contourArea(max_contour)) 
+                    {
+                        max_contour = contours[i];
+                    }
+                }
+                // 绘制轮廓
+                // cv::drawContours(mask, std::vector<std::vector<cv::Point>>{max_contour}, 0, cv::Scalar(0, 255, 0), 3);
+                // cv::imshow("contours", mask);
+
+                cv::RotatedRect rect = cv::minAreaRect(max_contour);
+                cv::Point2f vertices[4];
+                rect.points(vertices);
+                for (int i = 0; i < 4; i++) 
+                {
+                    cv::line(frame, vertices[i], vertices[(i + 1) % 4], cv::Scalar(0, 255, 0), 2);
+                }
+                // 计算中心点坐标
+                cv::Point2f center = rect.center;
+                // 计算中心点坐标与图像中心点坐标的差值
+                cv::Point2f diff = center - cv::Point2f(frame.cols / 2, frame.rows / 2);
+                // 计算差值的模
+                double distance = cv::norm(diff);
+                // 计算差值的角度
+                double angle = atan2(diff.y, diff.x) * 180 / CV_PI;
+                
+                if (if_debug)
+                {
+                    // 显示中心点
+                    cv::circle(frame, center, 5, cv::Scalar(0, 255, 0), -1);
+                    // 显示差值
+                    cv::putText(frame, "Distance: " + std::to_string(distance), cv::Point(10, 30), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
+                    cv::putText(frame, "Angle: " + std::to_string(angle), cv::Point(10, 60), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
+                    // 显示面积
+                    cv::putText(frame, "Area: " + std::to_string(cv::contourArea(max_contour)), cv::Point(10, 90), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
+                    // 显示图像
+                    // cv::imshow("Frame", frame);
+                    cv::imshow("Mask", mask);
+                    cv::imshow("Frame", frame);
+                    cv::waitKey(1);
+                }
+                
+                // 若外接矩形面积大于指定值，则认为找到目标
+                // lzt : for debug 
+                // std::cout << cv::contourArea(max_contour);
+
+                // 若面积大于一定值，说明能够锁定目标
+                if (cv::contourArea(max_contour) > 2000) 
+                {
+                    if_lock = true;
+                }
+                else
+                {
+                    if_lock = false;
+                }
+
+                // 若中心点坐标与前一帧中心点坐标的差值小于指定值，则认为找到目标
+                if (if_lock)
+                {
+                    if (cv::norm(center - pre_center) < 10000)
+                    {
+                        if_find = true;
+                        double dis = pnp_solve(rect, msg->num);
+                    }
+                    else if (if_find)
+                    {
+                        double dis = pnp_solve(rect, msg->num);
+                    }
+                    else
+                    {
+                        pre_center = center;
+                    }
+                }
+                
+                
+                // RCLCPP_INFO(this->get_logger(), "find something!");
+            }
+            // else
+            // {
+            //    RCLCPP_INFO(this->get_logger(), "find nothing!");
+            // }
+        }
+        else if (msg->way == 1)
+        {
+            
+            frame = frame_.clone();
+            std::vector<cv::Mat> channels;
+            cv::split(frame, channels);
+            cv::Mat binary;
+            if (msg->num == 1)
+            {
+                rgb_process = channels[2] - (channels[1] + channels[0]) / 2;
+            }
+            else if (msg->num == 2)
+            {
+                rgb_process = channels[1] - (channels[0] + channels[2]) / 2;
+            }
+            else if (msg->num == 3)
+            {
+                rgb_process = channels[0] - (channels[1] + channels[2]) / 2;
+            }
+            else
+            {
+                RCLCPP_INFO(this->get_logger(), "colorblock out of index");
+                return;
+            }
+
+            cv::threshold(rgb_process, binary, thresh, 255, cv::THRESH_BINARY);
+            
+            if (if_debug)
+            {
+            	RCLCPP_INFO(this->get_logger(), "put to pick ring");
+                // 设置窗口大小
+                cv::namedWindow("Binary", cv::WINDOW_NORMAL);
+                cv::resizeWindow("Binary", 800, 600); // 将窗口大小设置为 800x600
+
+                // 显示二值图像
+                cv::imshow("Binary", binary);
+            }
+            // 扩张
+            // cv::Mat dia_kernel = getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5));
+            // cv::dilate(binary, binary, dia_kernel);
+
+            // 自定义扩张操作
+            cv::Mat binary_;
+            cv::Mat dilated;
+            customDilate(binary, binary_, 8);
+
+            if (if_debug)
+            {
+                // 设置窗口大小
+                cv::namedWindow("Dilated", cv::WINDOW_NORMAL);
+                cv::resizeWindow("Dilated", 800, 600); // 将窗口大小设置为 800x600
+
+                // 显示扩张后的图像
+                cv::imshow("Dilated", binary_);
+            }
+            // 找到所有轮廓
+            std::vector<std::vector<cv::Point>> contours;
+            cv::findContours(binary_, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+
+            // 找到面积最大的轮廓
+            double max_area = 0;
+            int max_contour_idx = -1;
+            for (size_t i = 0; i < contours.size(); i++)
+            {
+                double area = cv::contourArea(contours[i]);
+                if (area > max_area)
+                {
+                    max_area = area;
+                    max_contour_idx = i;
+                }
+            }
+
+            if (max_contour_idx != -1)
+            {
+                // 拟合圆并获取圆心坐标和半径
+                cv::Point2f center;
+                float radius;
+                cv::minEnclosingCircle(contours[max_contour_idx], center, radius);
+                // 计算轮廓内所有未被过滤掉的像素值的坐标（x, y）的平均值
+                cv::Mat mask = cv::Mat::zeros(frame.size(), CV_8UC1);
+                cv::drawContours(mask, contours, max_contour_idx, cv::Scalar(255), cv::FILLED);
+                double mean_x = 0;
+                double mean_y = 0;
+                int count = 0;
+                for (int y = 0; y < mask.rows; ++y)
+                {
+                    for (int x = 0; x < mask.cols; ++x)
+                    {
+                        if (mask.at<uchar>(y, x) == 255)
+                        {
+                            mean_x += x;
+                            mean_y += y;
+                            ++count;
+                        }
+                    }
+                }
+                if (count > 0)
+                {
+                    mean_x /= count;
+                    mean_y /= count;
+                }
+                if (if_debug)
+                {
+                    // 在图上绘制圆
+                    cv::circle(frame, center, static_cast<int>(radius), cv::Scalar(0, 255, 0), 2);
+                    // 在图上绘制重心（绿色）
+                    cv::circle(frame, cv::Point(mean_x, mean_y), 5, cv::Scalar(0, 255, 0), -1);
+
+                    // 设置窗口大小
+                    cv::namedWindow("Frame", cv::WINDOW_NORMAL);
+                    cv::resizeWindow("Frame", 800, 600); // 将窗口大小设置为 800x600
+                    // 显示图像
+                    cv::imshow("Frame", frame);
+                    
+                    // 输出重心坐标
+                    RCLCPP_INFO(this->get_logger(), "Circle center: (%f, %f)", mean_x, mean_y);
+                    cv::waitKey(1);
+                }
+                // 发布该位姿
+                geometry_msgs::msg::Vector3 pos;
+                pos.x = mean_x;
+                pos.y = mean_y;
+                pos.z = msg->num;
+                colorblock_pos_pub->publish(pos);
+            }
+        }
+        else if (msg->way == 2)
+        {
+            
+            frame = frame_.clone();
+            std::vector<cv::Mat> channels;
+            cv::split(frame, channels);
+            cv::Mat binary;
+            if (msg->num == 1)
+            {
+                rgb_process = channels[2] - (channels[1] + channels[0]) / 2;
+            }
+            else if (msg->num == 2)
+            {
+                rgb_process = channels[1] - (channels[0] + channels[2]) / 2;
+            }
+            else if (msg->num == 3)
+            {
+                rgb_process = channels[0] - (channels[1] + channels[2]) / 2;
+            }
+            else
+            {
+                RCLCPP_INFO(this->get_logger(), "colorblock out of index");
+                return;
+            }
+
+            cv::threshold(rgb_process, binary, thresh, 255, cv::THRESH_BINARY);
+
+            if (if_debug)
+            {
+                RCLCPP_INFO(this->get_logger(), "pick colorblock in color ring");
+                // 设置窗口大小
+                cv::namedWindow("Binary", cv::WINDOW_NORMAL);
+                cv::resizeWindow("Binary", 800, 600); // 将窗口大小设置为 800x600
+
+                // 显示二值图像
+                cv::imshow("Binary", binary);
+            }
+            cv::Mat binary_;
+            customErode(binary, binary_, 10);
+            if (if_debug)
+            {
+                // 设置窗口大小
+                cv::namedWindow("Eroded", cv::WINDOW_NORMAL);
+                cv::resizeWindow("Eroded", 800, 600); // 将窗口大小设置为 800x600
+                // 显示侵蚀后的图像
+                cv::imshow("Eroded", binary_);
+            }
+            // 找到所有轮廓
+            std::vector<std::vector<cv::Point>> contours;
+            cv::findContours(binary_, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+
+            // 找到面积最大的轮廓
+            double max_area = 0;
+            int max_contour_idx = -1;
+            for (size_t i = 0; i < contours.size(); i++)
+            {
+                double area = cv::contourArea(contours[i]);
+                if (area > max_area)
+                {
+                    max_area = area;
+                    max_contour_idx = i;
+                }
+            }
+
+            if (max_contour_idx != -1)
+            {
+                // 拟合圆并获取圆心坐标和半径
+                cv::Point2f center;
+                float radius;
+                cv::minEnclosingCircle(contours[max_contour_idx], center, radius);
+                // 计算轮廓内所有未被过滤掉的像素值的坐标（x, y）的平均值
+                cv::Mat mask = cv::Mat::zeros(frame.size(), CV_8UC1);
+                cv::drawContours(mask, contours, max_contour_idx, cv::Scalar(255), cv::FILLED);
+                double mean_x = 0;
+                double mean_y = 0;
+                int count = 0;
+                for (int y = 0; y < mask.rows; ++y)
+                {
+                    for (int x = 0; x < mask.cols; ++x)
+                    {
+                        if (mask.at<uchar>(y, x) == 255)
+                        {
+                            mean_x += x;
+                            mean_y += y;
+                            ++count;
+                        }
+                    }
+                }
+                if (count > 0)
+                {
+                    mean_x /= count;
+                    mean_y /= count;
+                }
+                if (if_debug)
+                {
+                    // 在图上绘制圆
+                    cv::circle(frame, center, static_cast<int>(radius), cv::Scalar(0, 255, 0), 2);
+                    // 在图上绘制重心（绿色）
+                    cv::circle(frame, cv::Point(mean_x, mean_y), 5, cv::Scalar(0, 255, 0), -1);
+
+                    // 设置窗口大小
+                    cv::namedWindow("Frame", cv::WINDOW_NORMAL);
+                    cv::resizeWindow("Frame", 800, 600); // 将窗口大小设置为 800x600
+                    // 显示图像
+                    cv::imshow("Frame", frame);
+                    
+                    // 输出重心坐标
+                    RCLCPP_INFO(this->get_logger(), "Circle center: (%f, %f)", mean_x, mean_y);
+                    cv::waitKey(1); // 无限期等待按键
+                }
+                // 发布该位姿
+                geometry_msgs::msg::Vector3 pos;
+                pos.x = mean_x;
+                pos.y = mean_y;
+                pos.z = msg->num;
+                colorblock_pos_pub->publish(pos);
+            }
+        }
+    }
+    
+    
+    
+    // 自定义侵蚀函数：n*n中，有一个0，则中心点置为0
     void customErode(const cv::Mat& src, cv::Mat& dst, int kernel_size)
     {
         dst = src.clone();
@@ -687,6 +1061,39 @@ class SearchResponse : public rclcpp::Node
             }
         }
     }
+
+
+    // 自定义扩张函数:n*n中，有一个1，则中心点置为1
+    void customDilate(const cv::Mat& src, cv::Mat& dst, int kernel_size)
+    {
+        dst = src.clone();
+        int offset = kernel_size / 2;
+
+        for (int y = offset; y < src.rows - offset; ++y)
+        {
+            for (int x = offset; x < src.cols - offset; ++x)
+            {
+                bool dilate = false;
+                for (int ky = -offset; ky <= offset; ++ky)
+                {
+                    for (int kx = -offset; kx <= offset; ++kx)
+                    {
+                        if (src.at<uchar>(y + ky, x + kx) == 255)
+                        {
+                            dilate = true;
+                            break;
+                        }
+                    }
+                    if (dilate) break;
+                }
+                if (dilate)
+                {
+                    dst.at<uchar>(y, x) = 255;
+                }
+            }
+        }
+    }
+
 
     // pnp求解目标距离
     float pnp_solve(cv::RotatedRect rect, int number)

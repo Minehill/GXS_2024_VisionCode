@@ -1,0 +1,11 @@
+/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector/CMakeFiles/uninstall.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector/CMakeFiles/binary_detector_uninstall.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector/CMakeFiles/binary_detector.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector/CMakeFiles/binary.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector/CMakeFiles/test.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector/CMakeFiles/edit_cache.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector/CMakeFiles/rebuild_cache.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector/CMakeFiles/list_install_components.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector/CMakeFiles/install.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector/CMakeFiles/install/local.dir
+/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector/CMakeFiles/install/strip.dir

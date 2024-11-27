@@ -1,7 +1,7 @@
 import cv2
 
 # 打开USB摄像头
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_V4L2)
 
 if not cap.isOpened():
     print("无法打开摄像头")

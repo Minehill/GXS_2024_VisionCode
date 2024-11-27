@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbinary_detector.a CMakeFiles/binary_detector.dir/src/binary.cpp.o
+/usr/bin/ranlib libbinary_detector.a

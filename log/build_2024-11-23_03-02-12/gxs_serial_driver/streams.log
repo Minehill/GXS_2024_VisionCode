@@ -1,0 +1,43 @@
+[0.016s] Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver': CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow:/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver:/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector:/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector:/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver:/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver -- -j16 -l16
+[0.046s] [35m[1mConsolidate compiler generated dependencies of target gxs_serial_driver[0m
+[0.056s] [ 40%] Built target gxs_serial_driver_node
+[0.058s] [ 60%] [32mBuilding CXX object CMakeFiles/gxs_serial_driver.dir/src/rm_serial_driver.cpp.o[0m
+[9.162s] [ 80%] [32m[1mLinking CXX shared library libgxs_serial_driver.so[0m
+[9.697s] [100%] Built target gxs_serial_driver
+[9.705s] Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver' returned '0': CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow:/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver:/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector:/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector:/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver:/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver -- -j16 -l16
+[9.730s] Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver': CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow:/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver:/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector:/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector:/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver:/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver
+[9.736s] -- Install configuration: ""
+[9.736s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib/gxs_serial_driver/gxs_serial_driver_node
+[9.736s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/include
+[9.736s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/include/rm_serial_driver
+[9.736s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/include/rm_serial_driver/crc.hpp
+[9.736s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/include/rm_serial_driver/packet.hpp
+[9.736s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/include/rm_serial_driver/rm_serial_driver.hpp
+[9.736s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/library_path.sh
+[9.736s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/library_path.dsv
+[9.736s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib/libgxs_serial_driver.so
+[9.743s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib/libgxs_serial_driver.so" to ""
+[9.743s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/config
+[9.743s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/config/serial_driver.yaml
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/launch
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/launch/serial_driver.launch.py
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/ament_index/resource_index/package_run_dependencies/gxs_serial_driver
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/ament_index/resource_index/parent_prefix_path/gxs_serial_driver
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/ament_prefix_path.sh
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/ament_prefix_path.dsv
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/path.sh
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/environment/path.dsv
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/local_setup.bash
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/local_setup.sh
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/local_setup.zsh
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/local_setup.dsv
+[9.744s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.dsv
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/ament_index/resource_index/packages/gxs_serial_driver
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/ament_index/resource_index/rclcpp_components/gxs_serial_driver
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/cmake/gxs_serial_driverConfig.cmake
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/cmake/gxs_serial_driverConfig-version.cmake
+[9.744s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.xml
+[9.745s] Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver' returned '0': CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow:/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver:/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector:/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector:/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver:/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver

@@ -30,21 +30,7 @@ try:
 
         cv2.imshow('Camera', frame)
         
-
-        # 检测键盘输入
-        key = cv2.waitKey(10) & 0xFF  # 等待1毫秒，并获取按键值
-        print(f"检测到的按键值: {key}")
-        if key == ord('c'):
-            # 保存图像
-            img_name = f"images/{image_counter}.png"
-            cv2.imwrite(img_name, frame)
-            print(f"拍照成功，图片保存为 {img_name}")
-            image_counter += 1
-
-        elif key == ord('q'):
-            # 按下 'q' 键退出
-            print("退出程序")
-            break
+        cv2.waitKey(1)
 
 finally:
     # 释放摄像头并关闭所有窗口

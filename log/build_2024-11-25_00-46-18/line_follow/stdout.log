@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/lf.dir/src/lf.cpp.o[0m
+[100%] [32m[1mLinking CXX executable lf[0m
+[100%] Built target lf
+-- Install configuration: ""
+-- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/lib/line_follow/lf
+-- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/lib/line_follow/lf" to ""
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/ament_index/resource_index/package_run_dependencies/line_follow
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/ament_index/resource_index/parent_prefix_path/line_follow
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/environment/ament_prefix_path.sh
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/environment/path.sh
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/environment/path.dsv
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/local_setup.bash
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/local_setup.sh
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/local_setup.zsh
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/local_setup.dsv
+-- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.dsv
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/ament_index/resource_index/packages/line_follow
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/cmake/line_followConfig.cmake
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/cmake/line_followConfig-version.cmake
+-- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.xml

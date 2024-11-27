@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from qrmsg/msg/Lf.msg
+// generated code does not contain a copyright notice
+
+
+module qrmsg {
+  module msg {
+    struct Lf {
+      double lf_k;
+
+      double lf_b;
+    };
+  };
+};
