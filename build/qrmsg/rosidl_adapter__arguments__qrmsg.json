@@ -1,8 +1,0 @@
-{
-  "package_name": "qrmsg",
-  "non_idl_tuples": [
-    "/home/lccc/Desktop/GXS_2024_VisionCode/src/qrmsg:srv/Qr.srv",
-    "/home/lccc/Desktop/GXS_2024_VisionCode/src/qrmsg:msg/Lf.msg",
-    "/home/lccc/Desktop/GXS_2024_VisionCode/src/qrmsg:msg/Qr.msg"
-  ]
-}

@@ -1,4 +1,0 @@
-source;share/qrmsg/local_setup.bash
-source;share/qrmsg/local_setup.dsv
-source;share/qrmsg/local_setup.sh
-source;share/qrmsg/local_setup.zsh

@@ -1,4 +1,0 @@
-Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg -- -j16 -l16
-Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg -- -j16 -l16
-Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg
-Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg

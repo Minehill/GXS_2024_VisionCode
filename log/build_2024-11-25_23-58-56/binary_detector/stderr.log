@@ -1,4 +1,0 @@
-[01m[K/home/lccc/Desktop/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:[m[K In member function ‘[01m[Kstd::string QrDetector::detect(const cv::Mat&)[m[K’:
-[01m[K/home/lccc/Desktop/GXS_2024_VisionCode/src/binary_detector/src/binary.cpp:97:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
-   97 | [01;35m[K}[m[K
-      | [01;35m[K^[m[K
