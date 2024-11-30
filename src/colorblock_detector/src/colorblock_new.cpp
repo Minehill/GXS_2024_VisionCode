@@ -19,7 +19,7 @@ class SearchResponse : public rclcpp::Node
         // 色环阈值
         getParams_();
         // RGB阈值
-        thresh = 30;
+        thresh = 35;
 
         // 创建二维码请求订阅者
         request_sub = this->create_subscription<qrmsg::msg::Qr>(

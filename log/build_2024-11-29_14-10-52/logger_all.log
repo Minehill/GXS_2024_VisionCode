@@ -1,0 +1,577 @@
+[0.108s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.108s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x730da1787b80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x730da17875b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x730da17875b0>>)
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.277s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lccc/Desktop/GXS_2024_VisionCode'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/adjust) by extensions ['ignore', 'ignore_ament_install']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/adjust) by extension 'ignore'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/adjust) by extension 'ignore_ament_install'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/adjust) by extensions ['colcon_pkg']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/adjust) by extension 'colcon_pkg'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/adjust) by extensions ['colcon_meta']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/adjust) by extension 'colcon_meta'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/adjust) by extensions ['ros']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/adjust) by extension 'ros'
+[0.293s] DEBUG:colcon.colcon_core.package_identification:Package 'src/adjust' with type 'ros.ament_cmake' and name 'adjust_hsv'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/binary_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/binary_detector) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/binary_detector) by extension 'ignore_ament_install'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/binary_detector) by extensions ['colcon_pkg']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/binary_detector) by extension 'colcon_pkg'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/binary_detector) by extensions ['colcon_meta']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/binary_detector) by extension 'colcon_meta'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/binary_detector) by extensions ['ros']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/binary_detector) by extension 'ros'
+[0.295s] DEBUG:colcon.colcon_core.package_identification:Package 'src/binary_detector' with type 'ros.ament_cmake' and name 'binary_detector'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extension 'ignore_ament_install'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extensions ['colcon_pkg']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extension 'colcon_pkg'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extensions ['colcon_meta']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extension 'colcon_meta'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extensions ['ros']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extension 'ros'
+[0.296s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_driver' with type 'ros.ament_cmake' and name 'camera_driver'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/colorblock_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/colorblock_detector) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/colorblock_detector) by extension 'ignore_ament_install'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/colorblock_detector) by extensions ['colcon_pkg']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/colorblock_detector) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/colorblock_detector) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/colorblock_detector) by extension 'colcon_meta'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/colorblock_detector) by extensions ['ros']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/colorblock_detector) by extension 'ros'
+[0.297s] DEBUG:colcon.colcon_core.package_identification:Package 'src/colorblock_detector' with type 'ros.ament_cmake' and name 'colorblock_detector'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extension 'colcon_meta'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extensions ['ros']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extension 'ros'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extensions ['cmake', 'python']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extension 'cmake'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extension 'python'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extensions ['python_setup_py']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data) by extension 'python_setup_py'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/build) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/build) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/build) ignored
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extension 'cmake'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extension 'python'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/images) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/install) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/install) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/install) ignored
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/log) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/log) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_data/log) ignored
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/line_follow) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/line_follow) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/line_follow) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/line_follow) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/line_follow) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/line_follow) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/line_follow) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/line_follow) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/line_follow) by extension 'ros'
+[0.301s] DEBUG:colcon.colcon_core.package_identification:Package 'src/line_follow' with type 'ros.ament_cmake' and name 'line_follow'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/qrmsg) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/qrmsg) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/qrmsg) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/qrmsg) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/qrmsg) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/qrmsg) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/qrmsg) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/qrmsg) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/qrmsg) by extension 'ros'
+[0.302s] DEBUG:colcon.colcon_core.package_identification:Package 'src/qrmsg' with type 'ros.ament_cmake' and name 'qrmsg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_serial_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_serial_driver) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_serial_driver) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_serial_driver) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_serial_driver) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_serial_driver) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_serial_driver) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_serial_driver) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_serial_driver) by extension 'ros'
+[0.303s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_serial_driver' with type 'ros.ament_cmake' and name 'gxs_serial_driver'
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.327s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 274 installed packages in /opt/ros/humble
+[0.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'adjust_hsv' build argument 'cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'adjust_hsv' build argument 'cmake_target' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'adjust_hsv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'adjust_hsv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'adjust_hsv' build argument 'cmake_clean_first' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'adjust_hsv' build argument 'cmake_force_configure' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'adjust_hsv' build argument 'ament_cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'adjust_hsv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'adjust_hsv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.365s] DEBUG:colcon.colcon_core.verb:Building package 'adjust_hsv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lccc/Desktop/GXS_2024_VisionCode/build/adjust_hsv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv', 'merge_install': False, 'path': '/home/lccc/Desktop/GXS_2024_VisionCode/src/adjust', 'symlink_install': False, 'test_result_base': None}
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_target' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.365s] DEBUG:colcon.colcon_core.verb:Building package 'camera_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver', 'merge_install': False, 'path': '/home/lccc/Desktop/GXS_2024_VisionCode/src/camera_driver', 'symlink_install': False, 'test_result_base': None}
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'qrmsg' build argument 'cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'qrmsg' build argument 'cmake_target' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'qrmsg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'qrmsg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'qrmsg' build argument 'cmake_clean_first' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'qrmsg' build argument 'cmake_force_configure' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'qrmsg' build argument 'ament_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'qrmsg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'qrmsg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.365s] DEBUG:colcon.colcon_core.verb:Building package 'qrmsg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg', 'merge_install': False, 'path': '/home/lccc/Desktop/GXS_2024_VisionCode/src/qrmsg', 'symlink_install': False, 'test_result_base': None}
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'binary_detector' build argument 'cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'binary_detector' build argument 'cmake_target' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'binary_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'binary_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'binary_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'binary_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'binary_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'binary_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'binary_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.366s] DEBUG:colcon.colcon_core.verb:Building package 'binary_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector', 'merge_install': False, 'path': '/home/lccc/Desktop/GXS_2024_VisionCode/src/binary_detector', 'symlink_install': False, 'test_result_base': None}
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'colorblock_detector' build argument 'cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'colorblock_detector' build argument 'cmake_target' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'colorblock_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'colorblock_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'colorblock_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'colorblock_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'colorblock_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'colorblock_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'colorblock_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.366s] DEBUG:colcon.colcon_core.verb:Building package 'colorblock_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lccc/Desktop/GXS_2024_VisionCode/build/colorblock_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector', 'merge_install': False, 'path': '/home/lccc/Desktop/GXS_2024_VisionCode/src/colorblock_detector', 'symlink_install': False, 'test_result_base': None}
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'gxs_serial_driver' build argument 'cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'gxs_serial_driver' build argument 'cmake_target' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'gxs_serial_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'gxs_serial_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'gxs_serial_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'gxs_serial_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'gxs_serial_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'gxs_serial_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'gxs_serial_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.367s] DEBUG:colcon.colcon_core.verb:Building package 'gxs_serial_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver', 'merge_install': False, 'path': '/home/lccc/Desktop/GXS_2024_VisionCode/src/rm_serial_driver', 'symlink_install': False, 'test_result_base': None}
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'line_follow' build argument 'cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'line_follow' build argument 'cmake_target' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'line_follow' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'line_follow' build argument 'cmake_clean_cache' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'line_follow' build argument 'cmake_clean_first' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'line_follow' build argument 'cmake_force_configure' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'line_follow' build argument 'ament_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'line_follow' build argument 'catkin_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'line_follow' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.367s] DEBUG:colcon.colcon_core.verb:Building package 'line_follow' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lccc/Desktop/GXS_2024_VisionCode/build/line_follow', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow', 'merge_install': False, 'path': '/home/lccc/Desktop/GXS_2024_VisionCode/src/line_follow', 'symlink_install': False, 'test_result_base': None}
+[0.367s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.368s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.368s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/qrmsg' with build type 'ament_cmake'
+[0.369s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/qrmsg'
+[0.371s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.372s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.372s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.374s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/adjust' with build type 'ament_cmake'
+[0.374s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/adjust'
+[0.374s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.374s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.375s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/camera_driver' with build type 'ament_cmake'
+[0.375s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/camera_driver'
+[0.376s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.376s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg -- -j16 -l16
+[0.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/adjust_hsv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/adjust_hsv -- -j16 -l16
+[0.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver -- -j16 -l16
+[0.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/adjust_hsv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/adjust_hsv -- -j16 -l16
+[0.519s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver -- -j16 -l16
+[0.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/adjust_hsv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/adjust_hsv
+[0.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver
+[0.552s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(adjust_hsv)
+[0.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/adjust_hsv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/adjust_hsv
+[0.558s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv' for CMake module files
+[0.559s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv' for CMake config files
+[0.559s] Level 1:colcon.colcon_core.shell:create_environment_hook('adjust_hsv', 'cmake_prefix_path')
+[0.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/hook/cmake_prefix_path.ps1'
+[0.561s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/hook/cmake_prefix_path.dsv'
+[0.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/hook/cmake_prefix_path.sh'
+[0.563s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/lib'
+[0.563s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/bin'
+[0.563s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/lib/pkgconfig/adjust_hsv.pc'
+[0.563s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/lib/python3.10/site-packages'
+[0.563s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/bin'
+[0.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.ps1'
+[0.565s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.dsv'
+[0.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.sh'
+[0.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.bash'
+[0.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.zsh'
+[0.567s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/colcon-core/packages/adjust_hsv)
+[0.570s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_driver)
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver' for CMake module files
+[0.571s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/camera_driver
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver' for CMake config files
+[0.572s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_driver', 'cmake_prefix_path')
+[0.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/hook/cmake_prefix_path.ps1'
+[0.573s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/hook/cmake_prefix_path.dsv'
+[0.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/hook/cmake_prefix_path.sh'
+[0.573s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/lib'
+[0.573s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/bin'
+[0.574s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/lib/pkgconfig/camera_driver.pc'
+[0.574s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/lib/python3.10/site-packages'
+[0.574s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/bin'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.ps1'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.dsv'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.sh'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.bash'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.zsh'
+[0.576s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/colcon-core/packages/camera_driver)
+[0.589s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(adjust_hsv)
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv' for CMake module files
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv' for CMake config files
+[0.590s] Level 1:colcon.colcon_core.shell:create_environment_hook('adjust_hsv', 'cmake_prefix_path')
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/hook/cmake_prefix_path.ps1'
+[0.594s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/hook/cmake_prefix_path.dsv'
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/hook/cmake_prefix_path.sh'
+[0.600s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/lib'
+[0.600s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/bin'
+[0.600s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/lib/pkgconfig/adjust_hsv.pc'
+[0.600s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/lib/python3.10/site-packages'
+[0.601s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/bin'
+[0.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.ps1'
+[0.602s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.dsv'
+[0.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.sh'
+[0.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.bash'
+[0.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/adjust_hsv/package.zsh'
+[0.603s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/adjust_hsv/share/colcon-core/packages/adjust_hsv)
+[0.605s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_driver)
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver' for CMake module files
+[0.606s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver' for CMake config files
+[0.606s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_driver', 'cmake_prefix_path')
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/hook/cmake_prefix_path.ps1'
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/hook/cmake_prefix_path.dsv'
+[0.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/hook/cmake_prefix_path.sh'
+[0.609s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/lib'
+[0.609s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/bin'
+[0.609s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/lib/pkgconfig/camera_driver.pc'
+[0.609s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/lib/python3.10/site-packages'
+[0.609s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/bin'
+[0.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.ps1'
+[0.611s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.dsv'
+[0.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.sh'
+[0.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.bash'
+[0.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/camera_driver/package.zsh'
+[0.613s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/camera_driver/share/colcon-core/packages/camera_driver)
+[0.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg -- -j16 -l16
+[0.807s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg
+[0.858s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(qrmsg)
+[0.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg' for CMake module files
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg' for CMake config files
+[0.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('qrmsg', 'cmake_prefix_path')
+[0.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/cmake_prefix_path.ps1'
+[0.861s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/cmake_prefix_path.dsv'
+[0.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/cmake_prefix_path.sh'
+[0.862s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib'
+[0.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('qrmsg', 'ld_library_path_lib')
+[0.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/ld_library_path_lib.ps1'
+[0.862s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/ld_library_path_lib.dsv'
+[0.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/ld_library_path_lib.sh'
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/bin'
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/pkgconfig/qrmsg.pc'
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/python3.10/site-packages'
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/bin'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.ps1'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.dsv'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.sh'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.bash'
+[0.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.zsh'
+[0.865s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/colcon-core/packages/qrmsg)
+[0.939s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(qrmsg)
+[0.939s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg' for CMake module files
+[0.939s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg' for CMake config files
+[0.940s] Level 1:colcon.colcon_core.shell:create_environment_hook('qrmsg', 'cmake_prefix_path')
+[0.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/cmake_prefix_path.ps1'
+[0.940s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/cmake_prefix_path.dsv'
+[0.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/cmake_prefix_path.sh'
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib'
+[0.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('qrmsg', 'ld_library_path_lib')
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/ld_library_path_lib.ps1'
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/ld_library_path_lib.dsv'
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/hook/ld_library_path_lib.sh'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/bin'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/pkgconfig/qrmsg.pc'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/python3.10/site-packages'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/bin'
+[0.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.ps1'
+[0.942s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.dsv'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.sh'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.bash'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.zsh'
+[0.943s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/colcon-core/packages/qrmsg)
+[0.944s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/binary_detector' with build type 'ament_cmake'
+[0.944s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/binary_detector'
+[0.944s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.944s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.946s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/colorblock_detector' with build type 'ament_cmake'
+[0.946s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/colorblock_detector'
+[0.946s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.946s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.948s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/rm_serial_driver' with build type 'ament_cmake'
+[0.948s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/rm_serial_driver'
+[0.948s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.948s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.951s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/line_follow' with build type 'ament_cmake'
+[0.951s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lccc/Desktop/GXS_2024_VisionCode/src/line_follow'
+[0.951s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.951s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.959s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector -- -j16 -l16
+[0.963s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/colorblock_detector': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/colorblock_detector -- -j16 -l16
+[0.966s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver -- -j16 -l16
+[0.971s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/line_follow': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/line_follow -- -j16 -l16
+[1.028s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/colorblock_detector' returned '0': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/colorblock_detector -- -j16 -l16
+[1.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/line_follow' returned '0': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/line_follow -- -j16 -l16
+[1.047s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver' returned '0': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver -- -j16 -l16
+[1.052s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/colorblock_detector': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/colorblock_detector
+[1.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector' returned '0': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector -- -j16 -l16
+[1.063s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/line_follow': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/line_follow
+[1.063s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(colorblock_detector)
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector' for CMake module files
+[1.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/colorblock_detector' returned '0': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/colorblock_detector
+[1.065s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector' for CMake config files
+[1.065s] Level 1:colcon.colcon_core.shell:create_environment_hook('colorblock_detector', 'cmake_prefix_path')
+[1.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/hook/cmake_prefix_path.ps1'
+[1.066s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/hook/cmake_prefix_path.dsv'
+[1.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/hook/cmake_prefix_path.sh'
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/lib'
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/bin'
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/lib/pkgconfig/colorblock_detector.pc'
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/lib/python3.10/site-packages'
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/bin'
+[1.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.ps1'
+[1.068s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.dsv'
+[1.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.sh'
+[1.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.bash'
+[1.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.zsh'
+[1.069s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colcon-core/packages/colorblock_detector)
+[1.074s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver
+[1.074s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(line_follow)
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow' for CMake module files
+[1.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/line_follow' returned '0': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/line_follow
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow' for CMake config files
+[1.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('line_follow', 'cmake_prefix_path')
+[1.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/hook/cmake_prefix_path.ps1'
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/hook/cmake_prefix_path.dsv'
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/hook/cmake_prefix_path.sh'
+[1.076s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/lib'
+[1.076s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/bin'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/lib/pkgconfig/line_follow.pc'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/lib/python3.10/site-packages'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/bin'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.ps1'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.dsv'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.sh'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.bash'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.zsh'
+[1.080s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/colcon-core/packages/line_follow)
+[1.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector
+[1.083s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gxs_serial_driver)
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver' for CMake module files
+[1.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver' returned '0': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/gxs_serial_driver
+[1.084s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver' for CMake config files
+[1.084s] Level 1:colcon.colcon_core.shell:create_environment_hook('gxs_serial_driver', 'cmake_prefix_path')
+[1.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/cmake_prefix_path.ps1'
+[1.085s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/cmake_prefix_path.dsv'
+[1.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/cmake_prefix_path.sh'
+[1.086s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib'
+[1.086s] Level 1:colcon.colcon_core.shell:create_environment_hook('gxs_serial_driver', 'ld_library_path_lib')
+[1.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/ld_library_path_lib.ps1'
+[1.087s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/ld_library_path_lib.dsv'
+[1.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/ld_library_path_lib.sh'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/bin'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib/pkgconfig/gxs_serial_driver.pc'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib/python3.10/site-packages'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/bin'
+[1.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.ps1'
+[1.089s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.dsv'
+[1.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.sh'
+[1.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.bash'
+[1.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.zsh'
+[1.091s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/colcon-core/packages/gxs_serial_driver)
+[1.093s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(colorblock_detector)
+[1.093s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector' for CMake module files
+[1.096s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector' for CMake config files
+[1.096s] Level 1:colcon.colcon_core.shell:create_environment_hook('colorblock_detector', 'cmake_prefix_path')
+[1.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/hook/cmake_prefix_path.ps1'
+[1.097s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/hook/cmake_prefix_path.dsv'
+[1.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/hook/cmake_prefix_path.sh'
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/lib'
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/bin'
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/lib/pkgconfig/colorblock_detector.pc'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/lib/python3.10/site-packages'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/bin'
+[1.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.ps1'
+[1.100s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.dsv'
+[1.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.sh'
+[1.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.bash'
+[1.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colorblock_detector/package.zsh'
+[1.101s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/colorblock_detector/share/colcon-core/packages/colorblock_detector)
+[1.102s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(line_follow)
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow' for CMake module files
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow' for CMake config files
+[1.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('line_follow', 'cmake_prefix_path')
+[1.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/hook/cmake_prefix_path.ps1'
+[1.104s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/hook/cmake_prefix_path.dsv'
+[1.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/hook/cmake_prefix_path.sh'
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/lib'
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/bin'
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/lib/pkgconfig/line_follow.pc'
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/lib/python3.10/site-packages'
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/bin'
+[1.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.ps1'
+[1.106s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.dsv'
+[1.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.sh'
+[1.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.bash'
+[1.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/line_follow/package.zsh'
+[1.107s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/line_follow/share/colcon-core/packages/line_follow)
+[1.107s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(binary_detector)
+[1.108s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector' for CMake module files
+[1.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector' returned '0': AMENT_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg:/opt/ros/humble LD_LIBRARY_PATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/binary_detector
+[1.109s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector' for CMake config files
+[1.109s] Level 1:colcon.colcon_core.shell:create_environment_hook('binary_detector', 'cmake_prefix_path')
+[1.109s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/hook/cmake_prefix_path.ps1'
+[1.109s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/hook/cmake_prefix_path.dsv'
+[1.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/hook/cmake_prefix_path.sh'
+[1.110s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/lib'
+[1.110s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/bin'
+[1.110s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/lib/pkgconfig/binary_detector.pc'
+[1.110s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/lib/python3.10/site-packages'
+[1.110s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/bin'
+[1.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.ps1'
+[1.111s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.dsv'
+[1.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.sh'
+[1.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.bash'
+[1.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.zsh'
+[1.112s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/colcon-core/packages/binary_detector)
+[1.118s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gxs_serial_driver)
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver' for CMake module files
+[1.119s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver' for CMake config files
+[1.119s] Level 1:colcon.colcon_core.shell:create_environment_hook('gxs_serial_driver', 'cmake_prefix_path')
+[1.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/cmake_prefix_path.ps1'
+[1.119s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/cmake_prefix_path.dsv'
+[1.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/cmake_prefix_path.sh'
+[1.120s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib'
+[1.120s] Level 1:colcon.colcon_core.shell:create_environment_hook('gxs_serial_driver', 'ld_library_path_lib')
+[1.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/ld_library_path_lib.ps1'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/ld_library_path_lib.dsv'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/hook/ld_library_path_lib.sh'
+[1.121s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/bin'
+[1.121s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib/pkgconfig/gxs_serial_driver.pc'
+[1.122s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/lib/python3.10/site-packages'
+[1.122s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/bin'
+[1.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.ps1'
+[1.123s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.dsv'
+[1.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.sh'
+[1.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.bash'
+[1.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/gxs_serial_driver/package.zsh'
+[1.124s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/gxs_serial_driver/share/colcon-core/packages/gxs_serial_driver)
+[1.134s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(binary_detector)
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector' for CMake module files
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector' for CMake config files
+[1.134s] Level 1:colcon.colcon_core.shell:create_environment_hook('binary_detector', 'cmake_prefix_path')
+[1.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/hook/cmake_prefix_path.ps1'
+[1.135s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/hook/cmake_prefix_path.dsv'
+[1.135s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/hook/cmake_prefix_path.sh'
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/lib'
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/bin'
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/lib/pkgconfig/binary_detector.pc'
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/lib/python3.10/site-packages'
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/bin'
+[1.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.ps1'
+[1.137s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.dsv'
+[1.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.sh'
+[1.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.bash'
+[1.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/binary_detector/package.zsh'
+[1.138s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lccc/Desktop/GXS_2024_VisionCode/install/binary_detector/share/colcon-core/packages/binary_detector)
+[1.138s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.138s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.138s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.139s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.145s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.145s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.145s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.159s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.160s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lccc/Desktop/GXS_2024_VisionCode/install/local_setup.ps1'
+[1.161s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lccc/Desktop/GXS_2024_VisionCode/install/_local_setup_util_ps1.py'
+[1.162s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lccc/Desktop/GXS_2024_VisionCode/install/setup.ps1'
+[1.164s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lccc/Desktop/GXS_2024_VisionCode/install/local_setup.sh'
+[1.164s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lccc/Desktop/GXS_2024_VisionCode/install/_local_setup_util_sh.py'
+[1.165s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lccc/Desktop/GXS_2024_VisionCode/install/setup.sh'
+[1.166s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lccc/Desktop/GXS_2024_VisionCode/install/local_setup.bash'
+[1.166s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lccc/Desktop/GXS_2024_VisionCode/install/setup.bash'
+[1.167s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lccc/Desktop/GXS_2024_VisionCode/install/local_setup.zsh'
+[1.168s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lccc/Desktop/GXS_2024_VisionCode/install/setup.zsh'

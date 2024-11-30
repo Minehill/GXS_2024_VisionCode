@@ -1,0 +1,305 @@
+[0.009s] Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lccc/Desktop/GXS_2024_VisionCode/src/qrmsg -DCMAKE_INSTALL_PREFIX=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg
+[0.190s] -- The C compiler identification is GNU 11.4.0
+[0.299s] -- The CXX compiler identification is GNU 11.4.0
+[0.306s] -- Detecting C compiler ABI info
+[0.364s] -- Detecting C compiler ABI info - done
+[0.369s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.369s] -- Detecting C compile features
+[0.369s] -- Detecting C compile features - done
+[0.371s] -- Detecting CXX compiler ABI info
+[0.434s] -- Detecting CXX compiler ABI info - done
+[0.441s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.441s] -- Detecting CXX compile features
+[0.442s] -- Detecting CXX compile features - done
+[0.443s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.548s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.611s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.614s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.620s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.651s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.674s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.875s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.016s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.209s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.226s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.227s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.248s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.248s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.248s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.248s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.262s] -- Found PythonExtra: .so  
+[1.285s] -- Added test 'lint_cmake' to check CMake code style
+[1.285s] -- Added test 'xmllint' to check XML markup files
+[1.289s] -- Configuring done
+[1.307s] -- Generating done
+[1.308s] -- Build files have been written to: /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg
+[1.312s] Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lccc/Desktop/GXS_2024_VisionCode/src/qrmsg -DCMAKE_INSTALL_PREFIX=/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg
+[1.312s] Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg -- -j16 -l16
+[1.343s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.351s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.356s] [  4%] Built target ament_cmake_python_copy_qrmsg
+[1.500s] running egg_info
+[1.500s] creating qrmsg.egg-info
+[1.500s] writing qrmsg.egg-info/PKG-INFO
+[1.501s] writing dependency_links to qrmsg.egg-info/dependency_links.txt
+[1.501s] writing top-level names to qrmsg.egg-info/top_level.txt
+[1.501s] writing manifest file 'qrmsg.egg-info/SOURCES.txt'
+[1.502s] reading manifest file 'qrmsg.egg-info/SOURCES.txt'
+[1.503s] writing manifest file 'qrmsg.egg-info/SOURCES.txt'
+[1.521s] [  4%] Built target ament_cmake_python_build_qrmsg_egg
+[1.590s] [  4%] Built target qrmsg__cpp
+[1.597s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.598s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.598s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.655s] [ 12%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_generator_c.dir/rosidl_generator_c/qrmsg/srv/detail/qr__functions.c.o[0m
+[1.657s] [ 17%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_generator_c.dir/rosidl_generator_c/qrmsg/msg/detail/lf__functions.c.o[0m
+[1.657s] [ 17%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_generator_c.dir/rosidl_generator_c/qrmsg/msg/detail/qr__functions.c.o[0m
+[1.707s] [ 19%] [32m[1mLinking C shared library libqrmsg__rosidl_generator_c.so[0m
+[1.738s] [ 19%] Built target qrmsg__rosidl_generator_c
+[1.748s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.748s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.748s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.817s] [ 27%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qrmsg/msg/detail/lf__type_support.cpp.o[0m
+[1.819s] [ 31%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qrmsg/srv/detail/qr__type_support.cpp.o[0m
+[1.819s] [ 31%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qrmsg/msg/detail/qr__type_support.cpp.o[0m
+[1.854s] [ 38%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qrmsg/srv/detail/dds_fastrtps/qr__type_support.cpp.o[0m
+[1.854s] [ 38%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qrmsg/msg/detail/dds_fastrtps/lf__type_support.cpp.o[0m
+[1.854s] [ 38%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qrmsg/msg/detail/dds_fastrtps/qr__type_support.cpp.o[0m
+[1.910s] [ 44%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qrmsg/msg/qr__type_support.cpp.o[0m
+[1.910s] [ 44%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qrmsg/srv/qr__type_support.cpp.o[0m
+[1.910s] [ 44%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qrmsg/msg/lf__type_support.cpp.o[0m
+[2.098s] [ 48%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/qrmsg/msg/qr__type_support.cpp.o[0m
+[2.099s] [ 48%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/qrmsg/srv/qr__type_support.cpp.o[0m
+[2.099s] [ 51%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/qrmsg/msg/lf__type_support.cpp.o[0m
+[2.156s] [ 53%] [32m[1mLinking CXX shared library libqrmsg__rosidl_typesupport_c.so[0m
+[2.183s] [ 55%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qrmsg/srv/detail/qr__type_support_c.cpp.o[0m
+[2.184s] [ 57%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qrmsg/msg/detail/qr__type_support_c.cpp.o[0m
+[2.185s] [ 59%] [32mBuilding CXX object CMakeFiles/qrmsg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qrmsg/msg/detail/lf__type_support_c.cpp.o[0m
+[2.196s] [ 61%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qrmsg/srv/detail/qr__type_support.c.o[0m
+[2.197s] [ 63%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qrmsg/msg/detail/lf__type_support.c.o[0m
+[2.203s] [ 65%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qrmsg/msg/detail/qr__type_support.c.o[0m
+[2.237s] [ 65%] Built target qrmsg__rosidl_typesupport_c
+[2.251s] [ 68%] [32m[1mLinking C shared library libqrmsg__rosidl_typesupport_introspection_c.so[0m
+[2.274s] [ 70%] [32m[1mLinking CXX shared library libqrmsg__rosidl_typesupport_introspection_cpp.so[0m
+[2.281s] [ 72%] [32m[1mLinking CXX shared library libqrmsg__rosidl_typesupport_cpp.so[0m
+[2.284s] [ 72%] Built target qrmsg__rosidl_typesupport_introspection_c
+[2.318s] [ 72%] Built target qrmsg__rosidl_typesupport_introspection_cpp
+[2.324s] [ 72%] Built target qrmsg__rosidl_typesupport_cpp
+[2.346s] [ 74%] [32m[1mLinking CXX shared library libqrmsg__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.421s] [ 74%] Built target qrmsg__rosidl_typesupport_fastrtps_cpp
+[2.498s] [ 76%] [32m[1mLinking CXX shared library libqrmsg__rosidl_typesupport_fastrtps_c.so[0m
+[2.552s] [ 76%] Built target qrmsg__rosidl_typesupport_fastrtps_c
+[2.567s] [ 76%] Built target qrmsg
+[2.583s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.926s] [ 78%] Built target qrmsg__py
+[2.942s] [ 80%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_generator_py.dir/rosidl_generator_py/qrmsg/msg/_lf_s.c.o[0m
+[2.943s] [ 85%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_generator_py.dir/rosidl_generator_py/qrmsg/msg/_qr_s.c.o[0m
+[2.943s] [ 85%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_generator_py.dir/rosidl_generator_py/qrmsg/srv/_qr_s.c.o[0m
+[3.036s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/qrmsg/libqrmsg__rosidl_generator_py.so[0m
+[3.065s] [ 87%] Built target qrmsg__rosidl_generator_py
+[3.080s] [ 89%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/qrmsg/_qrmsg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.081s] [ 91%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/qrmsg/_qrmsg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.081s] [ 93%] [32mBuilding C object CMakeFiles/qrmsg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/qrmsg/_qrmsg_s.ep.rosidl_typesupport_c.c.o[0m
+[3.145s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/qrmsg/qrmsg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.148s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/qrmsg/qrmsg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.150s] [100%] [32m[1mLinking C shared library rosidl_generator_py/qrmsg/qrmsg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.171s] [100%] Built target qrmsg__rosidl_typesupport_introspection_c__pyext
+[3.173s] [100%] Built target qrmsg__rosidl_typesupport_c__pyext
+[3.180s] [100%] Built target qrmsg__rosidl_typesupport_fastrtps_c__pyext
+[3.190s] Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg -- -j16 -l16
+[3.258s] Invoking command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg
+[3.264s] -- Install configuration: ""
+[3.264s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/ament_index/resource_index/rosidl_interfaces/qrmsg
+[3.264s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg
+[3.264s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv
+[3.264s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail
+[3.264s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__functions.c
+[3.264s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__struct.h
+[3.264s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__functions.h
+[3.264s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__type_support.h
+[3.264s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/qr.h
+[3.264s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/rosidl_generator_c__visibility_control.h
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__functions.c
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__struct.h
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__struct.h
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__functions.h
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__type_support.h
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__functions.h
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__functions.c
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__type_support.h
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/qr.h
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/lf.h
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/library_path.sh
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/library_path.dsv
+[3.265s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_generator_c.so
+[3.266s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_generator_c.so" to ""
+[3.266s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg
+[3.266s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv
+[3.266s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail
+[3.266s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__rosidl_typesupport_fastrtps_c.h
+[3.266s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg
+[3.266s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail
+[3.266s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__rosidl_typesupport_fastrtps_c.h
+[3.266s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__rosidl_typesupport_fastrtps_c.h
+[3.266s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.266s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_fastrtps_c.so
+[3.266s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_fastrtps_c.so" to ""
+[3.266s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg
+[3.266s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv
+[3.267s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail
+[3.267s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__rosidl_typesupport_introspection_c.h
+[3.267s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__type_support.c
+[3.267s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg
+[3.267s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.267s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail
+[3.267s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__rosidl_typesupport_introspection_c.h
+[3.267s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__type_support.c
+[3.267s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__type_support.c
+[3.267s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__rosidl_typesupport_introspection_c.h
+[3.267s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_introspection_c.so
+[3.267s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_introspection_c.so" to ""
+[3.267s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_c.so
+[3.267s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_c.so" to ""
+[3.267s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg
+[3.268s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv
+[3.268s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail
+[3.268s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__struct.hpp
+[3.268s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__traits.hpp
+[3.268s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__builder.hpp
+[3.268s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/qr.hpp
+[3.268s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg
+[3.268s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail
+[3.268s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__struct.hpp
+[3.268s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__struct.hpp
+[3.268s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__builder.hpp
+[3.268s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__traits.hpp
+[3.268s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__builder.hpp
+[3.269s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__traits.hpp
+[3.269s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/lf.hpp
+[3.269s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/qr.hpp
+[3.269s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg
+[3.269s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv
+[3.269s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail
+[3.269s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/dds_fastrtps
+[3.269s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__rosidl_typesupport_fastrtps_cpp.hpp
+[3.269s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg
+[3.269s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.269s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail
+[3.269s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__rosidl_typesupport_fastrtps_cpp.hpp
+[3.269s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/dds_fastrtps
+[3.269s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__rosidl_typesupport_fastrtps_cpp.hpp
+[3.269s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_fastrtps_cpp.so
+[3.269s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.270s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg
+[3.270s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv
+[3.270s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail
+[3.270s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__rosidl_typesupport_introspection_cpp.hpp
+[3.270s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/srv/detail/qr__type_support.cpp
+[3.270s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg
+[3.270s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail
+[3.270s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__rosidl_typesupport_introspection_cpp.hpp
+[3.270s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/lf__type_support.cpp
+[3.270s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__rosidl_typesupport_introspection_cpp.hpp
+[3.270s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/include/qrmsg/qrmsg/msg/detail/qr__type_support.cpp
+[3.270s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_introspection_cpp.so
+[3.270s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_introspection_cpp.so" to ""
+[3.270s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_cpp.so
+[3.270s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_typesupport_cpp.so" to ""
+[3.270s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/pythonpath.sh
+[3.270s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/pythonpath.dsv
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg-0.0.0-py3.10.egg-info
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg-0.0.0-py3.10.egg-info/PKG-INFO
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg-0.0.0-py3.10.egg-info/top_level.txt
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv/_qr.py
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv/__init__.py
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv/_qr_s.c
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/__init__.py
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/libqrmsg__rosidl_generator_py.so
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/_qrmsg_s.ep.rosidl_typesupport_introspection_c.c
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg
+[3.271s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg/_qr.py
+[3.272s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg/__init__.py
+[3.272s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg/_lf.py
+[3.272s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg/_qr_s.c
+[3.272s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg/_lf_s.c
+[3.272s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/_qrmsg_s.ep.rosidl_typesupport_c.c
+[3.272s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/_qrmsg_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.272s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.293s] Listing '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg'...
+[3.293s] Compiling '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/__init__.py'...
+[3.293s] Listing '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg'...
+[3.293s] Compiling '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg/__init__.py'...
+[3.293s] Compiling '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg/_lf.py'...
+[3.293s] Compiling '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/msg/_qr.py'...
+[3.293s] Listing '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv'...
+[3.293s] Compiling '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv/__init__.py'...
+[3.293s] Compiling '/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/srv/_qr.py'...
+[3.296s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.296s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.296s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.296s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.296s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.296s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/local/lib/python3.10/dist-packages/qrmsg/qrmsg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.296s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_generator_py.so
+[3.296s] -- Set runtime path of "/home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/lib/libqrmsg__rosidl_generator_py.so" to ""
+[3.297s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv/Qr.idl
+[3.297s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/msg/Lf.idl
+[3.297s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/msg/Qr.idl
+[3.297s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv/Qr.srv
+[3.297s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv/Qr_Request.msg
+[3.297s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv/Qr_Response.msg
+[3.297s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/msg/Lf.msg
+[3.297s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/msg/Qr.msg
+[3.297s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv
+[3.297s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/srv/Qr.srv
+[3.297s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/msg
+[3.297s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/msg/Qr.msg
+[3.297s] -- Up-to-date: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/msg/Lf.msg
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/ament_index/resource_index/package_run_dependencies/qrmsg
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/ament_index/resource_index/parent_prefix_path/qrmsg
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/ament_prefix_path.sh
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/ament_prefix_path.dsv
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/path.sh
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/environment/path.dsv
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/local_setup.bash
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/local_setup.sh
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/local_setup.zsh
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/local_setup.dsv
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.dsv
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/ament_index/resource_index/packages/qrmsg
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_generator_cExport.cmake
+[3.298s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_generator_cExport-noconfig.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_typesupport_fastrtps_cExport.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_introspection_cExport.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_cExport.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_cExport-noconfig.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_generator_cppExport.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_introspection_cppExport.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_cppExport.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsg__rosidl_typesupport_cppExport-noconfig.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_generator_pyExport.cmake
+[3.299s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/export_qrmsg__rosidl_generator_pyExport-noconfig.cmake
+[3.300s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/rosidl_cmake-extras.cmake
+[3.300s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.300s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/ament_cmake_export_libraries-extras.cmake
+[3.300s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/ament_cmake_export_targets-extras.cmake
+[3.300s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.300s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.300s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.300s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsgConfig.cmake
+[3.300s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/cmake/qrmsgConfig-version.cmake
+[3.300s] -- Installing: /home/lccc/Desktop/GXS_2024_VisionCode/install/qrmsg/share/qrmsg/package.xml
+[3.301s] Invoked command in '/home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lccc/Desktop/GXS_2024_VisionCode/build/qrmsg
